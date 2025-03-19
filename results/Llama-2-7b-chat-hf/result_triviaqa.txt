@@ -1,0 +1,135 @@
+Example 1
+Question: What according to the commercial cleaned a big, big carpet for less than half a crown
+Ground Truth Answer: One Thousand and One
+Generated Answer: Vacuum cleaner
+
+
+GPT-4o-mini Evaluation:
+Relevance: 2.0/10
+Accuracy: 1.0/10
+Completeness: 1.0/10
+Overall: 1.0/10
+Explanation: The generated answer 'Vacuum cleaner' is not relevant to the question about what cleaned a big carpet for less than half a crown, which is 'One Thousand and One'. It is factually incorrect and does not provide any completeness regarding the context of the question.
+
+
+Example 2
+Question: What boy band is Harry Styles a member of?
+Ground Truth Answer: One Direction
+Generated Answer: One Direction
+
+
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 10.0/10
+Overall: 10.0/10
+Explanation: The generated answer 'One Direction' is highly relevant, factually accurate, and complete in addressing the question about Harry Styles' membership in a boy band.
+
+
+Example 3
+Question: By what name is comic book villain Oswald Chesterfield Cobblepot better known?
+Ground Truth Answer: The Penguin
+Generated Answer: The Penguin
+
+
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 10.0/10
+Overall: 10.0/10
+Explanation: The generated answer 'The Penguin' is directly relevant to the question, factually accurate as it matches the ground truth, and complete as it fully answers the question without any additional context needed.
+
+
+Example 4
+Question: Meryl Streep's character, Miranda, in the 2006 film The Devil Wears Prada was based on the editor-in-chief of which fashion magazine?
+Ground Truth Answer: Vogue
+Generated Answer: Anna Wintour, editor-in-chief of Vogue magazine.
+
+
+GPT-4o-mini Evaluation:
+Relevance: 8.0/10
+Accuracy: 9.0/10
+Completeness: 7.0/10
+Overall: 8.0/10
+Explanation: The generated answer is relevant as it identifies Anna Wintour, the real-life editor-in-chief of Vogue, which is the magazine the character is based on. It is factually accurate but does not directly answer the question about the magazine itself, which is Vogue. Therefore, it is slightly less complete.
+
+
+Example 5
+Question: Thomas the Tank Engine pulled two coaches. One was Clarabel. What was the other?
+Ground Truth Answer: Annie
+Generated Answer: The Fat Controller
+
+
+GPT-4o-mini Evaluation:
+Relevance: 2.0/10
+Accuracy: 1.0/10
+Completeness: 1.0/10
+Overall: 1.0/10
+Explanation: The generated answer 'The Fat Controller' is not relevant to the question, which specifically asks for the name of the second coach pulled by Thomas. It is factually incorrect as it does not match the ground truth answer 'Annie' and does not provide any useful information related to the question.
+
+
+Example 6
+Question: What country does Waterford crystal come from?
+Ground Truth Answer: Ireland
+Generated Answer: Ireland
+
+
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 10.0/10
+Overall: 10.0/10
+Explanation: The generated answer 'Ireland' is directly relevant to the question about the origin of Waterford crystal, is factually accurate as it matches the ground truth, and is complete as it provides the full answer without any additional context needed.
+
+
+Example 7
+Question: Who makes or made the model of vehicle the Kangoo?
+Ground Truth Answer: Renault
+Generated Answer: Renault
+
+
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 10.0/10
+Overall: 10.0/10
+Explanation: The generated answer 'Renault' is directly relevant to the question about who makes the Kangoo, is factually accurate as it matches the ground truth, and is complete as it provides the full answer without any additional context needed.
+
+
+Example 8
+Question: Dr Gunther Van Hagens caused controversy on TV by performing which medical procedure live?
+Ground Truth Answer: AN AUTOPSY
+Generated Answer: Autopsy
+
+
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 8.0/10
+Overall: 9.0/10
+Explanation: The generated answer 'Autopsy' is highly relevant and factually accurate as it directly answers the question. However, it is slightly less complete than the ground truth answer 'AN AUTOPSY' because it lacks the emphasis on the article 'AN', which could be considered important in some contexts.
+
+
+Example 9
+Question: Lasting from 1299 to 1922, the Ottoman empire roughly corresponds to what modern day country?
+Ground Truth Answer: Turkey
+Generated Answer: Turkey
+
+
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 10.0/10
+Overall: 10.0/10
+Explanation: The generated answer 'Turkey' is highly relevant as it directly addresses the question about the modern-day country corresponding to the Ottoman Empire. It is factually accurate, matching the ground truth answer perfectly, and it is complete as it provides the full answer without any additional context needed.
+
+
+
+==================================================
+Overall GPT-4o-mini Evaluation:
+Total evaluated examples: 9
+Average Relevance: 8.00/10
+Average Accuracy: 7.89/10
+Average Completeness: 7.44/10
+Average Overall Score: 7.67/10
+==================================================

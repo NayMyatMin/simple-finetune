@@ -1,0 +1,35 @@
+Example 1
+Question: Under normal conditions, T cells and antibodies produce what kind of peptides?
+Ground Truth Answer: "self" peptides
+Generated Answer: Under normal circumstances, many T cells and antibodies react with "self" peptides.
+
+GPT-4o-mini Evaluation:
+Relevance: 9.0/10
+Accuracy: 8.0/10
+Completeness: 7.0/10
+Overall: 8.0/10
+Explanation: The generated answer is highly relevant as it directly addresses the question about T cells and antibodies producing 'self' peptides. It is factually accurate but slightly less precise than the ground truth, as it implies a broader context ('many T cells and antibodies react with') rather than stating that they produce 'self' peptides. The answer is somewhat complete but could be improved by explicitly stating that T cells and antibodies produce 'self' peptides, rather than just mentioning their reaction to them.
+
+
+Example 2
+Question: Invertebrates do not generate what type of cells that are a part of the vertebrate adaptive immune system?
+Ground Truth Answer: lymphocytes
+Generated Answer: Invertebrates do not generate lymphocytes or an antibody-based humoral response.
+
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 9.0/10
+Overall: 9.0/10
+Explanation: The generated answer is highly relevant as it directly addresses the question about what type of cells invertebrates do not generate. It accurately states that invertebrates do not produce lymphocytes, which is the correct answer. Additionally, it provides extra information about the absence of an antibody-based humoral response, which enhances the completeness of the answer, though it slightly diverges from the specific focus of the question.
+
+
+
+==================================================
+Overall GPT-4o-mini Evaluation:
+Total evaluated examples: 2
+Average Relevance: 9.50/10
+Average Accuracy: 9.00/10
+Average Completeness: 8.00/10
+Average Overall Score: 8.50/10
+==================================================

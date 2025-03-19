@@ -1,0 +1,51 @@
+Example 1
+Question: who is dylan's father in bates motel
+Ground Truth Answer: Norma's brother, Caleb
+Generated Answer: Norman Bates
+
+
+GPT-4o-mini Evaluation:
+Relevance: 3.0/10
+Accuracy: 1.0/10
+Completeness: 2.0/10
+Overall: 2.0/10
+Explanation: The generated answer 'Norman Bates' is not relevant to the question about Dylan's father, as it incorrectly identifies a different character. It is factually inaccurate and does not provide a complete or correct response.
+
+
+Example 2
+Question: a legislative act passed by congress is an example of
+Ground Truth Answer: statutory law
+Generated Answer: law
+
+
+GPT-4o-mini Evaluation:
+Relevance: 8.0/10
+Accuracy: 6.0/10
+Completeness: 5.0/10
+Overall: 6.0/10
+Explanation: The generated answer 'law' is relevant as it pertains to the question about a legislative act, but it lacks specificity. While it is factually accurate in a broad sense, it does not capture the specific term 'statutory law' which is the ground truth answer. Therefore, it is somewhat complete but not fully so.
+
+
+Example 3
+Question: who played santa in the santa clause movies
+Ground Truth Answer: Tim Allen
+Generated Answer: Tim Allen
+
+
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 10.0/10
+Overall: 10.0/10
+Explanation: The generated answer 'Tim Allen' is directly relevant to the question about who played Santa in 'The Santa Clause' movies. It is factually accurate as it matches the ground truth answer perfectly and is complete as it provides the full name of the actor associated with the role.
+
+
+
+==================================================
+Overall GPT-4o-mini Evaluation:
+Total evaluated examples: 3
+Average Relevance: 7.00/10
+Average Accuracy: 5.67/10
+Average Completeness: 5.67/10
+Average Overall Score: 6.00/10
+==================================================

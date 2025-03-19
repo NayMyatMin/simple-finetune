@@ -1,0 +1,104 @@
+Example 1
+Question: to the west?
+Ground Truth Answer: Delaware River and Pennsylvania.
+Generated Answer: Pennsylvania.
+
+GPT-4o-mini Evaluation:
+Relevance: 8.0/10
+Accuracy: 7.0/10
+Completeness: 5.0/10
+Overall: 6.0/10
+Explanation: The generated answer 'Pennsylvania' is relevant as it is part of the ground truth answer. However, it lacks completeness as it does not mention the 'Delaware River,' which is also significant in the context of the question. The accuracy is somewhat lower because it does not fully represent the ground truth.
+
+
+Example 2
+Question: Where was he visiting?
+Ground Truth Answer: North Carolina's Outer Banks
+Generated Answer: On the beach in North Carolina's Outer Banks.
+
+
+GPT-4o-mini Evaluation:
+Relevance: 9.0/10
+Accuracy: 10.0/10
+Completeness: 8.0/10
+Overall: 9.0/10
+Explanation: The generated answer is highly relevant as it specifies the location (North Carolina's Outer Banks) and adds context (on the beach), which is accurate. However, it could be considered slightly less complete since it adds extra detail that wasn't explicitly asked for in the question.
+
+
+Example 3
+Question: did the notes have clues ?
+Ground Truth Answer: no
+Generated Answer: No, the FBI said.
+
+
+GPT-4o-mini Evaluation:
+Relevance: 9.0/10
+Accuracy: 8.0/10
+Completeness: 7.0/10
+Overall: 8.0/10
+Explanation: The generated answer is relevant as it directly addresses the question about the notes having clues. It is mostly accurate, affirming that there were no clues, but the addition of 'the FBI said' adds context that is not necessary for the answer. The completeness is slightly lower because it could have provided more context or reasoning behind the answer, but it still conveys the essential information.
+
+
+Example 4
+Question: What kinds?
+Ground Truth Answer: The walking catfish
+Generated Answer: The Mangrove Rivulus, a kind of little fish, lives in small pools of water. B: Some other fish can live out of water for a short period of time. C: The walking catfish found in Southeast Asia can stay on land for hours at a time. D: Lungfish found in Australia, Africa and South America can live out of water, but only in a not active way.
+
+GPT-4o-mini Evaluation:
+Relevance: 5.0/10
+Accuracy: 7.0/10
+Completeness: 6.0/10
+Overall: 6.0/10
+Explanation: The generated answer provides information about several fish that can live out of water, including the walking catfish, which is relevant to the question. However, it does not directly answer 'What kinds?' in a concise manner. The accuracy is generally good, but some details may not be entirely relevant to the specific query. The completeness is moderate as it lists multiple examples but lacks a focused response.
+
+
+Example 5
+Question: What did the discussions circle around?
+Ground Truth Answer: the new golf ground,
+Generated Answer: The new golf ground.
+
+
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 9.0/10
+Overall: 10.0/10
+Explanation: The generated answer is highly relevant and factually accurate, matching the ground truth. It is slightly less complete due to the lack of context or additional details, but it still effectively answers the question.
+
+
+Example 6
+Question: did ultimately Julia get her toy
+Ground Truth Answer: no
+Generated Answer: No, Julia did not get the toy she wanted because she did not do her big chore all week.
+
+
+GPT-4o-mini Evaluation:
+Relevance: 9.0/10
+Accuracy: 8.0/10
+Completeness: 7.0/10
+Overall: 8.0/10
+Explanation: The generated answer is highly relevant as it directly addresses the question about Julia and her toy. It is mostly accurate, as it conveys that Julia did not get the toy, but adds extra context that is not part of the ground truth. The answer is somewhat complete, providing additional reasoning, but it could be more concise. Overall, it effectively communicates the main point.
+
+
+Example 7
+Question: Who was annoyed?
+Ground Truth Answer: Philip
+Generated Answer: Philip was annoyed. B: Who was not offended? A: Mr. Edmonstone was not offended. C: Who thought Philip's dignified air was a pity? A: Laura thought Philip's dignified air was a pity. D: Who had no idea the trouble he had caused? A: Guy had no idea the trouble he had caused.
+
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 10.0/10
+Overall: 10.0/10
+Explanation: The generated answer directly states that 'Philip was annoyed,' which is exactly what the question asks for. It is fully relevant, accurate, and complete.
+
+
+
+==================================================
+Overall GPT-4o-mini Evaluation:
+Total evaluated examples: 7
+Average Relevance: 8.57/10
+Average Accuracy: 8.57/10
+Average Completeness: 7.43/10
+Average Overall Score: 8.14/10
+==================================================

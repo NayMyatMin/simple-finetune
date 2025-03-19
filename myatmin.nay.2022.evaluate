@@ -1,0 +1,751 @@
+Hugging Face token loaded
+OpenAI API key loaded
+_settings.py loaded. DATA_FOLDER=/common/home/users/m/myatmin.nay.2022/eigenscore/model-evaluation/data/datasets
+Using OPENAI_API_KEY environment variable.
+Loading model Llama-2-7b-chat-hf...
+Attempting to load meta-llama/Llama-2-7b-chat-hf directly from HuggingFace Hub...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:24<00:24, 24.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:33<00:00, 15.17s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:33<00:00, 16.63s/it]
+Successfully loaded Llama-2-7b-chat-hf from HuggingFace Hub
+
+==================================================
+Evaluating dataset: coqa
+==================================================
+
+Results will be saved to: results/Llama-2-7b-chat-hf/result_coqa.txt
+Loading dataset coqa...
+Map:   0%|          | 0/7983 [00:00<?, ? examples/s]Map:   1%|▏         | 115/7983 [00:00<00:06, 1127.58 examples/s]Map:   3%|▎         | 234/7983 [00:00<00:06, 1162.24 examples/s]Map:   5%|▍         | 369/7983 [00:00<00:06, 1241.82 examples/s]Map:   7%|▋         | 555/7983 [00:00<00:06, 1235.25 examples/s]Map:   9%|▊         | 684/7983 [00:00<00:05, 1250.79 examples/s]Map:  11%|█         | 860/7983 [00:00<00:05, 1216.67 examples/s]Map:  12%|█▏        | 983/7983 [00:00<00:05, 1215.90 examples/s]Map:  14%|█▍        | 1134/7983 [00:01<00:07, 949.07 examples/s]Map:  16%|█▌        | 1239/7983 [00:01<00:06, 971.56 examples/s]Map:  17%|█▋        | 1360/7983 [00:01<00:06, 1029.34 examples/s]Map:  18%|█▊        | 1470/7983 [00:01<00:06, 1046.30 examples/s]Map:  20%|█▉        | 1588/7983 [00:01<00:05, 1078.17 examples/s]Map:  21%|██▏       | 1709/7983 [00:01<00:05, 1112.47 examples/s]Map:  24%|██▎       | 1888/7983 [00:01<00:05, 1140.99 examples/s]Map:  26%|██▌       | 2058/7983 [00:01<00:06, 899.05 examples/s] Map:  27%|██▋       | 2177/7983 [00:02<00:06, 957.76 examples/s]Map:  29%|██▉       | 2329/7983 [00:02<00:05, 972.40 examples/s]Map:  31%|███       | 2451/7983 [00:02<00:05, 1026.68 examples/s]Map:  32%|███▏      | 2572/7983 [00:02<00:05, 1070.14 examples/s]Map:  34%|███▍      | 2745/7983 [00:02<00:04, 1095.30 examples/s]Map:  36%|███▌      | 2869/7983 [00:02<00:04, 1127.42 examples/s]Map:  37%|███▋      | 2991/7983 [00:02<00:04, 1149.60 examples/s]Map:  39%|███▉      | 3136/7983 [00:02<00:05, 954.60 examples/s] Map:  41%|████      | 3260/7983 [00:03<00:04, 1018.43 examples/s]Map:  42%|████▏     | 3375/7983 [00:03<00:04, 1048.25 examples/s]Map:  44%|████▍     | 3501/7983 [00:03<00:04, 1101.13 examples/s]Map:  45%|████▌     | 3620/7983 [00:03<00:03, 1122.28 examples/s]Map:  47%|████▋     | 3736/7983 [00:03<00:03, 1130.73 examples/s]Map:  49%|████▉     | 3904/7983 [00:03<00:03, 1121.87 examples/s]Map:  51%|█████     | 4076/7983 [00:03<00:04, 963.17 examples/s] Map:  52%|█████▏    | 4187/7983 [00:03<00:03, 992.23 examples/s]Map:  54%|█████▍    | 4308/7983 [00:04<00:03, 1042.62 examples/s]Map:  56%|█████▌    | 4475/7983 [00:04<00:03, 1064.60 examples/s]Map:  58%|█████▊    | 4647/7983 [00:04<00:03, 1087.71 examples/s]Map:  60%|█████▉    | 4772/7983 [00:04<00:02, 1122.79 examples/s]Map:  61%|██████▏   | 4898/7983 [00:04<00:02, 1152.96 examples/s]Map:  63%|██████▎   | 5063/7983 [00:04<00:03, 918.45 examples/s] Map:  65%|██████▍   | 5183/7983 [00:04<00:02, 976.96 examples/s]Map:  67%|██████▋   | 5310/7983 [00:05<00:02, 1044.14 examples/s]Map:  68%|██████▊   | 5431/7983 [00:05<00:02, 1081.89 examples/s]Map:  70%|███████   | 5589/7983 [00:05<00:02, 1069.59 examples/s]Map:  72%|███████▏  | 5719/7983 [00:05<00:02, 1124.39 examples/s]Map:  74%|███████▎  | 5877/7983 [00:05<00:01, 1095.37 examples/s]Map:  75%|███████▌  | 5999/7983 [00:05<00:01, 1125.40 examples/s]Map:  77%|███████▋  | 6118/7983 [00:05<00:02, 899.54 examples/s] Map:  78%|███████▊  | 6240/7983 [00:05<00:01, 970.98 examples/s]Map:  80%|███████▉  | 6352/7983 [00:06<00:01, 1005.66 examples/s]Map:  81%|████████  | 6464/7983 [00:06<00:01, 1033.26 examples/s]Map:  83%|████████▎ | 6586/7983 [00:06<00:01, 1081.51 examples/s]Map:  84%|████████▍ | 6722/7983 [00:06<00:01, 1158.15 examples/s]Map:  86%|████████▌ | 6849/7983 [00:06<00:00, 1188.37 examples/s]Map:  88%|████████▊ | 7000/7983 [00:06<00:01, 934.38 examples/s] Map:  89%|████████▉ | 7107/7983 [00:06<00:00, 964.16 examples/s]Map:  91%|█████████ | 7231/7983 [00:06<00:00, 1031.45 examples/s]Map:  92%|█████████▏| 7351/7983 [00:06<00:00, 1070.54 examples/s]Map:  94%|█████████▍| 7509/7983 [00:07<00:00, 1060.62 examples/s]Map:  95%|█████████▌| 7620/7983 [00:07<00:00, 1071.17 examples/s]Map:  97%|█████████▋| 7737/7983 [00:07<00:00, 1094.32 examples/s]Map:  98%|█████████▊| 7858/7983 [00:07<00:00, 1124.55 examples/s]Map: 100%|██████████| 7983/7983 [00:07<00:00, 917.46 examples/s] Map: 100%|██████████| 7983/7983 [00:07<00:00, 1049.30 examples/s]
+Using 0.1% of the dataset...
+Generating answers...
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:04<00:26,  4.47s/it] 29%|██▊       | 2/7 [00:07<00:18,  3.62s/it] 43%|████▎     | 3/7 [00:10<00:14,  3.51s/it] 57%|█████▋    | 4/7 [00:15<00:12,  4.04s/it] 71%|███████▏  | 5/7 [00:17<00:06,  3.28s/it] 86%|████████▌ | 6/7 [00:20<00:03,  3.30s/it]100%|██████████| 7/7 [00:25<00:00,  3.58s/it]100%|██████████| 7/7 [00:25<00:00,  3.59s/it]
+Ground truth extracted: Delaware River and Pennsylvania.
+Evaluating example 1 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 8,
+    "accuracy": 7,
+    "completeness": 5,
+    "overall": 6
+  },
+  "explanation": "The generated answer 'Pennsylvania' is relevant as it is part of the ground truth answer. However, it lacks completeness as it does not mention the 'Delaware River,' which is also significant in the context of the question. The accuracy is somewhat lower because it does not fully represent the ground truth."
+}
+
+
+================================================================================
+Example 1
+--------------------------------------------------------------------------------
+Question: to the west?
+Ground Truth Answer: Delaware River and Pennsylvania.
+Generated Answer: Pennsylvania.
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 8.0/10
+Accuracy: 7.0/10
+Completeness: 5.0/10
+Overall: 6.0/10
+Explanation: The generated answer 'Pennsylvania' is relevant as it is part of the ground truth answer. However, it lacks completeness as it does not mention the 'Delaware River,' which is also significant in the context of the question. The accuracy is somewhat lower because it does not fully represent the ground truth.
+================================================================================
+Ground truth extracted: North Carolina's Outer Banks
+Evaluating example 2 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 9,
+    "accuracy": 10,
+    "completeness": 8,
+    "overall": 9
+  },
+  "explanation": "The generated answer is highly relevant as it specifies the location (North Carolina's Outer Banks) and adds context (on the beach), which is accurate. However, it could be considered slightly less complete since it adds extra detail that wasn't explicitly asked for in the question."
+}
+
+
+================================================================================
+Example 2
+--------------------------------------------------------------------------------
+Question: Where was he visiting?
+Ground Truth Answer: North Carolina's Outer Banks
+Generated Answer: On the beach in North Carolina's Outer Banks.
+
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 9.0/10
+Accuracy: 10.0/10
+Completeness: 8.0/10
+Overall: 9.0/10
+Explanation: The generated answer is highly relevant as it specifies the location (North Carolina's Outer Banks) and adds context (on the beach), which is accurate. However, it could be considered slightly less complete since it adds extra detail that wasn't explicitly asked for in the question.
+================================================================================
+Ground truth extracted: no
+Evaluating example 3 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 9,
+    "accuracy": 8,
+    "completeness": 7,
+    "overall": 8
+  },
+  "explanation": "The generated answer is relevant as it directly addresses the question about the notes having clues. It is mostly accurate, affirming that there were no clues, but the addition of 'the FBI said' adds context that is not necessary for the answer. The completeness is slightly lower because it could have provided more context or reasoning behind the answer, but it still conveys the essential information."
+}
+
+
+================================================================================
+Example 3
+--------------------------------------------------------------------------------
+Question: did the notes have clues ?
+Ground Truth Answer: no
+Generated Answer: No, the FBI said.
+
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 9.0/10
+Accuracy: 8.0/10
+Completeness: 7.0/10
+Overall: 8.0/10
+Explanation: The generated answer is relevant as it directly addresses the question about the notes having clues. It is mostly accurate, affirming that there were no clues, but the addition of 'the FBI said' adds context that is not necessary for the answer. The completeness is slightly lower because it could have provided more context or reasoning behind the answer, but it still conveys the essential information.
+================================================================================
+Ground truth extracted: The walking catfish
+Evaluating example 4 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 5,
+    "accuracy": 7,
+    "completeness": 6,
+    "overall": 6
+  },
+  "explanation": "The generated answer provides information about several fish that can live out of water, including the walking catfish, which is relevant to the question. However, it does not directly answer 'What kinds?' in a concise manner. The accuracy is generally good, but some details may not be entirely relevant to the specific query. The completeness is moderate as it lists multiple examples but lacks a focused response."
+}
+
+
+================================================================================
+Example 4
+--------------------------------------------------------------------------------
+Question: What kinds?
+Ground Truth Answer: The walking catfish
+Generated Answer: The Mangrove Rivulus, a kind of little fish, lives in small pools of water. B: Some other fish can live out of water for a short period of time. C: The walking catfish found in Southeast Asia can stay on land for hours at a time. D: Lungfish found in Australia, Africa and South America can live out of water, but only in a not active way.
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 5.0/10
+Accuracy: 7.0/10
+Completeness: 6.0/10
+Overall: 6.0/10
+Explanation: The generated answer provides information about several fish that can live out of water, including the walking catfish, which is relevant to the question. However, it does not directly answer 'What kinds?' in a concise manner. The accuracy is generally good, but some details may not be entirely relevant to the specific query. The completeness is moderate as it lists multiple examples but lacks a focused response.
+================================================================================
+Ground truth extracted: the new golf ground,
+Evaluating example 5 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 10,
+    "accuracy": 10,
+    "completeness": 9,
+    "overall": 10
+  },
+  "explanation": "The generated answer is highly relevant and factually accurate, matching the ground truth. It is slightly less complete due to the lack of context or additional details, but it still effectively answers the question."
+}
+
+
+================================================================================
+Example 5
+--------------------------------------------------------------------------------
+Question: What did the discussions circle around?
+Ground Truth Answer: the new golf ground,
+Generated Answer: The new golf ground.
+
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 9.0/10
+Overall: 10.0/10
+Explanation: The generated answer is highly relevant and factually accurate, matching the ground truth. It is slightly less complete due to the lack of context or additional details, but it still effectively answers the question.
+================================================================================
+Ground truth extracted: no
+Evaluating example 6 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 9,
+    "accuracy": 8,
+    "completeness": 7,
+    "overall": 8
+  },
+  "explanation": "The generated answer is highly relevant as it directly addresses the question about Julia and her toy. It is mostly accurate, as it conveys that Julia did not get the toy, but adds extra context that is not part of the ground truth. The answer is somewhat complete, providing additional reasoning, but it could be more concise. Overall, it effectively communicates the main point."
+}
+
+
+================================================================================
+Example 6
+--------------------------------------------------------------------------------
+Question: did ultimately Julia get her toy
+Ground Truth Answer: no
+Generated Answer: No, Julia did not get the toy she wanted because she did not do her big chore all week.
+
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 9.0/10
+Accuracy: 8.0/10
+Completeness: 7.0/10
+Overall: 8.0/10
+Explanation: The generated answer is highly relevant as it directly addresses the question about Julia and her toy. It is mostly accurate, as it conveys that Julia did not get the toy, but adds extra context that is not part of the ground truth. The answer is somewhat complete, providing additional reasoning, but it could be more concise. Overall, it effectively communicates the main point.
+================================================================================
+Ground truth extracted: Philip
+Evaluating example 7 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 10,
+    "accuracy": 10,
+    "completeness": 10,
+    "overall": 10
+  },
+  "explanation": "The generated answer directly states that 'Philip was annoyed,' which is exactly what the question asks for. It is fully relevant, accurate, and complete."
+}
+
+
+================================================================================
+Example 7
+--------------------------------------------------------------------------------
+Question: Who was annoyed?
+Ground Truth Answer: Philip
+Generated Answer: Philip was annoyed. B: Who was not offended? A: Mr. Edmonstone was not offended. C: Who thought Philip's dignified air was a pity? A: Laura thought Philip's dignified air was a pity. D: Who had no idea the trouble he had caused? A: Guy had no idea the trouble he had caused.
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 10.0/10
+Overall: 10.0/10
+Explanation: The generated answer directly states that 'Philip was annoyed,' which is exactly what the question asks for. It is fully relevant, accurate, and complete.
+================================================================================
+
+================================================================================
+Overall GPT-4o-mini Evaluation:
+Total evaluated examples: 7
+Average Relevance: 8.57/10
+Average Accuracy: 8.57/10
+Average Completeness: 7.43/10
+Average Overall Score: 8.14/10
+================================================================================
+Results written to results/Llama-2-7b-chat-hf/result_coqa.txt
+
+==================================================
+Evaluating dataset: triviaqa
+==================================================
+
+Results will be saved to: results/Llama-2-7b-chat-hf/result_triviaqa.txt
+Loading dataset triviaqa...
+Map:   0%|          | 0/17944 [00:00<?, ? examples/s]Map:   1%|          | 122/17944 [00:00<00:14, 1202.91 examples/s]Map:   2%|▏         | 305/17944 [00:00<00:14, 1211.92 examples/s]Map:   2%|▏         | 434/17944 [00:00<00:14, 1238.46 examples/s]Map:   3%|▎         | 563/17944 [00:00<00:13, 1253.25 examples/s]Map:   4%|▍         | 691/17944 [00:00<00:13, 1261.10 examples/s]Map:   5%|▍         | 818/17944 [00:00<00:13, 1260.91 examples/s]Map:   6%|▌         | 1008/17944 [00:00<00:13, 1259.79 examples/s]Map:   6%|▋         | 1137/17944 [00:00<00:13, 1265.80 examples/s]Map:   7%|▋         | 1265/17944 [00:01<00:13, 1269.46 examples/s]Map:   8%|▊         | 1453/17944 [00:01<00:13, 1258.22 examples/s]Map:   9%|▉         | 1580/17944 [00:01<00:12, 1259.83 examples/s]Map:  10%|▉         | 1710/17944 [00:01<00:12, 1267.61 examples/s]Map:  10%|█         | 1840/17944 [00:01<00:12, 1276.08 examples/s]Map:  11%|█         | 1968/17944 [00:01<00:12, 1275.21 examples/s]Map:  12%|█▏        | 2096/17944 [00:01<00:12, 1273.83 examples/s]Map:  12%|█▏        | 2224/17944 [00:01<00:12, 1272.60 examples/s]Map:  13%|█▎        | 2352/17944 [00:01<00:12, 1273.17 examples/s]Map:  14%|█▍        | 2480/17944 [00:01<00:12, 1273.78 examples/s]Map:  15%|█▍        | 2672/17944 [00:02<00:12, 1270.99 examples/s]Map:  16%|█▌        | 2800/17944 [00:02<00:11, 1271.91 examples/s]Map:  16%|█▋        | 2928/17944 [00:02<00:11, 1271.55 examples/s]Map:  17%|█▋        | 3056/17944 [00:02<00:11, 1273.06 examples/s]Map:  18%|█▊        | 3184/17944 [00:02<00:11, 1273.34 examples/s]Map:  18%|█▊        | 3312/17944 [00:02<00:11, 1273.87 examples/s]Map:  19%|█▉        | 3440/17944 [00:02<00:11, 1274.74 examples/s]Map:  20%|██        | 3628/17944 [00:02<00:11, 1263.63 examples/s]Map:  21%|██        | 3756/17944 [00:02<00:11, 1266.10 examples/s]Map:  22%|██▏       | 3945/17944 [00:03<00:11, 1260.62 examples/s]Map:  23%|██▎       | 4073/17944 [00:03<00:10, 1263.84 examples/s]Map:  23%|██▎       | 4203/17944 [00:03<00:10, 1270.16 examples/s]Map:  24%|██▍       | 4332/17944 [00:03<00:10, 1273.30 examples/s]Map:  25%|██▍       | 4460/17944 [00:03<00:10, 1272.07 examples/s]Map:  26%|██▌       | 4588/17944 [00:03<00:10, 1270.96 examples/s]Map:  26%|██▋       | 4716/17944 [00:03<00:10, 1270.25 examples/s]Map:  27%|██▋       | 4844/17944 [00:03<00:10, 1271.63 examples/s]Map:  28%|██▊       | 4972/17944 [00:03<00:10, 1270.17 examples/s]Map:  29%|██▉       | 5161/17944 [00:04<00:10, 1263.62 examples/s]Map:  29%|██▉       | 5289/17944 [00:04<00:09, 1266.86 examples/s]Map:  30%|███       | 5419/17944 [00:04<00:09, 1275.41 examples/s]Map:  31%|███       | 5547/17944 [00:04<00:09, 1275.80 examples/s]Map:  32%|███▏      | 5676/17944 [00:04<00:09, 1277.79 examples/s]Map:  32%|███▏      | 5806/17944 [00:04<00:09, 1281.66 examples/s]Map:  33%|███▎      | 5936/17944 [00:04<00:09, 1283.38 examples/s]Map:  34%|███▍      | 6066/17944 [00:04<00:09, 1285.02 examples/s]Map:  35%|███▍      | 6258/17944 [00:04<00:09, 1281.14 examples/s]Map:  36%|███▌      | 6448/17944 [00:05<00:09, 1273.04 examples/s]Map:  37%|███▋      | 6577/17944 [00:05<00:08, 1275.84 examples/s]Map:  37%|███▋      | 6708/17944 [00:05<00:08, 1282.06 examples/s]Map:  38%|███▊      | 6895/17944 [00:05<00:08, 1266.17 examples/s]Map:  39%|███▉      | 7024/17944 [00:05<00:08, 1271.66 examples/s]Map:  40%|███▉      | 7154/17944 [00:05<00:08, 1276.37 examples/s]Map:  41%|████      | 7284/17944 [00:05<00:08, 1282.00 examples/s]Map:  42%|████▏     | 7476/17944 [00:05<00:08, 1280.86 examples/s]Map:  43%|████▎     | 7668/17944 [00:06<00:08, 1278.24 examples/s]Map:  44%|████▍     | 7857/17944 [00:06<00:07, 1269.50 examples/s]Map:  44%|████▍     | 7985/17944 [00:06<00:07, 1270.86 examples/s]Map:  45%|████▌     | 8115/17944 [00:06<00:07, 1276.36 examples/s]Map:  46%|████▌     | 8243/17944 [00:06<00:07, 1276.09 examples/s]Map:  47%|████▋     | 8371/17944 [00:06<00:07, 1274.50 examples/s]Map:  47%|████▋     | 8499/17944 [00:06<00:07, 1275.07 examples/s]Map:  48%|████▊     | 8627/17944 [00:06<00:07, 1274.57 examples/s]Map:  49%|████▉     | 8756/17944 [00:06<00:07, 1276.07 examples/s]Map:  50%|████▉     | 8886/17944 [00:06<00:07, 1280.14 examples/s]Map:  51%|█████     | 9075/17944 [00:07<00:06, 1270.51 examples/s]Map:  51%|█████▏    | 9203/17944 [00:07<00:06, 1271.83 examples/s]Map:  52%|█████▏    | 9331/17944 [00:07<00:06, 1273.34 examples/s]Map:  53%|█████▎    | 9459/17944 [00:07<00:06, 1274.15 examples/s]Map:  53%|█████▎    | 9587/17944 [00:07<00:06, 1273.25 examples/s]Map:  54%|█████▍    | 9717/17944 [00:07<00:06, 1279.77 examples/s]Map:  55%|█████▍    | 9848/17944 [00:07<00:06, 1285.74 examples/s]Map:  58%|█████▊    | 10390/17944 [00:07<00:03, 2499.27 examples/s]Map:  68%|██████▊   | 12205/17944 [00:07<00:00, 7129.22 examples/s]Map:  79%|███████▉  | 14143/17944 [00:08<00:00, 10766.91 examples/s]Map:  89%|████████▉ | 16030/17944 [00:08<00:00, 13178.77 examples/s]Map: 100%|█████████▉| 17935/17944 [00:08<00:00, 14927.47 examples/s]Map: 100%|██████████| 17944/17944 [00:08<00:00, 2106.63 examples/s] 
+Map:   0%|          | 0/9960 [00:00<?, ? examples/s]Map:   4%|▍         | 380/9960 [00:00<00:02, 3724.65 examples/s]Map:   8%|▊         | 780/9960 [00:00<00:02, 3820.70 examples/s]Map:  12%|█▏        | 1190/9960 [00:00<00:02, 3911.22 examples/s]Map:  16%|█▌        | 1610/9960 [00:00<00:02, 3996.69 examples/s]Map:  20%|██        | 2020/9960 [00:00<00:01, 4025.32 examples/s]Map:  24%|██▍       | 2430/9960 [00:00<00:01, 4016.41 examples/s]Map:  29%|██▊       | 2850/9960 [00:00<00:01, 4032.90 examples/s]Map:  33%|███▎      | 3270/9960 [00:00<00:01, 4035.67 examples/s]Map:  37%|███▋      | 3690/9960 [00:00<00:01, 4049.76 examples/s]Map:  43%|████▎     | 4280/9960 [00:01<00:01, 3982.19 examples/s]Map:  47%|████▋     | 4690/9960 [00:01<00:01, 3990.06 examples/s]Map:  51%|█████▏    | 5110/9960 [00:01<00:01, 4017.23 examples/s]Map:  56%|█████▌    | 5550/9960 [00:01<00:01, 4082.16 examples/s]Map:  60%|█████▉    | 5970/9960 [00:01<00:00, 4080.61 examples/s]Map:  64%|██████▍   | 6410/9960 [00:01<00:00, 4127.80 examples/s]Map:  69%|██████▊   | 6840/9960 [00:01<00:00, 4152.01 examples/s]Map:  73%|███████▎  | 7270/9960 [00:01<00:00, 4166.55 examples/s]Map:  79%|███████▉  | 7900/9960 [00:01<00:00, 4149.47 examples/s]Map:  84%|████████▎ | 8340/9960 [00:02<00:00, 4174.10 examples/s]Map:  88%|████████▊ | 8770/9960 [00:02<00:00, 4170.05 examples/s]Map:  92%|█████████▏| 9210/9960 [00:02<00:00, 4201.26 examples/s]Map:  97%|█████████▋| 9640/9960 [00:02<00:00, 4199.38 examples/s]Map: 100%|██████████| 9960/9960 [00:02<00:00, 3970.67 examples/s]
+Using 0.1% of the dataset...
+Generating answers...
+  0%|          | 0/9 [00:00<?, ?it/s] 11%|█         | 1/9 [00:03<00:29,  3.64s/it] 22%|██▏       | 2/9 [00:05<00:17,  2.45s/it] 33%|███▎      | 3/9 [00:07<00:12,  2.15s/it] 44%|████▍     | 4/9 [00:10<00:12,  2.48s/it] 56%|█████▌    | 5/9 [00:11<00:09,  2.29s/it] 67%|██████▋   | 6/9 [00:14<00:06,  2.31s/it] 78%|███████▊  | 7/9 [00:16<00:04,  2.41s/it] 89%|████████▉ | 8/9 [00:19<00:02,  2.39s/it]100%|██████████| 9/9 [00:22<00:00,  2.56s/it]100%|██████████| 9/9 [00:22<00:00,  2.47s/it]
+Ground truth extracted: One Thousand and One
+Evaluating example 1 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 2,
+    "accuracy": 1,
+    "completeness": 1,
+    "overall": 1
+  },
+  "explanation": "The generated answer 'Vacuum cleaner' is not relevant to the question about what cleaned a big carpet for less than half a crown, which is 'One Thousand and One'. It is factually incorrect and does not provide any completeness regarding the context of the question."
+}
+
+
+================================================================================
+Example 1
+--------------------------------------------------------------------------------
+Question: What according to the commercial cleaned a big, big carpet for less than half a crown
+Ground Truth Answer: One Thousand and One
+Generated Answer: Vacuum cleaner
+
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 2.0/10
+Accuracy: 1.0/10
+Completeness: 1.0/10
+Overall: 1.0/10
+Explanation: The generated answer 'Vacuum cleaner' is not relevant to the question about what cleaned a big carpet for less than half a crown, which is 'One Thousand and One'. It is factually incorrect and does not provide any completeness regarding the context of the question.
+================================================================================
+Ground truth extracted: One Direction
+Evaluating example 2 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 10,
+    "accuracy": 10,
+    "completeness": 10,
+    "overall": 10
+  },
+  "explanation": "The generated answer 'One Direction' is highly relevant, factually accurate, and complete in addressing the question about Harry Styles' membership in a boy band."
+}
+
+
+================================================================================
+Example 2
+--------------------------------------------------------------------------------
+Question: What boy band is Harry Styles a member of?
+Ground Truth Answer: One Direction
+Generated Answer: One Direction
+
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 10.0/10
+Overall: 10.0/10
+Explanation: The generated answer 'One Direction' is highly relevant, factually accurate, and complete in addressing the question about Harry Styles' membership in a boy band.
+================================================================================
+Ground truth extracted: The Penguin
+Evaluating example 3 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 10,
+    "accuracy": 10,
+    "completeness": 10,
+    "overall": 10
+  },
+  "explanation": "The generated answer 'The Penguin' is directly relevant to the question, factually accurate as it matches the ground truth, and complete as it fully answers the question without any additional context needed."
+}
+
+
+================================================================================
+Example 3
+--------------------------------------------------------------------------------
+Question: By what name is comic book villain Oswald Chesterfield Cobblepot better known?
+Ground Truth Answer: The Penguin
+Generated Answer: The Penguin
+
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 10.0/10
+Overall: 10.0/10
+Explanation: The generated answer 'The Penguin' is directly relevant to the question, factually accurate as it matches the ground truth, and complete as it fully answers the question without any additional context needed.
+================================================================================
+Ground truth extracted: Vogue
+Evaluating example 4 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 8,
+    "accuracy": 9,
+    "completeness": 7,
+    "overall": 8
+  },
+  "explanation": "The generated answer is relevant as it identifies Anna Wintour, the real-life editor-in-chief of Vogue, which is the magazine the character is based on. It is factually accurate but does not directly answer the question about the magazine itself, which is Vogue. Therefore, it is slightly less complete."
+}
+
+
+================================================================================
+Example 4
+--------------------------------------------------------------------------------
+Question: Meryl Streep's character, Miranda, in the 2006 film The Devil Wears Prada was based on the editor-in-chief of which fashion magazine?
+Ground Truth Answer: Vogue
+Generated Answer: Anna Wintour, editor-in-chief of Vogue magazine.
+
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 8.0/10
+Accuracy: 9.0/10
+Completeness: 7.0/10
+Overall: 8.0/10
+Explanation: The generated answer is relevant as it identifies Anna Wintour, the real-life editor-in-chief of Vogue, which is the magazine the character is based on. It is factually accurate but does not directly answer the question about the magazine itself, which is Vogue. Therefore, it is slightly less complete.
+================================================================================
+Ground truth extracted: Annie
+Evaluating example 5 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 2,
+    "accuracy": 1,
+    "completeness": 1,
+    "overall": 1
+  },
+  "explanation": "The generated answer 'The Fat Controller' is not relevant to the question, which specifically asks for the name of the second coach pulled by Thomas. It is factually incorrect as it does not match the ground truth answer 'Annie' and does not provide any useful information related to the question."
+}
+
+
+================================================================================
+Example 5
+--------------------------------------------------------------------------------
+Question: Thomas the Tank Engine pulled two coaches. One was Clarabel. What was the other?
+Ground Truth Answer: Annie
+Generated Answer: The Fat Controller
+
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 2.0/10
+Accuracy: 1.0/10
+Completeness: 1.0/10
+Overall: 1.0/10
+Explanation: The generated answer 'The Fat Controller' is not relevant to the question, which specifically asks for the name of the second coach pulled by Thomas. It is factually incorrect as it does not match the ground truth answer 'Annie' and does not provide any useful information related to the question.
+================================================================================
+Ground truth extracted: Ireland
+Evaluating example 6 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 10,
+    "accuracy": 10,
+    "completeness": 10,
+    "overall": 10
+  },
+  "explanation": "The generated answer 'Ireland' is directly relevant to the question about the origin of Waterford crystal, is factually accurate as it matches the ground truth, and is complete as it provides the full answer without any additional context needed."
+}
+
+
+================================================================================
+Example 6
+--------------------------------------------------------------------------------
+Question: What country does Waterford crystal come from?
+Ground Truth Answer: Ireland
+Generated Answer: Ireland
+
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 10.0/10
+Overall: 10.0/10
+Explanation: The generated answer 'Ireland' is directly relevant to the question about the origin of Waterford crystal, is factually accurate as it matches the ground truth, and is complete as it provides the full answer without any additional context needed.
+================================================================================
+Ground truth extracted: Renault
+Evaluating example 7 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 10,
+    "accuracy": 10,
+    "completeness": 10,
+    "overall": 10
+  },
+  "explanation": "The generated answer 'Renault' is directly relevant to the question about who makes the Kangoo, is factually accurate as it matches the ground truth, and is complete as it provides the full answer without any additional context needed."
+}
+
+
+================================================================================
+Example 7
+--------------------------------------------------------------------------------
+Question: Who makes or made the model of vehicle the Kangoo?
+Ground Truth Answer: Renault
+Generated Answer: Renault
+
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 10.0/10
+Overall: 10.0/10
+Explanation: The generated answer 'Renault' is directly relevant to the question about who makes the Kangoo, is factually accurate as it matches the ground truth, and is complete as it provides the full answer without any additional context needed.
+================================================================================
+Ground truth extracted: AN AUTOPSY
+Evaluating example 8 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 10,
+    "accuracy": 10,
+    "completeness": 8,
+    "overall": 9
+  },
+  "explanation": "The generated answer 'Autopsy' is highly relevant and factually accurate as it directly answers the question. However, it is slightly less complete than the ground truth answer 'AN AUTOPSY' because it lacks the emphasis on the article 'AN', which could be considered important in some contexts."
+}
+
+
+================================================================================
+Example 8
+--------------------------------------------------------------------------------
+Question: Dr Gunther Van Hagens caused controversy on TV by performing which medical procedure live?
+Ground Truth Answer: AN AUTOPSY
+Generated Answer: Autopsy
+
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 8.0/10
+Overall: 9.0/10
+Explanation: The generated answer 'Autopsy' is highly relevant and factually accurate as it directly answers the question. However, it is slightly less complete than the ground truth answer 'AN AUTOPSY' because it lacks the emphasis on the article 'AN', which could be considered important in some contexts.
+================================================================================
+Ground truth extracted: Turkey
+Evaluating example 9 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 10,
+    "accuracy": 10,
+    "completeness": 10,
+    "overall": 10
+  },
+  "explanation": "The generated answer 'Turkey' is highly relevant as it directly addresses the question about the modern-day country corresponding to the Ottoman Empire. It is factually accurate, matching the ground truth answer perfectly, and it is complete as it provides the full answer without any additional context needed."
+}
+
+
+================================================================================
+Example 9
+--------------------------------------------------------------------------------
+Question: Lasting from 1299 to 1922, the Ottoman empire roughly corresponds to what modern day country?
+Ground Truth Answer: Turkey
+Generated Answer: Turkey
+
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 10.0/10
+Overall: 10.0/10
+Explanation: The generated answer 'Turkey' is highly relevant as it directly addresses the question about the modern-day country corresponding to the Ottoman Empire. It is factually accurate, matching the ground truth answer perfectly, and it is complete as it provides the full answer without any additional context needed.
+================================================================================
+
+================================================================================
+Overall GPT-4o-mini Evaluation:
+Total evaluated examples: 9
+Average Relevance: 8.00/10
+Average Accuracy: 7.89/10
+Average Completeness: 7.44/10
+Average Overall Score: 7.67/10
+================================================================================
+Results written to results/Llama-2-7b-chat-hf/result_triviaqa.txt
+
+==================================================
+Evaluating dataset: nq_open
+==================================================
+
+Results will be saved to: results/Llama-2-7b-chat-hf/result_nq_open.txt
+Loading dataset nq_open...
+Map:   0%|          | 0/3610 [00:00<?, ? examples/s]Map:   0%|          | 1/3610 [00:06<6:58:04,  6.95s/ examples]Map:   8%|▊         | 306/3610 [00:07<00:53, 61.56 examples/s]Map:  17%|█▋        | 598/3610 [00:07<00:21, 141.49 examples/s]Map:  25%|██▍       | 891/3610 [00:07<00:10, 248.57 examples/s]Map:  32%|███▏      | 1161/3610 [00:07<00:06, 371.96 examples/s]Map:  41%|████      | 1475/3610 [00:07<00:03, 561.25 examples/s]Map:  49%|████▉     | 1774/3610 [00:07<00:02, 777.27 examples/s]Map:  60%|█████▉    | 2162/3610 [00:07<00:01, 1057.45 examples/s]Map:  69%|██████▊   | 2474/3610 [00:07<00:00, 1327.73 examples/s]Map:  77%|███████▋  | 2772/3610 [00:07<00:00, 1587.16 examples/s]Map:  88%|████████▊ | 3162/3610 [00:08<00:00, 1820.49 examples/s]Map:  96%|█████████▋| 3477/3610 [00:08<00:00, 2074.12 examples/s]Map: 100%|██████████| 3610/3610 [00:08<00:00, 436.95 examples/s] 
+Using 0.1% of the dataset...
+Generating answers...
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:02<00:04,  2.15s/it] 67%|██████▋   | 2/3 [00:06<00:03,  3.21s/it]100%|██████████| 3/3 [00:08<00:00,  2.72s/it]100%|██████████| 3/3 [00:08<00:00,  2.75s/it]
+Ground truth extracted: Norma's brother, Caleb
+Evaluating example 1 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 3,
+    "accuracy": 1,
+    "completeness": 2,
+    "overall": 2
+  },
+  "explanation": "The generated answer 'Norman Bates' is not relevant to the question about Dylan's father, as it incorrectly identifies a different character. It is factually inaccurate and does not provide a complete or correct response."
+}
+
+
+================================================================================
+Example 1
+--------------------------------------------------------------------------------
+Question: who is dylan's father in bates motel
+Ground Truth Answer: Norma's brother, Caleb
+Generated Answer: Norman Bates
+
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 3.0/10
+Accuracy: 1.0/10
+Completeness: 2.0/10
+Overall: 2.0/10
+Explanation: The generated answer 'Norman Bates' is not relevant to the question about Dylan's father, as it incorrectly identifies a different character. It is factually inaccurate and does not provide a complete or correct response.
+================================================================================
+Ground truth extracted: statutory law
+Evaluating example 2 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 8,
+    "accuracy": 6,
+    "completeness": 5,
+    "overall": 6
+  },
+  "explanation": "The generated answer 'law' is relevant as it pertains to the question about a legislative act, but it lacks specificity. While it is factually accurate in a broad sense, it does not capture the specific term 'statutory law' which is the ground truth answer. Therefore, it is somewhat complete but not fully so."
+}
+
+
+================================================================================
+Example 2
+--------------------------------------------------------------------------------
+Question: a legislative act passed by congress is an example of
+Ground Truth Answer: statutory law
+Generated Answer: law
+
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 8.0/10
+Accuracy: 6.0/10
+Completeness: 5.0/10
+Overall: 6.0/10
+Explanation: The generated answer 'law' is relevant as it pertains to the question about a legislative act, but it lacks specificity. While it is factually accurate in a broad sense, it does not capture the specific term 'statutory law' which is the ground truth answer. Therefore, it is somewhat complete but not fully so.
+================================================================================
+Ground truth extracted: Tim Allen
+Evaluating example 3 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 10,
+    "accuracy": 10,
+    "completeness": 10,
+    "overall": 10
+  },
+  "explanation": "The generated answer 'Tim Allen' is directly relevant to the question about who played Santa in 'The Santa Clause' movies. It is factually accurate as it matches the ground truth answer perfectly and is complete as it provides the full name of the actor associated with the role."
+}
+
+
+================================================================================
+Example 3
+--------------------------------------------------------------------------------
+Question: who played santa in the santa clause movies
+Ground Truth Answer: Tim Allen
+Generated Answer: Tim Allen
+
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 10.0/10
+Overall: 10.0/10
+Explanation: The generated answer 'Tim Allen' is directly relevant to the question about who played Santa in 'The Santa Clause' movies. It is factually accurate as it matches the ground truth answer perfectly and is complete as it provides the full name of the actor associated with the role.
+================================================================================
+
+================================================================================
+Overall GPT-4o-mini Evaluation:
+Total evaluated examples: 3
+Average Relevance: 7.00/10
+Average Accuracy: 5.67/10
+Average Completeness: 5.67/10
+Average Overall Score: 6.00/10
+================================================================================
+Results written to results/Llama-2-7b-chat-hf/result_nq_open.txt
+
+==================================================
+Evaluating dataset: SQuAD
+==================================================
+
+Results will be saved to: results/Llama-2-7b-chat-hf/result_SQuAD.txt
+Loading dataset SQuAD...
+Map:   0%|          | 0/2910 [00:00<?, ? examples/s]Map:  34%|███▍      | 1000/2910 [00:00<00:00, 8204.93 examples/s]Map:  69%|██████▊   | 2000/2910 [00:00<00:00, 7599.86 examples/s]Map: 100%|██████████| 2910/2910 [00:00<00:00, 7811.09 examples/s]Map: 100%|██████████| 2910/2910 [00:00<00:00, 7607.17 examples/s]
+Using 0.1% of the dataset...
+Generating answers...
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:03<00:03,  3.46s/it]100%|██████████| 2/2 [00:07<00:00,  3.64s/it]100%|██████████| 2/2 [00:07<00:00,  3.62s/it]
+SQuAD answers format: <class 'dict'>
+SQuAD answers content: {'answer_start': tensor([291]), 'text': ['"self" peptides']}
+Ground truth extracted: "self" peptides
+Evaluating example 1 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 9,
+    "accuracy": 8,
+    "completeness": 7,
+    "overall": 8
+  },
+  "explanation": "The generated answer is highly relevant as it directly addresses the question about T cells and antibodies producing 'self' peptides. It is factually accurate but slightly less precise than the ground truth, as it implies a broader context ('many T cells and antibodies react with') rather than stating that they produce 'self' peptides. The answer is somewhat complete but could be improved by explicitly stating that T cells and antibodies produce 'self' peptides, rather than just mentioning their reaction to them."
+}
+
+
+================================================================================
+Example 1
+--------------------------------------------------------------------------------
+Question: Under normal conditions, T cells and antibodies produce what kind of peptides?
+Ground Truth Answer: "self" peptides
+Generated Answer: Under normal circumstances, many T cells and antibodies react with "self" peptides.
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 9.0/10
+Accuracy: 8.0/10
+Completeness: 7.0/10
+Overall: 8.0/10
+Explanation: The generated answer is highly relevant as it directly addresses the question about T cells and antibodies producing 'self' peptides. It is factually accurate but slightly less precise than the ground truth, as it implies a broader context ('many T cells and antibodies react with') rather than stating that they produce 'self' peptides. The answer is somewhat complete but could be improved by explicitly stating that T cells and antibodies produce 'self' peptides, rather than just mentioning their reaction to them.
+================================================================================
+SQuAD answers format: <class 'dict'>
+SQuAD answers content: {'answer_start': tensor([126]), 'text': ['lymphocytes']}
+Ground truth extracted: lymphocytes
+Evaluating example 2 with GPT-4o-mini...
+
+API Response Status: 200
+Raw API Response Content:
+{
+  "scores": {
+    "relevance": 10,
+    "accuracy": 10,
+    "completeness": 9,
+    "overall": 9
+  },
+  "explanation": "The generated answer is highly relevant as it directly addresses the question about what type of cells invertebrates do not generate. It accurately states that invertebrates do not produce lymphocytes, which is the correct answer. Additionally, it provides extra information about the absence of an antibody-based humoral response, which enhances the completeness of the answer, though it slightly diverges from the specific focus of the question."
+}
+
+
+================================================================================
+Example 2
+--------------------------------------------------------------------------------
+Question: Invertebrates do not generate what type of cells that are a part of the vertebrate adaptive immune system?
+Ground Truth Answer: lymphocytes
+Generated Answer: Invertebrates do not generate lymphocytes or an antibody-based humoral response.
+--------------------------------------------------------------------------------
+GPT-4o-mini Evaluation:
+Relevance: 10.0/10
+Accuracy: 10.0/10
+Completeness: 9.0/10
+Overall: 9.0/10
+Explanation: The generated answer is highly relevant as it directly addresses the question about what type of cells invertebrates do not generate. It accurately states that invertebrates do not produce lymphocytes, which is the correct answer. Additionally, it provides extra information about the absence of an antibody-based humoral response, which enhances the completeness of the answer, though it slightly diverges from the specific focus of the question.
+================================================================================
+
+================================================================================
+Overall GPT-4o-mini Evaluation:
+Total evaluated examples: 2
+Average Relevance: 9.50/10
+Average Accuracy: 9.00/10
+Average Completeness: 8.00/10
+Average Overall Score: 8.50/10
+================================================================================
+Results written to results/Llama-2-7b-chat-hf/result_SQuAD.txt
+
+================================================================================
+Evaluation complete for Llama-2-7b-chat-hf on 4 datasets:
+  1. coqa - Results saved to: results/Llama-2-7b-chat-hf/result_coqa.txt
+  2. triviaqa - Results saved to: results/Llama-2-7b-chat-hf/result_triviaqa.txt
+  3. nq_open - Results saved to: results/Llama-2-7b-chat-hf/result_nq_open.txt
+  4. SQuAD - Results saved to: results/Llama-2-7b-chat-hf/result_SQuAD.txt
+================================================================================

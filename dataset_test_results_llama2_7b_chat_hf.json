@@ -1,0 +1,282 @@
+{
+  "coqa": {
+    "size": 7983,
+    "columns": [
+      "story",
+      "question",
+      "answer",
+      "additional_answers",
+      "id",
+      "prompt",
+      "input_ids",
+      "attention_mask"
+    ],
+    "column_analysis": {
+      "story": {
+        "type": "str",
+        "avg_length": "1571.91 chars"
+      },
+      "question": {
+        "type": "str",
+        "avg_length": "26.89 chars"
+      },
+      "answer": {
+        "type": "str",
+        "avg_length": "12.99 chars"
+      },
+      "additional_answers": {
+        "type": "list",
+        "avg_length": "3.00 elements"
+      },
+      "id": {
+        "type": "str",
+        "avg_length": "32.30 chars"
+      },
+      "prompt": {
+        "type": "str",
+        "avg_length": "1605.80 chars"
+      }
+    },
+    "prompt_stats": {
+      "avg_length": 1500.589,
+      "min_length": 728,
+      "max_length": 2353
+    },
+    "tokenization": {
+      "avg_length": 397.414,
+      "min_length": 183,
+      "max_length": 595,
+      "potential_truncation_percent": 0.0
+    },
+    "generation_config": {
+      "eos_token_id": [
+        869,
+        13,
+        2
+      ],
+      "bad_words_ids": [
+        [
+          894
+        ],
+        [
+          29871
+        ],
+        [
+          29871
+        ],
+        [
+          673
+        ],
+        [
+          29871
+        ],
+        [
+          660
+        ]
+      ]
+    }
+  },
+  "triviaqa": {
+    "size": 9960,
+    "columns": [
+      "question",
+      "question_id",
+      "answer",
+      "input_ids",
+      "attention_mask",
+      "decoder_input_ids",
+      "decoder_attention_mask",
+      "labels",
+      "id",
+      "prompt"
+    ],
+    "column_analysis": {
+      "question": {
+        "type": "str",
+        "avg_length": "58.33 chars"
+      },
+      "question_id": {
+        "type": "str",
+        "avg_length": "6.13 chars"
+      },
+      "answer": {
+        "type": "str",
+        "avg_length": "10.24 chars"
+      },
+      "decoder_input_ids": {
+        "type": "Tensor",
+        "avg_length": "4.24 elements"
+      },
+      "decoder_attention_mask": {
+        "type": "Tensor",
+        "avg_length": "4.24 elements"
+      },
+      "labels": {
+        "type": "Tensor",
+        "avg_length": "4.24 elements"
+      },
+      "id": {
+        "type": "str",
+        "avg_length": "6.13 chars"
+      },
+      "prompt": {
+        "type": "str",
+        "avg_length": "133.33 chars"
+      }
+    },
+    "prompt_stats": {
+      "avg_length": 142.658,
+      "min_length": 97,
+      "max_length": 301
+    },
+    "tokenization": {
+      "avg_length": 46.758,
+      "min_length": 35,
+      "max_length": 86,
+      "potential_truncation_percent": 0.0
+    },
+    "generation_config": {
+      "eos_token_id": [
+        13,
+        1919,
+        869,
+        2
+      ],
+      "bad_words_ids": [
+        [
+          1,
+          660,
+          29901
+        ]
+      ]
+    }
+  },
+  "nq_open": {
+    "size": 3610,
+    "columns": [
+      "question",
+      "answer",
+      "id",
+      "additional_answers",
+      "prompt",
+      "input_ids",
+      "attention_mask",
+      "labels"
+    ],
+    "column_analysis": {
+      "question": {
+        "type": "str",
+        "avg_length": "46.71 chars"
+      },
+      "answer": {
+        "type": "str",
+        "avg_length": "12.96 chars"
+      },
+      "id": {
+        "type": "str",
+        "avg_length": "1.90 chars"
+      },
+      "additional_answers": {
+        "type": "list",
+        "avg_length": "0.61 elements"
+      },
+      "prompt": {
+        "type": "str",
+        "avg_length": "418.71 chars"
+      },
+      "labels": {
+        "type": "Tensor",
+        "avg_length": "5.44 elements"
+      }
+    },
+    "prompt_stats": {
+      "avg_length": 419.533,
+      "min_length": 402,
+      "max_length": 471
+    },
+    "tokenization": {
+      "avg_length": 124.587,
+      "min_length": 121,
+      "max_length": 135,
+      "potential_truncation_percent": 0.0
+    },
+    "generation_config": {
+      "eos_token_id": [
+        13,
+        1919,
+        869,
+        2
+      ],
+      "bad_words_ids": [
+        [
+          1,
+          660,
+          29901
+        ]
+      ]
+    }
+  },
+  "squad": {
+    "size": 2910,
+    "columns": [
+      "context",
+      "question",
+      "answers",
+      "id",
+      "prompt",
+      "input_ids",
+      "attention_mask"
+    ],
+    "column_analysis": {
+      "context": {
+        "type": "str",
+        "avg_length": "660.17 chars"
+      },
+      "question": {
+        "type": "str",
+        "avg_length": "44.23 chars"
+      },
+      "answers": {
+        "type": "list",
+        "avg_length": "3.05 elements"
+      },
+      "id": {
+        "type": "str",
+        "avg_length": "25.00 chars"
+      },
+      "prompt": {
+        "type": "str",
+        "avg_length": "732.40 chars"
+      }
+    },
+    "prompt_stats": {
+      "avg_length": 915.374,
+      "min_length": 252,
+      "max_length": 2967
+    },
+    "tokenization": {
+      "avg_length": 213.977,
+      "min_length": 49,
+      "max_length": 669,
+      "potential_truncation_percent": 0.0
+    },
+    "generation_config": {
+      "eos_token_id": [
+        869,
+        13,
+        2
+      ],
+      "bad_words_ids": [
+        [
+          894,
+          29901
+        ],
+        [
+          29871,
+          13,
+          16492
+        ]
+      ]
+    }
+  }
+}
