@@ -55,6 +55,8 @@ cover/
 *.mo
 *.pot
 
+lora_weight/
+
 # Django stuff:
 *.log
 local_settings.py
@@ -151,6 +153,10 @@ venv.bak/
 .dmypy.json
 dmypy.json
 
+# cursor
+.cursorignore
+.cursor/
+
 # Pyre type checker
 .pyre/
 
@@ -175,4 +181,4 @@ cython_debug/
 
 myatmin.nay.2022.evaluate_llama31
 myatmin.nay.2022.evaluate_mistral
-myatmin.nay.2022.evaluate
+myatmin.nay.2022.finetune
