@@ -82,4 +82,15 @@ if [ -f "$BASHRC_PATH" ]; then
     fi
 fi
 
-python evaluate.py --dataset coqa triviaqa nq_open SQuAD --fraction_of_data_to_use 0.001 --evaluate_with_gpt
+model="Llama-2-7b-chat-hf" 
+# model="Llama-3.1-8B-Instruct"
+# model="Mistral-7B-Instruct-v0.3"
+
+# python evaluate.py --dataset coqa triviaqa nq_open SQuAD --fraction_of_data_to_use 1 \
+#     --evaluate_with_gpt --model
+
+python evaluate.py --dataset coqa triviaqa nq_open SQuAD --fraction_of_data_to_use 1 \
+    --evaluate_with_gpt --model $model
+
+# python evaluate.py --dataset coqa triviaqa nq_open SQuAD --fraction_of_data_to_use 1 \
+#     --evaluate_with_gpt --model Mistral-7B-Instruct-v0.3

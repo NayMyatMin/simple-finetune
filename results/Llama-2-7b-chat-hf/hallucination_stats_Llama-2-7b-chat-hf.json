@@ -1,0 +1,74 @@
+{
+  "dataset_stats": {
+    "coqa": {
+      "total_evaluated": 7,
+      "hallucination_counts": {
+        "INTRINSIC": 2,
+        "EXTRINSIC": 1,
+        "FACTUAL_ERROR": 0,
+        "NONE": 4,
+        "UNKNOWN": 0
+      },
+      "avg_hallucination_severity": 2.857142857142857,
+      "avg_factual_accuracy": 8.285714285714286,
+      "avg_overconfidence": 3.2857142857142856,
+      "avg_overall_reliability": 7.571428571428571
+    },
+    "triviaqa": {
+      "total_evaluated": 9,
+      "hallucination_counts": {
+        "INTRINSIC": 2,
+        "EXTRINSIC": 1,
+        "FACTUAL_ERROR": 0,
+        "NONE": 6,
+        "UNKNOWN": 0
+      },
+      "avg_hallucination_severity": 2.7777777777777777,
+      "avg_factual_accuracy": 8.0,
+      "avg_overconfidence": 2.6666666666666665,
+      "avg_overall_reliability": 7.888888888888889
+    },
+    "nq_open": {
+      "total_evaluated": 3,
+      "hallucination_counts": {
+        "INTRINSIC": 1,
+        "EXTRINSIC": 0,
+        "FACTUAL_ERROR": 0,
+        "NONE": 2,
+        "UNKNOWN": 0
+      },
+      "avg_hallucination_severity": 4.333333333333333,
+      "avg_factual_accuracy": 6.0,
+      "avg_overconfidence": 4.333333333333333,
+      "avg_overall_reliability": 5.666666666666667
+    },
+    "SQuAD": {
+      "total_evaluated": 2,
+      "hallucination_counts": {
+        "INTRINSIC": 0,
+        "EXTRINSIC": 1,
+        "FACTUAL_ERROR": 0,
+        "NONE": 1,
+        "UNKNOWN": 0
+      },
+      "avg_hallucination_severity": 3.0,
+      "avg_factual_accuracy": 7.5,
+      "avg_overconfidence": 4.5,
+      "avg_overall_reliability": 6.5
+    }
+  },
+  "overall": {
+    "total_evaluated": 21,
+    "hallucination_counts": {
+      "INTRINSIC": 5,
+      "EXTRINSIC": 3,
+      "FACTUAL_ERROR": 0,
+      "NONE": 13,
+      "UNKNOWN": 0
+    },
+    "avg_hallucination_severity": 3.0476190476190474,
+    "avg_factual_accuracy": 7.761904761904762,
+    "avg_overconfidence": 3.2857142857142856,
+    "avg_overall_reliability": 7.333333333333333
+  }
+}

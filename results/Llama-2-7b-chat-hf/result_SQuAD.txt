@@ -1,35 +1,39 @@
 Example 1
 Question: Under normal conditions, T cells and antibodies produce what kind of peptides?
-Ground Truth Answer: "self" peptides
+Ground Truth: "self" peptides
 Generated Answer: Under normal circumstances, many T cells and antibodies react with "self" peptides.
 
-GPT-4o-mini Evaluation:
-Relevance: 9.0/10
-Accuracy: 8.0/10
-Completeness: 7.0/10
-Overall: 8.0/10
-Explanation: The generated answer is highly relevant as it directly addresses the question about T cells and antibodies producing 'self' peptides. It is factually accurate but slightly less precise than the ground truth, as it implies a broader context ('many T cells and antibodies react with') rather than stating that they produce 'self' peptides. The answer is somewhat complete but could be improved by explicitly stating that T cells and antibodies produce 'self' peptides, rather than just mentioning their reaction to them.
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 4.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth by stating that T cells and antibodies react with 'self' peptides. While it adds a bit of context ('under normal circumstances' and 'many T cells and antibodies'), this does not contradict the ground truth and does not introduce unsupported information. Therefore, there are no hallucinations detected.
 
-
+--------------------------------------------------
 Example 2
 Question: Invertebrates do not generate what type of cells that are a part of the vertebrate adaptive immune system?
-Ground Truth Answer: lymphocytes
+Ground Truth: lymphocytes
 Generated Answer: Invertebrates do not generate lymphocytes or an antibody-based humoral response.
 
-GPT-4o-mini Evaluation:
-Relevance: 10.0/10
-Accuracy: 10.0/10
-Completeness: 9.0/10
-Overall: 9.0/10
-Explanation: The generated answer is highly relevant as it directly addresses the question about what type of cells invertebrates do not generate. It accurately states that invertebrates do not produce lymphocytes, which is the correct answer. Additionally, it provides extra information about the absence of an antibody-based humoral response, which enhances the completeness of the answer, though it slightly diverges from the specific focus of the question.
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 5.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. an antibody-based humoral response
+Analysis: The generated answer correctly identifies that invertebrates do not generate lymphocytes, which aligns with the ground truth. However, it adds the statement about an antibody-based humoral response, which is not part of the original question and is not necessary for the answer. This additional information is considered extrinsic and does not directly contradict the ground truth but introduces unnecessary complexity.
 
-
+--------------------------------------------------
 
 ==================================================
-Overall GPT-4o-mini Evaluation:
+Overall Hallucination Analysis:
 Total evaluated examples: 2
-Average Relevance: 9.50/10
-Average Accuracy: 9.00/10
-Average Completeness: 8.00/10
-Average Overall Score: 8.50/10
+Average Hallucination Severity: 3.00/10
+Average Factual Accuracy: 7.50/10
+Average Overconfidence: 4.50/10
+Average Overall Reliability: 6.50/10
 ==================================================

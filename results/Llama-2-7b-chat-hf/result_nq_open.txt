@@ -1,51 +1,53 @@
 Example 1
 Question: who is dylan's father in bates motel
-Ground Truth Answer: Norma's brother, Caleb
+Ground Truth: Norma's brother, Caleb
 Generated Answer: Norman Bates
 
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Norman Bates
+Analysis: The generated answer 'Norman Bates' is completely incorrect as it contradicts the ground truth that identifies Caleb as Dylan's father. This represents a significant hallucination, as it not only fails to provide the correct information but also presents a character who is not related to Dylan in that context, indicating a high level of fabrication and overconfidence in the incorrect response.
 
-GPT-4o-mini Evaluation:
-Relevance: 3.0/10
-Accuracy: 1.0/10
-Completeness: 2.0/10
-Overall: 2.0/10
-Explanation: The generated answer 'Norman Bates' is not relevant to the question about Dylan's father, as it incorrectly identifies a different character. It is factually inaccurate and does not provide a complete or correct response.
-
-
+--------------------------------------------------
 Example 2
 Question: a legislative act passed by congress is an example of
-Ground Truth Answer: statutory law
+Ground Truth: statutory law
 Generated Answer: law
 
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 4.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: NONE
+Analysis: The generated answer 'law' is a broad and somewhat vague term that is related to the ground truth 'statutory law', but it does not contradict it. While it lacks specificity, it is not completely fabricated or incorrect. Therefore, there are no hallucinations detected.
 
-GPT-4o-mini Evaluation:
-Relevance: 8.0/10
-Accuracy: 6.0/10
-Completeness: 5.0/10
-Overall: 6.0/10
-Explanation: The generated answer 'law' is relevant as it pertains to the question about a legislative act, but it lacks specificity. While it is factually accurate in a broad sense, it does not capture the specific term 'statutory law' which is the ground truth answer. Therefore, it is somewhat complete but not fully so.
-
-
+--------------------------------------------------
 Example 3
 Question: who played santa in the santa clause movies
-Ground Truth Answer: Tim Allen
+Ground Truth: Tim Allen
 Generated Answer: Tim Allen
 
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer matches the ground truth perfectly, with no fabricated or unsupported information present. The answer is factually correct and presented with appropriate confidence.
 
-GPT-4o-mini Evaluation:
-Relevance: 10.0/10
-Accuracy: 10.0/10
-Completeness: 10.0/10
-Overall: 10.0/10
-Explanation: The generated answer 'Tim Allen' is directly relevant to the question about who played Santa in 'The Santa Clause' movies. It is factually accurate as it matches the ground truth answer perfectly and is complete as it provides the full name of the actor associated with the role.
-
-
+--------------------------------------------------
 
 ==================================================
-Overall GPT-4o-mini Evaluation:
+Overall Hallucination Analysis:
 Total evaluated examples: 3
-Average Relevance: 7.00/10
-Average Accuracy: 5.67/10
-Average Completeness: 5.67/10
-Average Overall Score: 6.00/10
+Average Hallucination Severity: 4.33/10
+Average Factual Accuracy: 6.00/10
+Average Overconfidence: 4.33/10
+Average Overall Reliability: 5.67/10
 ==================================================

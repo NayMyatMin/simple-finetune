@@ -1,0 +1,37 @@
+Example 1
+Question: Under normal conditions, T cells and antibodies produce what kind of peptides?
+Ground Truth: "self" peptides
+Generated Answer: Self peptides
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer 'Self peptides' is factually correct and matches the ground truth answer 'self' peptides. There are no hallucinations detected as the information is accurate and presented confidently without speculation.
+
+--------------------------------------------------
+Example 2
+Question: Invertebrates do not generate what type of cells that are a part of the vertebrate adaptive immune system?
+Ground Truth: lymphocytes
+Generated Answer: Lymphocytes
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer 'Lymphocytes' is factually correct and matches the ground truth answer. There are no hallucinations detected as the information provided is accurate and consistent with the question asked.
+
+--------------------------------------------------
+
+==================================================
+Overall Hallucination Analysis:
+Total evaluated examples: 2
+Average Hallucination Severity: 1.00/10
+Average Factual Accuracy: 10.00/10
+Average Overconfidence: 1.00/10
+Average Overall Reliability: 10.00/10
+==================================================

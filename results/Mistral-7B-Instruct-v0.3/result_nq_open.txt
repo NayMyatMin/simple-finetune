@@ -1,0 +1,53 @@
+Example 1
+Question: who is dylan's father in bates motel
+Ground Truth: Norma's brother, Caleb
+Generated Answer: Norma Bates
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Norma Bates
+Analysis: The generated answer incorrectly identifies Dylan's father as Norma Bates, which contradicts the ground truth that states he is Caleb, Norma's brother. This is a significant error as it misrepresents the familial relationship and context within the show 'Bates Motel'. The model presents this incorrect information with a degree of confidence, indicating overconfidence in its response.
+
+--------------------------------------------------
+Example 2
+Question: a legislative act passed by congress is an example of
+Ground Truth: statutory law
+Generated Answer: a statute
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer 'a statute' is a correct synonym for 'statutory law', which is the ground truth answer. There are no hallucinations detected as the generated answer is factually accurate and does not contradict the ground truth.
+
+--------------------------------------------------
+Example 3
+Question: who played santa in the santa clause movies
+Ground Truth: Tim Allen
+Generated Answer: Tim Allen
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer is identical to the ground truth answer, with no fabricated or unsupported information present. Therefore, there are no hallucinations detected.
+
+--------------------------------------------------
+
+==================================================
+Overall Hallucination Analysis:
+Total evaluated examples: 3
+Average Hallucination Severity: 3.33/10
+Average Factual Accuracy: 7.33/10
+Average Overconfidence: 3.33/10
+Average Overall Reliability: 7.00/10
+==================================================

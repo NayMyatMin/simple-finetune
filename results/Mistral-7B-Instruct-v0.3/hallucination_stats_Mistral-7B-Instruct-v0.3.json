@@ -1,0 +1,74 @@
+{
+  "dataset_stats": {
+    "coqa": {
+      "total_evaluated": 7,
+      "hallucination_counts": {
+        "INTRINSIC": 1,
+        "EXTRINSIC": 2,
+        "FACTUAL_ERROR": 0,
+        "NONE": 4,
+        "UNKNOWN": 0
+      },
+      "avg_hallucination_severity": 3.2857142857142856,
+      "avg_factual_accuracy": 7.714285714285714,
+      "avg_overconfidence": 3.2857142857142856,
+      "avg_overall_reliability": 7.571428571428571
+    },
+    "triviaqa": {
+      "total_evaluated": 9,
+      "hallucination_counts": {
+        "INTRINSIC": 1,
+        "EXTRINSIC": 0,
+        "FACTUAL_ERROR": 0,
+        "NONE": 8,
+        "UNKNOWN": 0
+      },
+      "avg_hallucination_severity": 1.8888888888888888,
+      "avg_factual_accuracy": 9.11111111111111,
+      "avg_overconfidence": 1.7777777777777777,
+      "avg_overall_reliability": 9.11111111111111
+    },
+    "nq_open": {
+      "total_evaluated": 3,
+      "hallucination_counts": {
+        "INTRINSIC": 1,
+        "EXTRINSIC": 0,
+        "FACTUAL_ERROR": 0,
+        "NONE": 2,
+        "UNKNOWN": 0
+      },
+      "avg_hallucination_severity": 3.3333333333333335,
+      "avg_factual_accuracy": 7.333333333333333,
+      "avg_overconfidence": 3.3333333333333335,
+      "avg_overall_reliability": 7.0
+    },
+    "SQuAD": {
+      "total_evaluated": 2,
+      "hallucination_counts": {
+        "INTRINSIC": 0,
+        "EXTRINSIC": 0,
+        "FACTUAL_ERROR": 0,
+        "NONE": 2,
+        "UNKNOWN": 0
+      },
+      "avg_hallucination_severity": 1.5,
+      "avg_factual_accuracy": 9.0,
+      "avg_overconfidence": 2.0,
+      "avg_overall_reliability": 8.5
+    }
+  },
+  "overall": {
+    "total_evaluated": 21,
+    "hallucination_counts": {
+      "INTRINSIC": 3,
+      "EXTRINSIC": 2,
+      "FACTUAL_ERROR": 0,
+      "NONE": 16,
+      "UNKNOWN": 0
+    },
+    "avg_hallucination_severity": 2.5238095238095237,
+    "avg_factual_accuracy": 8.380952380952381,
+    "avg_overconfidence": 2.5238095238095237,
+    "avg_overall_reliability": 8.238095238095237
+  }
+}
