@@ -1,0 +1,2134 @@
+Example 1
+Question: How many pounds of steam per kilowatt hour does the Energiprojekt AB engine use?
+Ground Truth: 8.8
+Generated Answer: Ћ 4 kg (8.8 lb) of steam per kWh.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 9.0/10
+Overconfidence: 4.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly states the amount of steam used per kilowatt hour as 8.8 lb, which matches the ground truth. The conversion to kg is accurate, and there are no contradictions or unsupported claims present. The slight overconfidence is noted in the presentation of the answer, but it does not detract from the overall reliability.
+
+--------------------------------------------------
+Example 2
+Question: The loss of Edinburgh Pentlands really disappointed whom the most?
+Ground Truth: the Conservatives
+Generated Answer: Ա The Conservatives.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer 'Ա The Conservatives' is factually correct as it aligns with the ground truth answer. The inclusion of 'Ա' appears to be a typographical error or irrelevant character, but it does not alter the factual accuracy of the answer. Therefore, there are no hallucinations detected.
+
+--------------------------------------------------
+Example 3
+Question: How many professors does the Warsaw University of Technology employ?
+Ground Truth: 2,000
+Generated Answer: Љ According to the passage, the Warsaw University of Technology employs 2,000 professors.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer regarding the number of professors employed by the Warsaw University of Technology. There are no hallucinations detected, as the information provided is consistent and factual.
+
+--------------------------------------------------
+Example 4
+Question: What does the Museum of the Polish Army portray the history of?
+Ground Truth: arms
+Generated Answer: Џ The Museum of the Polish Army portrays the history of arms.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without any fabrication or unsupported information. It correctly states that the Museum of the Polish Army portrays the history of arms, matching the provided ground truth perfectly.
+
+--------------------------------------------------
+Example 5
+Question: What architecture type came before Norman in England?
+Ground Truth: Anglo-Saxon
+Generated Answer: . According to the passage, the architecture type that came before Norman in England is Anglo-Saxon.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without any fabrication or unsupported information. It correctly identifies 'Anglo-Saxon' as the architecture type that came before Norman in England. The model's confidence is slightly overestimated, but it does not present speculation as fact.
+
+--------------------------------------------------
+Example 6
+Question: In what way do idea strings transmit tesion forces?
+Ground Truth: action-reaction pairs
+Generated Answer: Tension forces can be modeled using ideal strings that are massless, frictionless, unbreakable, and unstretchable. They can be combined with ideal pulleys, which allow ideal strings to switch physical direction. Ideal strings transmit tension forces instantaneously in action-reaction pairs so that if two objects are connected by an ideal string, any force directed along the string by the first object is accompanied by a force directed along the string in the opposite direction by the second object.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 9.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 8.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately describes how ideal strings transmit tension forces and aligns closely with the ground truth answer. While it provides additional context about ideal strings and pulleys, this information does not contradict the ground truth and is relevant to the topic. Therefore, no hallucinations are detected.
+
+--------------------------------------------------
+Example 7
+Question: How many passengers can the Ford Fiesta accommodate?
+Ground Truth: at least four passengers
+Generated Answer: According to the passage, the Ford Fiesta can accommodate at least four passengers.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth without any fabrication or unsupported information. It correctly states that the Ford Fiesta can accommodate at least four passengers, matching the provided information.
+
+--------------------------------------------------
+Example 8
+Question: What town was actually granted to the Huguenots on arrival?
+Ground Truth: Manakin Town
+Generated Answer: - Manakin Town, now in Powhatan County.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 9.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 8.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. now in Powhatan County
+Analysis: The generated answer is largely accurate, correctly identifying Manakin Town as the location granted to the Huguenots. However, the addition of 'now in Powhatan County' is extrinsic information that, while likely true, is not part of the ground truth and could be seen as unnecessary detail that does not directly answer the question.
+
+--------------------------------------------------
+Example 9
+Question: What type of practices did the Yuan reintroduce in government?
+Ground Truth: Confucian
+Generated Answer: Љ The Yuan reintroduced Confucian governmental practices and examinations based on the Classics, which had fallen into disuse in north China during the period of disunity, were reinstated by the Yuan court, probably in the hope of maintaining order over Han society.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 4.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth regarding the reintroduction of Confucian practices by the Yuan. While it provides additional context about the historical situation, this does not contradict the ground truth and is relevant to the question. Therefore, no hallucinations are detected.
+
+--------------------------------------------------
+Example 10
+Question: How many kilometers is Warsaw from the Carpathian Mountains?
+Ground Truth: about 300
+Generated Answer: Љ Warsaw is approximately 300 km (190 mi) from the Carpathian Mountains.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer regarding the distance from Warsaw to the Carpathian Mountains. There are no hallucinations detected, as the information provided is consistent and factual.
+
+--------------------------------------------------
+Example 11
+Question: Which noble helped establish the Huguenot settlement in Saarland?
+Ground Truth: Prince Louis de Condé
+Generated Answer: Љ Prince Louis de Condé.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer is factually correct and matches the ground truth answer. There are no hallucinations detected, as the answer does not contradict or add unsupported information.
+
+--------------------------------------------------
+Example 12
+Question: Hormones can alter the sensitivity of the immune system, so they can be referred to as what?
+Ground Truth: immunomodulators
+Generated Answer: 
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly identifies hormones as immunomodulators, which aligns perfectly with the ground truth. There are no hallucinations present, and the answer is factually accurate and presented with appropriate caution.
+
+--------------------------------------------------
+Example 13
+Question: What are white blood cells known as?
+Ground Truth: Leukocytes
+Generated Answer: Մ white blood cells are known as leukocytes.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly states that white blood cells are known as leukocytes, matching the ground truth. There are no hallucinations detected, and the answer is presented with appropriate confidence.
+
+--------------------------------------------------
+Example 14
+Question: Where does heat rejection occur in the Rankine cycle?
+Ground Truth: in the condenser
+Generated Answer: Љ Heat rejection occurs in the condenser in the Rankine cycle.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without any fabricated or unsupported information. It correctly states that heat rejection occurs in the condenser of the Rankine cycle. There is no evidence of hallucination present.
+
+--------------------------------------------------
+Example 15
+Question: Terra Nullius is a Latin expression meaning what in English?
+Ground Truth: empty land
+Generated Answer: Ъ Terra nullius is a Latin expression meaning "empty land".
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without any fabrication or unsupported information. The inclusion of 'Ъ' at the beginning appears to be a typographical error rather than a hallucination. Overall, the answer is reliable and factually correct.
+
+--------------------------------------------------
+Example 16
+Question: What was DATANET 1 
+Ground Truth: was the public switched data network operated by the Dutch PTT Telecom
+Generated Answer: Taking into account the context provided, DATANET 1 refers to the public switched data network operated by the Dutch PTT Telecom (now known as KPN) and the connected users via leased lines (using the X.121 DNIC 2041) as well as the public PAD service Telepad (using the DNIC 2049). Additionally, the name was also used to refer to the main Videotex service that used the network and modified PAD devices as infrastructure, although this usage of the name was incorrect.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 5.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. the connected users via leased lines (using the X.121 DNIC 2041)
+  2. the public PAD service Telepad (using the DNIC 2049)
+  3. the main Videotex service that used the network and modified PAD devices as infrastructure
+Analysis: The generated answer includes additional details about connected users, specific DNIC codes, and mentions of the Telepad service and Videotex service that are not present in the ground truth. While the core information about DATANET 1 is accurate, these extra details introduce uncertainty and could mislead the reader, indicating a moderate level of hallucination.
+
+--------------------------------------------------
+Example 17
+Question: When was Phags-pa script invented?
+Ground Truth: 1269
+Generated Answer: (Option A) 1269.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer matches the ground truth exactly, indicating no hallucinations or inaccuracies present.
+
+--------------------------------------------------
+Example 18
+Question: What makes energy changes in a closed system?
+Ground Truth: nonconservative forces
+Generated Answer: ! Nonconservative forces, such as friction, gravity, and heat transfer, cause energy changes in a closed system by converting some of the system's internal energy into random motion or heat. These forces are not accounted for by the microscopic conservative forces that describe the interactions between individual molecules, but rather by the statistical mechanics of the system as a whole. As a result, nonconservative forces can lead to an increase in the entropy of the system, which is a measure of the disorder or randomness of the system.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. the statistical mechanics of the system as a whole
+  2. increase in the entropy of the system
+Analysis: The generated answer provides additional context about statistical mechanics and entropy that is not directly related to the question or the ground truth answer. While the core concept of nonconservative forces is accurate, the elaboration introduces extraneous information that could be seen as unnecessary or speculative in the context of the original question.
+
+--------------------------------------------------
+Example 19
+Question: What sort of engines utilized the Yarrow-Schlick-Tweedy balancing system?
+Ground Truth: marine triple expansion
+Generated Answer: Ћ The Yarrow-Schlick-Tweedy balancing system was used on some marine triple expansion engines. Specifically, it was used on 4-cylinder triple-expansion engines, such as those used in large passenger liners like the Olympic class.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 5.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. Specifically, it was used on 4-cylinder triple-expansion engines
+  2. such as those used in large passenger liners like the Olympic class
+Analysis: The generated answer introduces specific details about 4-cylinder triple-expansion engines and their use in Olympic class liners, which are not supported by the ground truth. While it correctly identifies the marine triple expansion engines, the additional information is speculative and not verified.
+
+--------------------------------------------------
+Example 20
+Question: What force acts on an object suspended on a spring scale in addition to gravity?
+Ground Truth: spring reaction force
+Generated Answer: Ъ The force of the spring reaction force acts on an object suspended on a spring scale in addition to gravity. This force is equal to the weight of the object and is exerted in the opposite direction of the force of gravity.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly identifies the spring reaction force as acting on the object in addition to gravity, which aligns with the ground truth. However, the phrasing could imply a slight overconfidence in stating that the spring reaction force is equal to the weight of the object, as this is context-dependent. Overall, the answer is mostly accurate with minimal hallucination.
+
+--------------------------------------------------
+Example 21
+Question: What legitimate dynasty came before the Yuan?
+Ground Truth: Song
+Generated Answer: զ According to traditional Chinese historiography, the legitimate dynasty that came before the Yuan was the Song dynasty.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly identifies the Song dynasty as the legitimate dynasty that came before the Yuan, matching the ground truth perfectly. There are no hallucinations present, and the information provided is accurate and presented with appropriate confidence.
+
+--------------------------------------------------
+Example 22
+Question: What field of computer science analyzes the resource requirements of a specific algorithm isolated unto itself within a given problem?
+Ground Truth: analysis of algorithms
+Generated Answer: W hen analyzing a particular algorithm isolated unto itself within a given problem, the field of computer science that analyzes the resource requirements of that algorithm is called "analysis of algorithms".
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without introducing any fabricated or unsupported information. It correctly identifies the field of computer science as 'analysis of algorithms' and presents the information in a clear and factual manner.
+
+--------------------------------------------------
+Example 23
+Question: What is Warsaw's name in the Polish language?
+Ground Truth: Warszawa
+Generated Answer: Ъ Warsaw's name in the Polish language is Warszawa, approximately /vɑːrˈʃɑːvə/ (also formerly spelled Warszewa and Warszowa), meaning "belonging to Warsz", Warsz being a shortened form of the masculine name of Slavic origin Warcisław; see also etymology of Wrocław.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 6.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. approximately /vɑːrˈʃɑːvə/
+  2. formerly spelled Warszewa and Warszowa
+  3. meaning 'belonging to Warsz'
+  4. Warcisław; see also etymology of Wrocław
+Analysis: The generated answer provides additional information that is not directly relevant to the question, such as pronunciation, alternative spellings, and etymological details. While some of this information may be accurate, it is extraneous and not necessary to answer the question about Warsaw's name in Polish, which is simply 'Warszawa'. This leads to a moderate level of hallucination severity and overconfidence in presenting speculative details as fact.
+
+--------------------------------------------------
+Example 24
+Question: What religions did Tugh Temur follow?
+Ground Truth: supported Zhu Xi's Neo-Confucianism and also devoted himself in Buddhism
+Generated Answer: Љ Tugh Temür supported Zhu Xi's Neo-Confucianism and also devoted himself in Buddhism.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without introducing any fabricated or unsupported information. It correctly states Tugh Temür's support for Zhu Xi's Neo-Confucianism and his devotion to Buddhism. There are no hallucinations detected.
+
+--------------------------------------------------
+Example 25
+Question: How are the particle forces and accelerations explained as by gauge bosons exchange?
+Ground Truth: mathematical by-product
+Generated Answer: , In modern particle physics, forces and the acceleration of particles are explained as a mathematical by-product of exchange of momentum-carrying gauge bosons. With the development of quantum field theory and general relativity, it was realized that force is a redundant concept arising from conservation of momentum (4-momentum in relativity and momentum of virtual particles in quantum electrodynamics). The conservation of momentum can be directly derived from the homogeneity or symmetry of space and so is usually considered more fundamental than the concept of a force. Thus the currently known fundamental forces are considered more accurately to be "fundamental interactions". When particle A emits (creates) or absorbs (annihilates) virtual particle B, a momentum conservation results in recoil of particle A making impression of repulsion or attraction between particles A A' exchanging by B. This description applies to all forces arising from fundamental interactions. While sophisticated mathematical descriptions are needed to predict, in full detail, the accurate result of such interactions, there is a conceptually simple way to describe such interactions through the use of Feynman diagrams. In a Feynman diagram, each matter particle is represented as a straight line (see
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. the conservation of momentum can be directly derived from the homogeneity or symmetry of space
+  2. the concept of a force is considered more redundant
+Analysis: The generated answer provides a detailed explanation of particle forces and gauge bosons, which is largely accurate but introduces extraneous information that is not present in the ground truth answer. While it elaborates on the relationship between forces and momentum conservation, this additional context may lead to confusion regarding the simplicity of the original ground truth, which simply states 'mathematical by-product'. The generated answer also presents some speculative interpretations as facts, contributing to a moderate level of overconfidence.
+
+--------------------------------------------------
+Example 26
+Question: The European Court of Justice cannot uphold measures that are incompatible with what?
+Ground Truth: fundamental rights recognised and protected in the constitutions of member states
+Generated Answer: Љ Fundamental rights recognised and protected in the constitutions of member states.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer is factually correct and matches the ground truth answer closely. There are no hallucinations detected, as the information provided is accurate and relevant to the question asked.
+
+--------------------------------------------------
+Example 27
+Question: What equation desribed the physics of force before the current Schrodinger equation?
+Ground Truth: Newtonian
+Generated Answer: , before the Schrödinger equation, the physics of forces was described by Newton's laws of motion. These laws, which were developed by Isaac Newton in the 17th century, describe how forces act on an object and how the object will move in response to those forces.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately describes Newton's laws of motion as the framework for understanding forces before the Schrödinger equation. While it provides additional context about Isaac Newton and the development of these laws, this information does not contradict the ground truth and is relevant to the question. Therefore, there are no hallucinations detected.
+
+--------------------------------------------------
+Example 28
+Question: What's the party's take on Muslim history?
+Ground Truth: a different view
+Generated Answer: գ HT takes a unique view of Muslim history, placing the pivotal turning point not in the early days of Islam but in the 20th century with the abolition of the Ottoman Caliphate in 1924. According to HT, this event marked the end of the true Islamic system and the beginning of a period of decline and corruption in the Muslim world. The party blames "the disbelieving (Kafir) colonial powers" working through Turkish modernist Mustafa Kemal Atatürk for this development, which it sees as a betrayal of Islamic values and principles. This perspective sets HT apart from other Islamist groups like Muhammad Qutb's movement, which places more emphasis on the early days of Islam and the struggles of the rightly guided Caliphs.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 7.0/10
+Factual Accuracy: 4.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 3.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. HT takes a unique view of Muslim history, placing the pivotal turning point not in the early days of Islam but in the 20th century with the abolition of the Ottoman Caliphate in 1924.
+  2. The party blames 'the disbelieving (Kafir) colonial powers' working through Turkish modernist Mustafa Kemal Atatürk for this development.
+Analysis: The generated answer introduces specific claims about HT's perspective on Muslim history that are not supported by the ground truth, which simply states 'a different view.' The details about the Ottoman Caliphate and Atatürk are extrinsic information that goes beyond the provided ground truth, leading to a high hallucination severity and low factual accuracy.
+
+--------------------------------------------------
+Example 29
+Question: How many Huguenots were killed during this purge?
+Ground Truth: 5,000 to 30,000
+Generated Answer: Џ The exact number of Huguenots killed during the St. Bartholomew's Day massacre is difficult to determine, with estimates ranging from 5,000 to 30,000. However, most historians agree that the death toll was likely in the tens of thousands.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the range of estimates for the number of Huguenots killed during the St. Bartholomew's Day massacre, aligning closely with the ground truth. While it introduces some speculation about historians' agreement, it does not contradict the provided information or introduce unsupported facts.
+
+--------------------------------------------------
+Example 30
+Question: How long did Ms Kucukdeveci work for Swedex Gmbh & Co KG before she was dismissed?
+Ground Truth: 10 years
+Generated Answer: According to the case, Ms Kücükdeveci worked for 10 years, from age 18 to 28, for Swedex GmbH & Co KG before her dismissal.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 8.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth regarding the duration of Ms. Kücükdeveci's employment. While it adds context about her age, this does not contradict the provided information and does not introduce any unsupported claims. Therefore, no hallucinations are detected.
+
+--------------------------------------------------
+Example 31
+Question: What device is used to recycle the boiler water in most steam engines?
+Ground Truth: water pump
+Generated Answer: Ћ Water pump.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer 'Ћ Water pump' is factually accurate and corresponds directly to the ground truth answer 'water pump'. The slight addition of the character 'Ћ' does not alter the factual correctness of the answer, and there is no unsupported information present.
+
+--------------------------------------------------
+Example 32
+Question: Germany referred to which area more so than an actual country?
+Ground Truth: central Europe
+Generated Answer: Ъ Germany referred to an amorphous area of central Europe more so than an actual country.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 4.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. an amorphous area of central Europe
+Analysis: The generated answer introduces the term 'amorphous area,' which is not supported by the ground truth and adds unnecessary complexity. While the core idea of Germany referring to central Europe is correct, the additional description is speculative and not grounded in the provided information.
+
+--------------------------------------------------
+Example 33
+Question: On what date did Henry Kissinger negotiate an Israeli troop withdrawal from the Sinai Peninsula?
+Ground Truth: January 18, 1974,
+Generated Answer: Ъ Henry Kissinger negotiated an Israeli troop withdrawal from parts of the Sinai Peninsula by January 18, 1974.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 9.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 8.0/10
+Hallucination Type: NONE
+Analysis: The generated answer closely aligns with the ground truth, providing the correct date of January 18, 1974, for the Israeli troop withdrawal negotiation. The phrase 'by January 18, 1974' does not introduce any hallucination, as it does not contradict the ground truth but rather reinforces it. Overall, the answer is reliable with minimal potential for misinterpretation.
+
+--------------------------------------------------
+Example 34
+Question: What are the agents the immune system detects known as?
+Ground Truth: pathogens
+Generated Answer: Ъ The agents the immune system detects are known as pathogens. Pathogens are any foreign substances that can cause disease, including viruses, bacteria, fungi, parasites, and other microorganisms. The immune system must detect and distinguish these pathogens from the organism's own healthy tissue in order to function properly.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 9.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 8.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately identifies pathogens as the agents the immune system detects and provides additional correct information about what pathogens are. There are no hallucinations present, as all information aligns with the ground truth.
+
+--------------------------------------------------
+Example 35
+Question: Who was the duke in the battle of Hastings?
+Ground Truth: William the Conqueror
+Generated Answer: 
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly identifies William the Conqueror as the duke in the Battle of Hastings, matching the ground truth perfectly. There are no hallucinations present, and the answer is factually accurate.
+
+--------------------------------------------------
+Example 36
+Question: What type of immune cells help to destroy abnormal cells in tumors?
+Ground Truth: killer T cells
+Generated Answer: Љ Killer T cells and NK cells help to destroy abnormal cells in tumors.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 4.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. NK cells help to destroy abnormal cells in tumors.
+Analysis: The generated answer includes additional information about NK cells, which is not part of the ground truth. While killer T cells are correctly identified, the mention of NK cells introduces extrinsic information that is not supported by the original question's context.
+
+--------------------------------------------------
+Example 37
+Question: About how many Walloons and Huguenots emigrated to England and Ireland in this era?
+Ground Truth: 50,000
+Generated Answer: Љ About 50,000 Protestant Walloons and Huguenots emigrated to England and Ireland in this era.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer of 50,000 emigrants, with no fabricated or unsupported information present. The model presents the information confidently but does not overstate or speculate beyond the provided facts.
+
+--------------------------------------------------
+Example 38
+Question: What did the Mongol elites wish Buyantu didn't do?
+Ground Truth: actively support and adopt mainstream Chinese culture
+Generated Answer: Џ The Mongol elites wished Buyantu didn't actively support and adopt mainstream Chinese culture, as this went against their traditional Mongolian ways and values.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth without introducing any fabricated information. It correctly states that the Mongol elites wished Buyantu didn't adopt mainstream Chinese culture, aligning perfectly with the provided ground truth. The model shows slight overconfidence in its presentation but remains factually correct.
+
+--------------------------------------------------
+Example 39
+Question: Are there any regions where the Treaty of European Union excludes from jurisdiction?
+Ground Truth: the Faroe Islands
+Generated Answer: Yes, the Treaty of European Union (TEU) specifically excludes certain regions from the jurisdiction of European Union law. These regions include:
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. These regions include:
+Analysis: The generated answer correctly identifies that the Treaty of European Union excludes certain regions from jurisdiction, but it does not specify the Faroe Islands as the ground truth does. The phrase 'These regions include:' suggests there are multiple regions listed, which is not supported by the ground truth. This adds extraneous information that is not verified.
+
+--------------------------------------------------
+Example 40
+Question: What legitimate dynasty came after the Yuan?
+Ground Truth: Ming
+Generated Answer: Ћ According to traditional Chinese historiography, the legitimate dynasty that came after the Yuan was the Ming dynasty. The Ming dynasty was established in 1368 by the Hongwu Emperor, who overthrew the Yuan dynasty and restored Chinese rule to the Han Chinese people. The Ming dynasty is considered to be the next legitimate dynasty of China, as it was established through a popular revolution that overthrew the foreign-led Yuan dynasty and restored Chinese sovereignty to the Han Chinese people.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately identifies the Ming dynasty as the legitimate dynasty that came after the Yuan dynasty, providing correct historical context and details. There are no hallucinations present, as all information aligns with the ground truth.
+
+--------------------------------------------------
+Example 41
+Question: When did Buyantu resume testing potential government employees?
+Ground Truth: 1313
+Generated Answer: Њ Buyantu resumed testing potential government employees in 1313.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without introducing any fabricated information. The model presents the information confidently but does not speculate beyond the provided facts.
+
+--------------------------------------------------
+Example 42
+Question: What uprising began in 1351?
+Ground Truth: the Red Turban Rebellion
+Generated Answer: զ The Red Turban Rebellion started in 1351 and grew into a nationwide uprising.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately states that the Red Turban Rebellion started in 1351 and describes it as a nationwide uprising, which aligns with the ground truth. There are no hallucinations detected.
+
+--------------------------------------------------
+Example 43
+Question: What molecules are recognized as foreign by the immune system?
+Ground Truth: non-self molecules
+Generated Answer: Њ Antigens are molecules that are recognized as foreign by the immune system.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly identifies antigens as molecules recognized by the immune system, which aligns with the concept of non-self molecules. While the term 'non-self molecules' is more general, the answer does not contradict the ground truth and provides accurate information without significant fabrication.
+
+--------------------------------------------------
+Example 44
+Question: When did Kublai move the Mongol capital?
+Ground Truth: 1264
+Generated Answer: Ъ Kublai readied the move of the Mongol capital from Karakorum in Mongolia to Khanbaliq in 1264, constructing a new city near the former Jurchen capital Zhongdu, now modern Beijing, in 1266.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 5.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. constructing a new city near the former Jurchen capital Zhongdu, now modern Beijing, in 1266
+Analysis: The generated answer correctly identifies the year 1264 for the move of the Mongol capital, which aligns with the ground truth. However, it introduces additional information about the construction of a new city in 1266, which is not supported by the ground truth and could be considered extrinsic information. This addition detracts from the overall reliability of the answer.
+
+--------------------------------------------------
+Example 45
+Question: Common Sense Realism of what Scottish philosophers did Agassiz incorporate in his dual view of knowedge?
+Ground Truth: Thomas Reid and Dugald Stewart
+Generated Answer: . Agassiz incorporated the teachings of Common Sense Realism derived from Scottish philosophers Thomas Reid and Dugald Stewart, whose works were part of the Harvard curriculum at the time.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 4.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. whose works were part of the Harvard curriculum at the time
+Analysis: The generated answer correctly identifies Thomas Reid and Dugald Stewart as the philosophers associated with Common Sense Realism, aligning with the ground truth. However, it introduces additional information about their works being part of the Harvard curriculum, which is not supported by the ground truth and could be considered extrinsic information. This adds a slight degree of uncertainty to the overall reliability of the answer.
+
+--------------------------------------------------
+Example 46
+Question: By whom is European Law applied by?
+Ground Truth: the courts of member states and the Court of Justice of the European Union
+Generated Answer: Љ European Union law is applied by the courts of member states and the Court of Justice of the European Union.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth without any fabricated or unsupported information. It correctly states that European Union law is applied by the courts of member states and the Court of Justice of the European Union, matching the ground truth perfectly.
+
+--------------------------------------------------
+Example 47
+Question: What name was given to the plot to usurp power from the French House of Guise?
+Ground Truth: Amboise plot
+Generated Answer: Հuguenot.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Huguenot
+Analysis: The generated answer 'Huguenot' is completely unrelated to the question about the Amboise plot, indicating a severe hallucination. It contradicts the ground truth and does not provide any relevant information regarding the plot to usurp power from the French House of Guise.
+
+--------------------------------------------------
+Example 48
+Question: Plant cells respond to the molecules associated with pathogens known as what?
+Ground Truth: Pathogen-associated molecular patterns
+Generated Answer: Ћ Plant cells respond to molecules associated with pathogens known as Pathogen-associated molecular patterns or PAMPs.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without introducing any fabricated or unsupported information. It correctly identifies the term 'Pathogen-associated molecular patterns' and its abbreviation 'PAMPs'. The model shows slight overconfidence by including the phrase 'known as', but this does not detract from the factual accuracy.
+
+--------------------------------------------------
+Example 49
+Question: When was the final legislative proposals for a Scottish Assembly passed?
+Ground Truth: 1978
+Generated Answer: , According to the text, the final legislative proposals for a Scottish Assembly were passed by the United Kingdom Parliament in 1978.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer regarding the date when the final legislative proposals for a Scottish Assembly were passed. There are no hallucinations detected, as the information provided is correct and consistent with the ground truth.
+
+--------------------------------------------------
+Example 50
+Question: What are committees in the Scottish Parliament compared to other systems?
+Ground Truth: stronger
+Generated Answer: Pertaining to the role of committees in the Scottish Parliament, the answer is that the role of committees is stronger in the Scottish Parliament than in other parliamentary systems. This is because committees in the Scottish Parliament have a more prominent role in scrutinizing the government and there is no revising chamber.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth that committees in the Scottish Parliament are stronger compared to other systems. While it elaborates on the role of committees and mentions the absence of a revising chamber, these details do not contradict the ground truth and are relevant to the context. Therefore, no hallucinations are detected.
+
+--------------------------------------------------
+Example 51
+Question: When did Jamaa Islamiya renounce violence?
+Ground Truth: in 2003
+Generated Answer: Jamaa Islamiya (or al-Gama'a al-Islamiyya) renounced violence in 2003.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer regarding Jamaa Islamiya's renouncement of violence in 2003, with no fabricated or unsupported information present.
+
+--------------------------------------------------
+Example 52
+Question: What major conquest did Tancred play a roll in?
+Ground Truth: Jerusalem
+Generated Answer: Љ Tancred played a major role in the conquest of Jerusalem during the First Crusade. After the successful siege of Antioch in 1097, Tancred led a contingent of knights and foot soldiers through the desert to Jerusalem, where they laid siege to the city and captured it in July 1099. Tancred was instrumental in the capture of the city, and he was granted the title of Count of the Kingdom of Jerusalem by the Crusader leaders in recognition of his service.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 9.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 8.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. Tancred was granted the title of Count of the Kingdom of Jerusalem by the Crusader leaders in recognition of his service.
+Analysis: The generated answer provides a largely accurate account of Tancred's role in the conquest of Jerusalem, aligning well with the ground truth. However, it includes additional details about Tancred being granted the title of Count of the Kingdom of Jerusalem, which is not explicitly stated in the ground truth answer. This additional information, while plausible, is not confirmed by the ground truth and thus qualifies as extrinsic hallucination. The overall reliability remains high due to the strong factual basis of the main answer.
+
+--------------------------------------------------
+Example 53
+Question: For most organisms, what is the dominant system of defense?
+Ground Truth: innate immune system
+Generated Answer: MOST ORGANISMS - The dominant system of host defense is the innate immune system.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without introducing any fabricated or unsupported information. It correctly identifies the innate immune system as the dominant system of defense for most organisms. There is a slight overconfidence in the phrasing, but it does not detract from the factual accuracy.
+
+--------------------------------------------------
+Example 54
+Question: What is it called when steam propels a turbo generator with electric motor propulsion?
+Ground Truth: turbo-electric transmission
+Generated Answer: Ћ Turbo-electric transmission.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer is accurate and matches the ground truth answer. There are no hallucinations detected, as the answer is factually correct and presents the information confidently without speculation.
+
+--------------------------------------------------
+Example 55
+Question: Tumor antigens are complexed with MHC class I molecules in the same way as what antigens?
+Ground Truth: viral antigens
+Generated Answer: ...in a similar way to viral antigens.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer, stating that tumor antigens are complexed with MHC class I molecules in a similar way to viral antigens. There are no hallucinations detected, as the information is consistent with the provided ground truth.
+
+--------------------------------------------------
+Example 56
+Question: What are the 3 post popular libraries for undergraduates in the Harvard system?
+Ground Truth: Cabot Science Library, Lamont Library, and Widener Library
+Generated Answer: Љ Cabot Science Library, Lamont Library, and Widener Library are the three most popular libraries for undergraduates to use, with easy access and central locations.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately lists the three libraries as per the ground truth and provides additional context about their accessibility and locations without introducing any unsupported information.
+
+--------------------------------------------------
+Example 57
+Question: When did the UK formally subscribe to the Agreement on Social Policy?
+Ground Truth: 1997
+Generated Answer: . The UK formally subscribed to the Agreement on Social Policy in 1997, following the election of the UK Labour Party to government that year.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately states the year the UK subscribed to the Agreement on Social Policy as 1997, which matches the ground truth. There are no hallucinations detected, as the additional context about the Labour Party's election does not contradict the ground truth and is relevant information.
+
+--------------------------------------------------
+Example 58
+Question: What was the defeat of the Arab troops at the hand of the Israeli troops during the Six-Day War?
+Ground Truth: quick and decisive
+Generated Answer: Mention of the defeat of the Arab troops at the hand of the Israeli troops during the Six-Day War is given in the passage as a pivotal event in the Arab Muslim world. The passage states that the quick and decisive defeat of the Arab troops by Israeli troops constituted a pivotal event in the Arab Muslim world.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth by stating that the defeat was quick and decisive. There are no hallucinations detected, as the information provided aligns well with the historical context of the Six-Day War.
+
+--------------------------------------------------
+Example 59
+Question: What lands were reserved for natives?
+Ground Truth: west of the Appalachian Mountains
+Generated Answer: Ћ The Royal Proclamation of 1763 reserved lands west of the Appalachian Mountains for the Indian population.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 9.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 8.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth regarding the lands reserved for natives, specifically mentioning the Royal Proclamation of 1763, which is relevant context. There are no hallucinations detected as the information provided is consistent with the ground truth.
+
+--------------------------------------------------
+Example 60
+Question: Who was the Karluk Kara-Khanid ruler ranked above?
+Ground Truth: the Korean King
+Generated Answer: հhe Karluk Kara-Khanid ruler was ranked above the Korean King.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately states that the Karluk Kara-Khanid ruler was ranked above the Korean King, which aligns with the ground truth. However, the phrasing could imply a level of certainty that may not be fully supported by historical evidence, leading to a moderate score in overconfidence. Overall, the answer is reliable with minimal hallucination severity.
+
+--------------------------------------------------
+Example 61
+Question: Which part of the immune system protects the brain?
+Ground Truth: neuroimmune system
+Generated Answer: . The neuroimmune system.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without any fabrication or unsupported information. It is factually correct and presents the information with appropriate caution.
+
+--------------------------------------------------
+Example 62
+Question: What building from the 19th century was destroyed between the 1950s and 1960s?
+Ground Truth: Leopold Kronenberg Palace
+Generated Answer: Љ Leopold Kronenberg Palace.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer is a correct representation of the ground truth answer, with only a minor typographical character (Љ) that does not affect the factual accuracy. Therefore, there are no hallucinations detected.
+
+--------------------------------------------------
+Example 63
+Question: What paper is commonly considered the bellwether ushering in systematic studies computational complexity?
+Ground Truth: On the Computational Complexity of Algorithms
+Generated Answer: Љ The paper commonly considered the bellwether ushering in systematic studies of computational complexity is "On the Computational Complexity of Algorithms" by Juris Hartmanis and Richard Stearns (1965). This paper laid out the definitions of time and space complexity and proved the hierarchy theorems, providing a foundation for the field of computational complexity theory.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 9.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 8.0/10
+Hallucination Type: NONE
+Analysis: The generated answer is largely accurate and aligns well with the ground truth. It correctly identifies the paper and its authors, as well as its significance in the field of computational complexity. There are no hallucinations detected, but the answer could be slightly more cautious in its claims about the paper's contributions.
+
+--------------------------------------------------
+Example 64
+Question: In what year was the Alan Turing's definitional model of a computing device received?
+Ground Truth: 1936
+Generated Answer: Precise definition of a Turing machine was given by Alan Turing in his 1936 paper "On Computable Numbers".
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth by stating that Alan Turing's precise definition of a Turing machine was given in his 1936 paper. There are no hallucinations present, as the information is factual and directly related to the question asked.
+
+--------------------------------------------------
+Example 65
+Question: What northern province in France has a large protestant population?
+Ground Truth: Alsace
+Generated Answer: Certainly! The northern province in France with a large Protestant population is Alsace.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly identifies Alsace as the northern province in France with a large Protestant population, matching the ground truth perfectly. There are no hallucinations present, and the model's confidence is appropriate given the factual accuracy.
+
+--------------------------------------------------
+Example 66
+Question: What monarchy did western troops protect?
+Ground Truth: Saudi
+Generated Answer: Љ Western troops came to protect the Saudi monarchy.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without introducing any fabricated or unsupported information. It correctly identifies the Saudi monarchy as the subject of protection by western troops, thus demonstrating high factual accuracy and low hallucination severity.
+
+--------------------------------------------------
+Example 67
+Question: What did Newton's mechanics affect?
+Ground Truth: idealized point particles
+Generated Answer: d) Newton's mechanics affected the way forces are described and how they affect matter. Specifically, Newton's laws of motion describe how forces cause matter to change its motion, and they provide a mathematical framework for predicting the motion of objects under the influence of various forces.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 5.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. Newton's mechanics affected the way forces are described
+  2. they provide a mathematical framework for predicting the motion of objects
+Analysis: The generated answer introduces additional concepts about the description of forces and the mathematical framework for predicting motion, which are not explicitly mentioned in the ground truth answer. While these statements are related to Newton's mechanics, they do not directly address the specific aspect of 'idealized point particles' as stated in the ground truth, leading to an extrinsic hallucination.
+
+--------------------------------------------------
+Example 68
+Question: How much more land does the school own in Allston than Cambridge?
+Ground Truth: approximately fifty percent
+Generated Answer: Ћ According to the passage, Harvard owns approximately fifty percent more land in Allston than in Cambridge. This means that the school owns twice as much land in Allston as it does in Cambridge.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 7.0/10
+Factual Accuracy: 4.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 3.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Harvard owns approximately fifty percent more land in Allston than in Cambridge.
+  2. This means that the school owns twice as much land in Allston as it does in Cambridge.
+Analysis: The generated answer incorrectly states that Harvard owns 'approximately fifty percent more land in Allston than in Cambridge,' which contradicts the ground truth that simply states 'approximately fifty percent.' The additional claim that this means the school owns 'twice as much land in Allston as it does in Cambridge' is also unsupported and incorrect, indicating a significant level of overconfidence in the fabricated information.
+
+--------------------------------------------------
+Example 69
+Question: What ruined Richard's plans to reach Acre?
+Ground Truth: a storm
+Generated Answer: Սtorm dispersed Richard's fleet.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 5.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. Storm dispersed Richard's fleet.
+Analysis: The generated answer introduces the phrase 'dispersed Richard's fleet,' which is not supported by the ground truth answer 'a storm.' While the core concept of a storm is correct, the additional detail about the fleet is not substantiated by the provided information, making it an extrinsic hallucination.
+
+--------------------------------------------------
+Example 70
+Question: Who was Margaret's brother?
+Ground Truth: Edgar
+Generated Answer: Љ Edgar Atheling.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 7.0/10
+Factual Accuracy: 3.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 4.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. Љ Edgar Atheling
+Analysis: The generated answer introduces 'Љ Edgar Atheling', which is not only extraneous but also incorrect in the context of the question. The ground truth answer is simply 'Edgar', making the additional information unsupported and irrelevant.
+
+--------------------------------------------------
+Example 71
+Question: What were the two Huguenot neighborhoods created in Berlin?
+Ground Truth: Dorotheenstadt and Friedrichstadt
+Generated Answer: (A) The two Huguenot neighborhoods created in Berlin were Dorotheenstadt and Friedrichstadt.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth without any fabrication or unsupported information. It presents the information confidently and correctly.
+
+--------------------------------------------------
+Example 72
+Question: In an adjustable spring-loaded valve, what needs to be broken to allow an operator to tamper with it?
+Ground Truth: seal
+Generated Answer: Սel seal. In an adjustable spring-loaded valve, the operator cannot tamper with the adjustment unless the seal illegally is broken.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 5.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly identifies that the seal needs to be broken for tampering, aligning with the ground truth. However, the phrase 'illegally is broken' introduces a slight ambiguity regarding legality, which could be seen as an overconfidence in asserting the legality aspect without context. Overall, the answer is mostly accurate but slightly less reliable due to this phrasing.
+
+--------------------------------------------------
+Example 73
+Question: What is the nature of the relationship between T-cells and vitamin D?
+Ground Truth: symbiotic relationship
+Generated Answer: Ъ The relationship between T-cells and vitamin D is symbiotic. T-cells extend a vitamin D receptor when they encounter a foreign pathogen, which allows them to bind to the active form of vitamin D, calcitriol. This binding is necessary for T-cells to perform their intended function. Additionally, T-cells express the gene CYP27B1, which is responsible for converting the pre-hormone version of vitamin D, calcidiol, into the steroid hormone version, calcitriol. This allows T-cells to activate vitamin D and perform their intended function.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. T-cells extend a vitamin D receptor when they encounter a foreign pathogen
+  2. T-cells express the gene CYP27B1, which is responsible for converting the pre-hormone version of vitamin D, calcidiol, into the steroid hormone version, calcitriol
+Analysis: The generated answer provides additional details about the mechanisms involving T-cells and vitamin D that are not present in the ground truth. While the core relationship is correctly identified as symbiotic, the specifics about T-cells extending a vitamin D receptor and expressing the CYP27B1 gene are not universally accepted or may not be fully accurate, leading to a moderate level of hallucination.
+
+--------------------------------------------------
+Example 74
+Question: How did france differ from Britain in managing its colonies?
+Ground Truth: small numbers of settlers
+Generated Answer: . France differed from Britain in managing its colonies in several ways. Firstly, France sent small numbers of settlers to its colonies, with the only notable exception of Algeria, where French settlers nevertheless always remained a small minority. In contrast, Britain established large-scale settlements in its colonies, particularly in India, where British settlers formed the majority population. Secondly, France declared a civilizing mission to lift the world up to French standards by bringing Christianity and French culture. In contrast, Britain saw its colonies as sources of wealth and resources to be exploited for the benefit of the mother country. Finally, France offered full citizenship rights, or 'assimilation,' to the people in its colonies, although in reality assimilation was always on the distant horizon. In contrast, Britain maintained a more distant and paternalistic approach to its colonies, with little effort to assimilate the local population into British society.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. France declared a civilizing mission to lift the world up to French standards by bringing Christianity and French culture.
+  2. France offered full citizenship rights, or 'assimilation,' to the people in its colonies.
+Analysis: The generated answer contains some extrinsic information that is not directly supported by the ground truth. While it accurately describes the small number of settlers sent by France, the additional details about France's civilizing mission and citizenship rights are not explicitly mentioned in the ground truth and could be seen as speculative. The overall context is relevant, but the inclusion of these details introduces a degree of uncertainty regarding their factual basis.
+
+--------------------------------------------------
+Example 75
+Question: What class of ships is an example of large passenger liners?
+Ground Truth: Olympic
+Generated Answer: Ъ The class of ships that is an example of large passenger liners is the Olympic class.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly identifies the Olympic class as an example of large passenger liners, matching the ground truth without introducing any fabricated or unsupported information.
+
+--------------------------------------------------
+Example 76
+Question: Who used imperialism during their rule of the Mongol Empire?
+Ground Truth: Genghis Khan
+Generated Answer: շ Genghis Khan used imperialism during his rule of the Mongol Empire.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly identifies Genghis Khan as the figure who used imperialism during his rule of the Mongol Empire. There are no hallucinations present, and the information is factually accurate. The slight overconfidence is due to the inclusion of the character 'շ' at the beginning, which does not affect the factual content.
+
+--------------------------------------------------
+Example 77
+Question: What was there a significant minority of in Warsaw?
+Ground Truth: Jewish
+Generated Answer: (D) Jews
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer 'Jews' is factually correct and aligns perfectly with the ground truth answer 'Jewish'. There are no hallucinations detected as the information is accurate and directly related to the question.
+
+--------------------------------------------------
+Example 78
+Question: Pitt's plan called for what attacks?
+Ground Truth: three major offensive actions involving large numbers of regular troops
+Generated Answer: Љ Pitt's plan called for three major offensive actions involving large numbers of regular troops, supported by the provincial militias, aimed at capturing the heartlands of New France. These attacks were:
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 5.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. supported by the provincial militias
+  2. aimed at capturing the heartlands of New France
+Analysis: The generated answer includes additional details not present in the ground truth, such as the involvement of provincial militias and the specific aim of capturing the heartlands of New France. While the core information about the three major offensive actions is accurate, these extra details introduce a level of uncertainty and speculation, leading to a moderate hallucination severity.
+
+--------------------------------------------------
+Example 79
+Question: In a steam turbine, what are rotors mounted on?
+Ground Truth: drive shaft
+Generated Answer: Rotors are mounted on a drive shaft.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without any fabrication or unsupported information. It is factually correct and presents the information confidently without speculation.
+
+--------------------------------------------------
+Example 80
+Question: Imperialism extends a country's power and what?
+Ground Truth: influence
+Generated Answer: Љ Imperialism extends a country's power and influence through diplomacy or military force.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 9.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 8.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth by stating that imperialism extends a country's power and influence. The additional information about 'diplomacy or military force' is not directly supported by the ground truth but does not contradict it, making it a reasonable elaboration rather than a hallucination. Overall, the answer is reliable and mostly accurate.
+
+--------------------------------------------------
+Example 81
+Question: What does it mean when currencies are left to "float?"
+Ground Truth: to "float" (rise and fall according to market demand)
+Generated Answer: ...the value of the dollar had been pegged to the price of gold and all other currencies were pegged to the dollar, whose value was left to "float" (rise and fall according to market demand). When currencies are left to "float," their values are determined by market forces of supply and demand rather than being fixed at a specific exchange rate. This means that the value of a currency can fluctuate in response to changes in economic conditions, such as inflation, interest rates, and trade balances, as well as geopolitical events and investor sentiment.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 9.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 8.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. the value of the dollar had been pegged to the price of gold and all other currencies were pegged to the dollar
+Analysis: The generated answer includes extrinsic information about the historical context of currency pegging to gold and the dollar, which is not directly relevant to the question about what it means for currencies to float. While the core explanation of floating currencies is accurate, the additional context may distract from the main point and is not necessary for answering the question.
+
+--------------------------------------------------
+Example 82
+Question: What allows the adaptive immune system to react faster and more strongly each subsequent time a pathogen is encountered?
+Ground Truth: immunological memory
+Generated Answer: Faster and stronger responses are due to the development of an immunological memory, which is a persistent ability of the immune system to recognize and respond to a specific pathogen more quickly and effectively after the initial exposure. This is achieved through the activation of memory cells, which are specialized immune cells that retain a "memory" of the pathogen and can rapidly differentiate into effector cells upon subsequent exposure.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth regarding immunological memory and does not contain any fabricated or unsupported information. It explains the concept clearly and correctly, with only a minor degree of overconfidence in its presentation.
+
+--------------------------------------------------
+Example 83
+Question: Who killed Harold II? 
+Ground Truth: William II
+Generated Answer: Щ Duke William II of Normandy killed King Harold II at the Battle of Hastings in 1066.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 5.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. Duke William II of Normandy
+Analysis: The generated answer correctly identifies William II as the killer of Harold II but adds the title 'Duke' and specifies 'of Normandy,' which, while historically accurate, is not part of the ground truth answer. This additional information does not contradict the ground truth but is not necessary for the answer, indicating a slight extrinsic hallucination. The overall factual accuracy is high, but the model's confidence in providing extra details reflects moderate overconfidence.
+
+--------------------------------------------------
+Example 84
+Question: Melatonin during sleep can actively counteract the production of what?
+Ground Truth: free radical production
+Generated Answer: Ъ Melatonin during sleep times can actively counteract free radical production during this time.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without introducing any unsupported information. The phrasing is slightly awkward, but it does not alter the factual content. Therefore, there are no hallucinations detected.
+
+--------------------------------------------------
+Example 85
+Question: Complexity theory classifies problems based on what primary attribute?
+Ground Truth: difficulty
+Generated Answer: Ъ Complexity theory classifies problems based on their difficulty, or the amount of computational resources (such as time and space) required to solve them. Specifically, it classifies problems based on the amount of time required to solve them, using concepts such as time complexity and space complexity.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. the amount of computational resources (such as time and space) required to solve them
+  2. using concepts such as time complexity and space complexity
+Analysis: The generated answer provides additional information about computational resources and specific concepts like time complexity and space complexity, which, while related to the topic, are not explicitly mentioned in the ground truth answer. This additional information does not contradict the ground truth but is not necessary for answering the question, leading to a classification of EXTRINSIC hallucination.
+
+--------------------------------------------------
+Example 86
+Question: What river does Warsaw straddle?
+Ground Truth: Vistula River
+Generated Answer: . Warsaw straddles the Vistula River.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately states that Warsaw straddles the Vistula River, which is consistent with the ground truth. There are no hallucinations detected in this response.
+
+--------------------------------------------------
+Example 87
+Question: What army was pushing deep into Polish territory to pursue the Germans in 1944?
+Ground Truth: the Red Army
+Generated Answer: Few armies were pushing deep into Polish territory to pursue the Germans in 1944. The army that was pushing deep into Polish territory to pursue the Germans in 1944 was the Red Army.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 5.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. Few armies were pushing deep into Polish territory to pursue the Germans in 1944.
+Analysis: The generated answer introduces extrinsic information by stating 'Few armies were pushing deep into Polish territory to pursue the Germans in 1944,' which is not supported by the ground truth. However, it correctly identifies the Red Army as the primary force pursuing the Germans, leading to a relatively high factual accuracy score despite the additional speculative statement.
+
+--------------------------------------------------
+Example 88
+Question: The adaptive immune system must distinguish between what types of molecules?
+Ground Truth: self and non-self
+Generated Answer: Љ The adaptive immune system must distinguish between self and non-self molecules.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth without any fabrication or unsupported information. It correctly states that the adaptive immune system must distinguish between self and non-self molecules, matching the provided ground truth perfectly.
+
+--------------------------------------------------
+Example 89
+Question: Who was a prominent Huguenot in Holland?
+Ground Truth: Pierre Bayle
+Generated Answer: Љ Pierre Bayle was a prominent Huguenot in Holland. He was a teacher and writer who started teaching in Rotterdam and finished writing and publishing his multi-volume masterpiece, Historical and Critical Dictionary, in the Netherlands. The Dictionary became one of the 100 foundational texts of the US Library of Congress.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 4.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. The Dictionary became one of the 100 foundational texts of the US Library of Congress.
+Analysis: The generated answer is mostly accurate regarding Pierre Bayle's identity and contributions. However, it introduces extrinsic information about the Historical and Critical Dictionary being one of the foundational texts of the US Library of Congress, which is not supported by the ground truth and may not be verifiable. This adds a layer of uncertainty to the overall reliability of the answer.
+
+--------------------------------------------------
+Example 90
+Question: Who explored Ohio territory in 1750?
+Ground Truth: Christopher Gist
+Generated Answer: Ъ Christopher Gist explored the Ohio territory in 1750, acting on behalf of both Virginia and the Ohio Company.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 9.0/10
+Overconfidence: 4.0/10
+Overall Reliability: 8.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. acting on behalf of both Virginia and the Ohio Company
+Analysis: The generated answer is mostly accurate, correctly identifying Christopher Gist as the explorer of the Ohio territory in 1750. However, it introduces additional information about Gist acting on behalf of Virginia and the Ohio Company, which is not part of the ground truth. This additional detail is not necessarily fabricated but is not confirmed by the provided ground truth, leading to a minor hallucination.
+
+--------------------------------------------------
+Example 91
+Question: How many cylinders does the Energiprojekt AB engine have?
+Ground Truth: 5
+Generated Answer: , according to the passage, the Energiprojekt AB engine has 5 cylinders.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without any fabrication or unsupported information. It correctly states that the Energiprojekt AB engine has 5 cylinders, and there is no indication of overconfidence or speculation.
+
+--------------------------------------------------
+Example 92
+Question: What theorem was implicated by Manuel Blum's axioms?
+Ground Truth: speed-up theorem
+Generated Answer: SPEED-UP THEOREM
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer 'SPEED-UP THEOREM' is a correct representation of the ground truth answer 'speed-up theorem', with no fabricated or unsupported information present. The answer is factually accurate and does not exhibit overconfidence.
+
+--------------------------------------------------
+Example 93
+Question: What was the purpose of Loudoun's troops at Fort Henry?
+Ground Truth: to distract Montcalm
+Generated Answer: Љ Loudoun left a sizable force at Fort William Henry to distract Montcalm, the French commander at Quebec. The purpose of the troops at Fort Henry was to draw Montcalm's attention away from the main expedition to Quebec.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 4.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. Loudoun left a sizable force at Fort William Henry
+  2. the French commander at Quebec
+Analysis: The generated answer contains some extrinsic information that is not present in the ground truth, such as the specific mention of 'Fort William Henry' and the detail about Montcalm being the French commander at Quebec. While the core purpose of distracting Montcalm is accurate, the additional details introduce elements that are not supported by the ground truth.
+
+--------------------------------------------------
+Example 94
+Question: What status has the Brotherhood obtained in the Islamic world?
+Ground Truth: one of the most influential movements
+Generated Answer: Љ Despite periodic repression, the Brotherhood has become one of the most influential movements in the Islamic world, particularly in the Arab world. For many years it was described as "semi-legal" and was the only opposition group in Egypt able to field candidates during elections. In the Egyptian parliamentary election, 2011–2012, the political parties identified as "Islamist" (the Brotherhood's Freedom and Justice Party, Salafi Al-Nour Party and liberal Islamist Al-Wasat Party) won 75% of the total seats. Mohamed Morsi, an Islamist democrat of Muslim Brotherhood, was the first democratically elected president of Egypt. He was deposed during the 2013 Egyptian coup d'état.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. described as 'semi-legal'
+  2. won 75% of the total seats
+  3. first democratically elected president of Egypt
+Analysis: The generated answer provides additional context and details about the Brotherhood's status and history that are not present in the ground truth. While much of the information is accurate, it goes beyond the original question, which only asked about the status of the Brotherhood in the Islamic world. This additional information could lead to confusion about the core answer, hence it is categorized as extrinsic hallucination.
+
+--------------------------------------------------
+Example 95
+Question: Who figured out that his law of gravity had to be universal?
+Ground Truth: Newton
+Generated Answer: Newton himself.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer 'Newton himself' is factually correct and aligns perfectly with the ground truth answer 'Newton'. There are no hallucinations present, as the information is accurate and does not contradict or add unsupported details.
+
+--------------------------------------------------
+Example 96
+Question: Who was the leader of Russia in the 1960's?
+Ground Truth: Nikita Khrushchev
+Generated Answer: The leader of Russia in the 1960's was Nikita Khrushchev.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer is factually correct and matches the ground truth answer. There are no hallucinations detected, as the information provided is accurate and presented confidently without speculation.
+
+--------------------------------------------------
+Example 97
+Question: In what field were double and triple expansion engines common?
+Ground Truth: shipping
+Generated Answer: ' Double and triple expansion engines were common in the field of shipping.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without any fabrication or unsupported information. It is factually correct and presents the information with appropriate confidence.
+
+--------------------------------------------------
+Example 98
+Question: How much capital did UK law require to start a company?
+Ground Truth: £1
+Generated Answer: պ UK law only required £1 of capital to start a company.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer regarding the capital required to start a company in the UK. There are no hallucinations present, as the information is consistent and factual.
+
+--------------------------------------------------
+Example 99
+Question: How many elements did Aristotle believe the terrestrial sphere to be made up of?
+Ground Truth: four
+Generated Answer: Љ Aristotle believed the terrestrial sphere to be made up of four elements: earth, water, air, and fire.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects Aristotle's belief about the four elements that make up the terrestrial sphere, matching the ground truth perfectly. There are no hallucinations present.
+
+--------------------------------------------------
+Example 100
+Question: What formation has an asymmetrical pattern of different terraces?
+Ground Truth: Vistula Valley
+Generated Answer: Ћ The Vistula Valley has an asymmetrical pattern of different terraces.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth without introducing any fabricated information. The slight overconfidence is noted due to the use of 'The' at the beginning, but it does not detract from the factual accuracy.
+
+--------------------------------------------------
+Example 101
+Question: What was developed for the Air Force 
+Ground Truth: survivable communications networks
+Generated Answer: RAND Corporation developed the concept of distributed adaptive message block switching for the Air Force.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 7.0/10
+Factual Accuracy: 4.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 3.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. RAND Corporation developed the concept of distributed adaptive message block switching for the Air Force.
+Analysis: The generated answer introduces specific information about the RAND Corporation and a concept that is not mentioned in the ground truth answer. While it may be related to communications networks, it does not directly address the ground truth of 'survivable communications networks' and thus adds unsupported external information.
+
+--------------------------------------------------
+Example 102
+Question: What do the membership of the committees reflect?
+Ground Truth: balance of parties
+Generated Answer: Election to a committee reflects the balance of parties across parliament.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 4.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer closely aligns with the ground truth, indicating that it reflects the balance of parties in a committee context. While it adds a bit of context by mentioning 'election to a committee,' this does not contradict the ground truth and is relevant. Therefore, no hallucinations are detected.
+
+--------------------------------------------------
+Example 103
+Question: Along with poppet valve gears, what type of gears utilized separate admission and exhaust valves to give ideal events?
+Ground Truth: Corliss
+Generated Answer: Љ Corliss, and later, poppet valve gears had separate admission and exhaust valves driven by trip mechanisms or cams profiled so as to give ideal events; most of these gears never succeeded outside of the stationary marketplace due to various other issues including leakage and more delicate mechanisms.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 4.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. most of these gears never succeeded outside of the stationary marketplace due to various other issues including leakage and more delicate mechanisms
+Analysis: The generated answer correctly identifies 'Corliss' as a type of gear that utilizes separate admission and exhaust valves, aligning with the ground truth. However, it introduces extrinsic information about the success of these gears in the marketplace, which is not supported by the ground truth and may not be universally applicable. This addition detracts from the overall reliability of the answer.
+
+--------------------------------------------------
+Example 104
+Question: What organization did Iqbal join in London?
+Ground Truth: the All India Muslim League
+Generated Answer: Ёqbal joined the London branch of the All India Muslim League.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 9.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 8.0/10
+Hallucination Type: NONE
+Analysis: The generated answer is factually correct and closely aligns with the ground truth. The mention of the 'London branch' does not contradict the ground truth but adds a slight detail that is not explicitly stated. However, this does not constitute a hallucination, as it does not fabricate information or present speculation as fact.
+
+--------------------------------------------------
+Example 105
+Question: What was Kublai Khan's relation to Ogedei Khan?
+Ground Truth: nephew
+Generated Answer: Љ Kublai Khan was the nephew of Ögedei Khan.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately states that Kublai Khan was the nephew of Ögedei Khan, which aligns perfectly with the ground truth. There are no hallucinations detected, and the information is presented confidently without speculation.
+
+--------------------------------------------------
+Example 106
+Question: In the case Geven v Land Nordrhein-Westfalen, how many hours was the Dutch woman in question working in Germany?
+Ground Truth: between 3 and 14 hours a week
+Generated Answer: According to the case Geven v Land Nordrhein-Westfalen, the Dutch woman in question was working between 3 and 14 hours a week in Germany.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without any fabrication or unsupported information. It presents the information in a clear and confident manner, aligning perfectly with the provided facts.
+
+--------------------------------------------------
+Example 107
+Question: What has the infrastructure done a lot of over the past years?
+Ground Truth: developed
+Generated Answer: Ћ The infrastructure has developed a lot over the past years.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer closely mirrors the ground truth answer, with no fabricated or unsupported information present. The slight variation in wording does not introduce any hallucinations, and the answer is factually accurate.
+
+--------------------------------------------------
+Example 108
+Question: What molecules are parts of the body of an organism in immunology?
+Ground Truth: self molecules
+Generated Answer: Љ In immunology, self molecules are those components of an organism's body that can be distinguished from foreign substances by the immune system. This includes all the molecules that are naturally present in the body, such as proteins, carbohydrates, and lipids, as well as the DNA and RNA molecules that make up the genetic material of the body's cells. These self molecules are not considered foreign and do not elicit an immune response.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 4.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately describes self molecules in the context of immunology and aligns closely with the ground truth answer. While it expands on the concept by including examples of molecules, this additional information does not contradict the ground truth and is relevant to the question. Therefore, no hallucinations are detected.
+
+--------------------------------------------------
+Example 109
+Question: Which year did the price of oil drop to $10 per barrel?
+Ground Truth: 1980s
+Generated Answer: ք The price of oil dropped to $10 per barrel in 1981.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: FACTUAL_ERROR
+Hallucination Examples:
+  1. The price of oil dropped to $10 per barrel in 1981.
+Analysis: The generated answer specifies a year (1981) which is more precise than the ground truth (1980s). While the price of oil did drop to around $10 per barrel in the early 1980s, the exact year is not confirmed as 1981 in the ground truth, making it a factual error. The model presents this information with a degree of confidence that may not be warranted.
+
+--------------------------------------------------
+Example 110
+Question: On what lake did troops attack fort willima henry in winter?
+Ground Truth: Lake George
+Generated Answer: Љ In February, French irregular forces attacked Fort William Henry across the frozen Lake George.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 9.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 8.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly identifies Lake George as the location of the attack on Fort William Henry. While it adds some contextual information about the timing and the nature of the forces involved, this additional detail does not contradict the ground truth and is relevant to the question. Therefore, there are no hallucinations detected.
+
+--------------------------------------------------
+Example 111
+Question: what does vBNS stand for 
+Ground Truth: The Very high-speed Backbone Network Service
+Generated Answer: Ъ vBNS stands for "The Very high-speed Backbone Network Service."
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly states what vBNS stands for, matching the ground truth answer perfectly. There are no hallucinations detected, as the information provided is accurate and directly corresponds to the question asked.
+
+--------------------------------------------------
+Example 112
+Question: What remained an important issue in Scottish national identity for many years?
+Ground Truth: lack of a Parliament of Scotland
+Generated Answer: Ъ The lack of a Parliament of Scotland remained an important element in Scottish national identity for many years.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth without introducing any fabricated or unsupported information. It correctly states that the lack of a Parliament of Scotland was an important issue in Scottish national identity for many years. There are no hallucinations detected.
+
+--------------------------------------------------
+Example 113
+Question: What did Article 12 of the Allied Armistice terms require Germany to withdraw from?
+Ground Truth: areas controlled by Russia in 1914
+Generated Answer: Ћ Article 12 of the Allied Armistice terms required Germany to withdraw from areas controlled by Russia in 1914, which included Warsaw.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 4.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. which included Warsaw
+Analysis: The generated answer correctly states that Article 12 required Germany to withdraw from areas controlled by Russia in 1914, aligning with the ground truth. However, it adds the specific location 'Warsaw,' which is not mentioned in the ground truth and is therefore considered extrinsic information. This addition does not significantly alter the overall accuracy but introduces unsupported detail.
+
+--------------------------------------------------
+Example 114
+Question: What does the National Museum boast having from Adolf Hitler's private collection?
+Ground Truth: some paintings
+Generated Answer: 
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth, stating that the National Museum boasts having some paintings from Adolf Hitler's private collection. There are no hallucinations detected, as the information is consistent with the provided ground truth.
+
+--------------------------------------------------
+Example 115
+Question: Breaking down barriers to trade and enhancing the free movement of goods is meant to reduce what?
+Ground Truth: consumer prices
+Generated Answer: consumer prices.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer is identical to the ground truth answer, indicating no hallucinations or unsupported information. It accurately reflects the intended meaning of the question.
+
+--------------------------------------------------
+Example 116
+Question: What is a notable application of injectors today?
+Ground Truth: steam locomotives
+Generated Answer: Љ Steam locomotives are the most notable application of injectors today. Injectors are still used in some steam locomotives to supply feed water to the boiler, as they provide a reliable and efficient means of supplying water at low pressure.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 4.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth regarding the application of injectors in steam locomotives. While it elaborates on the function of injectors, this additional information does not contradict the ground truth and is relevant. Therefore, no hallucinations are detected.
+
+--------------------------------------------------
+Example 117
+Question: What is the estimated death toll for Polish civilians? 
+Ground Truth: between 150,000 and 200,000
+Generated Answer: Roughly between 150,000 and 200,000.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer closely mirrors the ground truth answer, providing the same estimated range for the death toll of Polish civilians. There are no hallucinations detected, as the information is accurate and presented with appropriate caution.
+
+--------------------------------------------------
+Example 118
+Question: Why did OPEC block oil deliveries to the United States?
+Ground Truth: American aid to Israel
+Generated Answer: Ћ OPEC blocked oil deliveries to the United States as a "principal hostile country" in response to the US providing aid to Israel during the 1973 oil embargo.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 4.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the reason OPEC blocked oil deliveries to the United States during the 1973 oil embargo, which was indeed related to American aid to Israel. While the phrasing 'principal hostile country' is not part of the ground truth, it does not contradict the core fact. Therefore, there are no significant hallucinations detected.
+
+--------------------------------------------------
+Example 119
+Question: During withdrawal from Fort William Henry, what did some Indian allies of French do?
+Ground Truth: attacked the British column, killing and capturing several hundred men, women, children, and slaves.
+Generated Answer: Ա During withdrawal from Fort William Henry, some Indian allies of the French attacked the British column, killing and capturing several hundred men, women, children, and slaves.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth without introducing any fabricated or unsupported information. It is factually correct and presents the information with appropriate caution.
+
+--------------------------------------------------
+Example 120
+Question: What title was the Social Charter set to be included into the Maastricht treaty under?
+Ground Truth: the "Social Chapter"
+Generated Answer: Ə The Social Charter was set to be included into the Maastricht Treaty under the title "Social Chapter".
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without any fabrication or unsupported information. It correctly states that the Social Charter was set to be included in the Maastricht Treaty under the title 'Social Chapter'. There are no hallucinations detected.
+
+--------------------------------------------------
+Example 121
+Question: What was the Harvard endowment total in 2011?
+Ground Truth: $32 billion
+Generated Answer: Ћ As of September 2011, the Harvard endowment was worth nearly $32 billion.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth regarding the Harvard endowment in 2011, with no fabricated or unsupported information present. The phrase 'nearly $32 billion' is a slight variation but does not introduce any hallucination, as it is still factually correct.
+
+--------------------------------------------------
+Example 122
+Question: When did ISIL pledge allegiance to al-Qaeda?
+Ground Truth: 2004
+Generated Answer: Љ ISIL pledged allegiance to al-Qaeda in 2004.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer, stating that ISIL pledged allegiance to al-Qaeda in 2004. There are no hallucinations detected, as the information is correct and presented confidently without speculation.
+
+--------------------------------------------------
+Example 123
+Question: In 1962, who was responsible for the authorship of a paper published on real time-computations?
+Ground Truth: Hisao Yamada
+Generated Answer: Љ The paper on real-time computations was published in 1962 by Hisao Yamada.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without any fabrication or unsupported information. It correctly attributes the authorship of the paper to Hisao Yamada and does not present any speculation as fact.
+
+--------------------------------------------------
+Example 124
+Question: What modern city is located on the original Huguenot colony?
+Ground Truth: Cape Town
+Generated Answer: Ћ The modern city located on the original Huguenot colony is Cape Town, South Africa.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately identifies Cape Town as the modern city located on the original Huguenot colony, matching the ground truth perfectly. There are no hallucinations detected, and the information provided is factual and reliable.
+
+--------------------------------------------------
+Example 125
+Question: Secular Arab nationalism was blamed for both the defeat of Arab troops as well as what type of stagnation?
+Ground Truth: economic
+Generated Answer: Ə Secular Arab nationalism was blamed for both the defeat of Arab troops as well as economic stagnation in the defeated countries.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth without introducing any unsupported information or fabrications. It correctly identifies economic stagnation as the type of stagnation attributed to secular Arab nationalism, matching the ground truth perfectly.
+
+--------------------------------------------------
+Example 126
+Question: What proclamation abolished protestantism in France?
+Ground Truth: Edict of Fontainebleau
+Generated Answer: հ Edict of Fontainebleau (1685) abolished all legal recognition of Protestantism in France and forced the Huguenots to convert.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 9.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 8.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately identifies the Edict of Fontainebleau as the proclamation that abolished Protestantism in France. While it adds some context about the legal recognition and the forced conversion of Huguenots, this information is factually correct and does not contradict the ground truth. Therefore, there are no hallucinations detected.
+
+--------------------------------------------------
+Example 127
+Question: Classification of resources is contingent on determining the upper and lower bounds of minimum time required by what?  
+Ground Truth: the most efficient algorithm
+Generated Answer: Џ The minimum time required by the most efficient algorithm solving a given problem.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 9.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 8.0/10
+Hallucination Type: NONE
+Analysis: The generated answer closely aligns with the ground truth answer, providing a correct interpretation of the minimum time required by the most efficient algorithm. There are no significant hallucinations detected, as the information presented is accurate and relevant to the question.
+
+--------------------------------------------------
+Example 128
+Question: How many Muslims are in Greater London?
+Ground Truth: over 900,000
+Generated Answer: Љ Over 900,000 Muslims are in Greater London.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth without any fabrication or unsupported information. The slight overconfidence is due to the use of 'Љ' which appears to be a typographical error rather than an indication of overconfidence in the content itself.
+
+--------------------------------------------------
+Example 129
+Question: Imperialism is most often associated with which sovereignty?
+Ground Truth: the British Empire
+Generated Answer: national sovereignty.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 3.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. national sovereignty
+Analysis: The generated answer 'national sovereignty' contradicts the ground truth answer 'the British Empire', which is the correct association with imperialism. The model presents this incorrect information with a degree of confidence, indicating a significant level of hallucination.
+
+--------------------------------------------------
+Example 130
+Question: What is restrained with a lever in the top of a boiler?
+Ground Truth: plug valve
+Generated Answer: Љ The simple lever restrains a plug valve in the top of a boiler.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately describes the function of the lever in relation to the plug valve in the boiler. While the phrasing is slightly awkward, it does not contradict the ground truth and does not introduce any unsupported information. Therefore, no hallucinations are detected.
+
+--------------------------------------------------
+Example 131
+Question: Where did Harold II die?
+Ground Truth: Battle of Hastings
+Generated Answer: հ Harold II died at the Battle of Hastings, which took place in Sussex, England.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly states that Harold II died at the Battle of Hastings, which aligns perfectly with the ground truth. There are no hallucinations detected, as all information provided is accurate and relevant.
+
+--------------------------------------------------
+Example 132
+Question: Who was the most influential researcher among those grappling with the deficit of work surrounding the complexity posed by algorithmic problems?
+Ground Truth: Alan Turing
+Generated Answer: ! Alan Turing is widely regarded as the most influential researcher in the field of computer science, particularly in the area of algorithmic problems. His work on Turing machines in 1936 laid the foundation for modern computer science and provided a framework for understanding the complexity of algorithmic problems. Turing's work has had a lasting impact on the field and has influenced many subsequent researchers in the field of computer science.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately identifies Alan Turing as the most influential researcher in the context of algorithmic problems and provides correct supporting information about his contributions. There are no hallucinations present, as all statements align with established facts.
+
+--------------------------------------------------
+Example 133
+Question: What plants create most electric power?
+Ground Truth: steam turbine
+Generated Answer: Ё Steam turbine plant.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 4.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. Ё Steam turbine plant.
+Analysis: The generated answer introduces the term 'Ё' and adds 'plant' to 'steam turbine', which is not present in the ground truth. While 'steam turbine' is correct, the addition of 'plant' and the unusual character 'Ё' does not align with the ground truth and could mislead the user.
+
+--------------------------------------------------
+Example 134
+Question: Who does the Presiding Officer submit the final bill to?
+Ground Truth: the Monarch
+Generated Answer: The Presiding Officer submits the final bill to the Monarch for royal assent.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without introducing any fabricated information. It correctly states that the Presiding Officer submits the final bill to the Monarch for royal assent, which aligns perfectly with the provided ground truth.
+
+--------------------------------------------------
+Example 135
+Question: How did user of Tymnet connect 
+Ground Truth: connected via dial-up connections or dedicated async connections
+Generated Answer: Ћ Users of Tymnet connected via dial-up connections or dedicated async connections.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth without any fabrication or unsupported information. There are no hallucinations detected.
+
+--------------------------------------------------
+Example 136
+Question: When did they raise the price of oil to $5.11?
+Ground Truth: October 16, 1973,
+Generated Answer: Ћ On October 16, 1973, OPEC raised the posted price of oil by 70%, to $5.11 a barrel.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth, providing the correct date and context regarding the price increase of oil. There are no hallucinations detected, as all information aligns with historical facts.
+
+--------------------------------------------------
+Example 137
+Question: The legislative body, the Council, are made up of what type of individuals?
+Ground Truth: different ministers of the member states
+Generated Answer: The Council is composed of different ministers of the member states.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer without any fabrication or unsupported information. It is factually correct and presents the information confidently without speculation.
+
+--------------------------------------------------
+Example 138
+Question: What Dutch document condemned the Spanish Inquisition?
+Ground Truth: "Apologie"
+Generated Answer: ...the "Apologie" of William the Silent, condemning the Spanish Inquisition, which was written by his court minister, the Huguenot Pierre L'Oyseleur, lord of Villiers.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 6.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 5.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. written by his court minister, the Huguenot Pierre L'Oyseleur, lord of Villiers
+Analysis: The generated answer correctly identifies the 'Apologie' as the document that condemned the Spanish Inquisition, which aligns with the ground truth. However, it introduces extrinsic information about Pierre L'Oyseleur, which is not supported by the ground truth and may mislead the reader regarding the authorship of the document. This addition detracts from the overall reliability of the answer.
+
+--------------------------------------------------
+Example 139
+Question: Where did he begin teaching?
+Ground Truth: Rotterdam
+Generated Answer: Љ Pierre Bayle began teaching in Rotterdam.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately states that Pierre Bayle began teaching in Rotterdam, which matches the ground truth. There are no hallucinations detected, as the information is factual and presented confidently without speculation.
+
+--------------------------------------------------
+Example 140
+Question: What causes the symptoms of inflammation?
+Ground Truth: increased blood flow into tissue
+Generated Answer: Љ The symptoms of inflammation are caused by increased blood flow into tissue, which leads to redness, swelling, heat, and pain. This increased blood flow is caused by the release of eicosanoids and cytokines, which are produced by injured or infected cells. Eicosanoids, such as prostaglandins, produce fever and the dilation of blood vessels associated with inflammation, while cytokines, such as interleukins, chemokines, and interferons, recruit immune cells to the site of infection and promote healing of any damaged tissue following the removal of pathogens.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. Eicosanoids, such as prostaglandins, produce fever and the dilation of blood vessels associated with inflammation
+  2. cytokines, such as interleukins, chemokines, and interferons, recruit immune cells to the site of infection and promote healing of any damaged tissue following the removal of pathogens
+Analysis: The generated answer provides additional details about eicosanoids and cytokines that are not present in the ground truth. While these details are relevant to the topic of inflammation, they are not necessary to answer the question directly and could be considered extrinsic information. The core concept of increased blood flow causing inflammation symptoms is accurate, but the additional information may lead to confusion about the primary cause.
+
+--------------------------------------------------
+Example 141
+Question: What advancements besides military technology did Europe achieve?
+Ground Truth: communication
+Generated Answer: Along with advancements in military technology, Europe also experienced significant advancements in other fields, including:
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 5.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer does not contain any fabricated information and aligns closely with the ground truth. It mentions advancements in other fields, which is a reasonable expansion of the topic. However, it lacks specificity regarding the type of advancements, which could lead to some ambiguity. Overall, the answer is mostly accurate and presents information in a cautious manner.
+
+--------------------------------------------------
+Example 142
+Question: In addition to recirculating water, what do condensers do?
+Ground Truth: recover the latent heat of vaporisation
+Generated Answer: Ъ Condensers are used to recirculate the water and recover the latent heat of vaporization.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 9.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 8.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth by stating that condensers recirculate water and recover the latent heat of vaporization. There are no hallucinations present, as the information provided is consistent with the ground truth.
+
+--------------------------------------------------
+Example 143
+Question: What is one part of the innate immune system that doesn't attack microbes directly?
+Ground Truth: Natural killer cells
+Generated Answer: Љ NK cells (natural killer cells) don't attack microbes directly. They destroy compromised host cells, such as tumor cells or virus-infected cells, recognizing such cells by a condition known as "missing self."
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately describes the role of natural killer cells in the immune system and does not contradict the ground truth. While it adds some additional context about how NK cells function, this information is relevant and does not constitute a hallucination. The answer is mostly factual, with minor deviations in detail that do not significantly impact its reliability.
+
+--------------------------------------------------
+Example 144
+Question: Under normal conditions, T cells and antibodies produce what kind of peptides?
+Ground Truth: "self" peptides
+Generated Answer: հ Under normal circumstances, many T cells and antibodies react with "self" peptides.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth by stating that T cells and antibodies react with 'self' peptides. The addition of 'many T cells and antibodies' does not contradict the ground truth but rather expands on it without introducing unsupported information. Therefore, there are no hallucinations detected.
+
+--------------------------------------------------
+Example 145
+Question: Invertebrates do not generate what type of cells that are a part of the vertebrate adaptive immune system?
+Ground Truth: lymphocytes
+Generated Answer: Invertebrates do not generate lymphocytes or an antibody-based humoral response.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 5.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. an antibody-based humoral response
+Analysis: The generated answer correctly identifies that invertebrates do not generate lymphocytes, which aligns with the ground truth. However, it introduces additional information about the antibody-based humoral response, which is not part of the original question or ground truth. This additional information is not necessary for answering the question and could lead to confusion, thus categorizing it as extrinsic hallucination.
+
+--------------------------------------------------
+
+==================================================
+Overall Hallucination Analysis:
+Total evaluated examples: 145
+Average Hallucination Severity: 2.05/10
+Average Factual Accuracy: 8.88/10
+Average Overconfidence: 3.23/10
+Average Overall Reliability: 8.03/10
+==================================================

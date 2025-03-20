@@ -5,11 +5,52 @@ import tqdm
 import transformers
 import json
 from datasets import Dataset
+import multiprocessing as mp
+from peft import PeftModel, PeftConfig
 
 import _settings
 import model_utils
 import gpt_evaluation
 import utils
+from utils.parallel import TaskPartitioner
+
+
+def collate_fn_with_padding(batch):
+    """
+    Custom collate function that handles variable-length sequences by padding.
+    This resolves the "stack expects each tensor to be equal size" error.
+    """
+    # Extract all keys from the batch
+    keys = batch[0].keys()
+    
+    # Handle each key separately
+    result = {}
+    for key in keys:
+        if key in ['input_ids', 'attention_mask']:
+            # Handle tensors that need padding
+            elements = [item[key] for item in batch]
+            
+            # Find max length for padding
+            max_len = max(len(x) for x in elements)
+            
+            # Pad sequences to max length
+            padded_elements = []
+            for tensor in elements:
+                if len(tensor) < max_len:
+                    # Create a new tensor with zeros and copy the original content
+                    padded = torch.zeros(max_len, dtype=tensor.dtype)
+                    padded[:len(tensor)] = tensor
+                    padded_elements.append(padded)
+                else:
+                    padded_elements.append(tensor)
+            
+            # Stack the padded tensors
+            result[key] = torch.stack(padded_elements)
+        else:
+            # For non-tensor data, just use a list
+            result[key] = [item[key] for item in batch]
+    
+    return result
 
 
 def parse_arguments():
@@ -26,8 +67,62 @@ def parse_arguments():
     parser.add_argument('--output_file', type=str, default=None, help='Custom output file path (if not using the default structure)')
     parser.add_argument('--openai_api_key', type=str, default=None, help='OpenAI API key for GPT-4o-mini evaluation')
     parser.add_argument('--evaluate_with_gpt', action='store_true', help='Enable evaluation with GPT-4o-mini')
+    parser.add_argument('--batch_size', type=int, default=4, help='Batch size for evaluation')
+    parser.add_argument('--num_workers', type=int, default=4, help='Number of worker threads for data loading')
+    parser.add_argument('--parallel_datasets', action='store_true', help='Process datasets in parallel')
+    parser.add_argument('--num_processes', type=int, default=0, 
+                        help='Number of processes for parallel execution (0 for auto-detect)')
+    parser.add_argument('--lora_weights', type=str, default=None,
+                        help='Path to the LoRA weights directory (if not provided, uses base model)')
 
     return parser.parse_args()
+
+
+def load_model_with_lora(base_model_name, lora_weights_path, device):
+    """
+    Load a base model and apply LoRA weights to it
+    
+    Args:
+        base_model_name (str): Name of the base model
+        lora_weights_path (str): Path to the LoRA weights directory
+        device (str): Device to load the model on
+        
+    Returns:
+        model, tokenizer: The model with LoRA weights applied and its tokenizer
+    """
+    print(f"Loading base model: {base_model_name}")
+    
+    # Load the base model and tokenizer
+    base_model, tokenizer = model_utils.load_model(base_model_name, device)
+    
+    # If no LoRA weights specified, return the base model
+    if not lora_weights_path:
+        print("No LoRA weights specified, using base model")
+        return base_model, tokenizer
+    
+    # Check if the LoRA weights exist
+    if not os.path.exists(lora_weights_path):
+        print(f"Warning: LoRA weights path does not exist: {lora_weights_path}")
+        print("Falling back to base model")
+        return base_model, tokenizer
+    
+    print(f"Loading LoRA adapter from: {lora_weights_path}")
+    
+    # Load the PEFT configuration
+    try:
+        # Load configuration
+        peft_config = PeftConfig.from_pretrained(lora_weights_path)
+        print(f"LoRA config loaded: {peft_config}")
+        
+        # Apply the LoRA adapter
+        model = PeftModel.from_pretrained(base_model, lora_weights_path)
+        print("LoRA adapter applied successfully")
+        
+        return model, tokenizer
+    except Exception as e:
+        print(f"Error loading LoRA weights: {e}")
+        print("Falling back to base model")
+        return base_model, tokenizer
 
 
 def analyze_dataset(dataset, tokenizer, dataset_name):
@@ -106,14 +201,11 @@ def analyze_dataset(dataset, tokenizer, dataset_name):
 
 
 @torch.no_grad()
-def evaluate_dataset(dataset_name, model, tokenizer, device, args, hallucination_stats=None):
+def evaluate_dataset(dataset_name, model, tokenizer, device, args, hallucination_stats=None, model_results_dir=None):
     """Evaluate a single dataset using the provided model and tokenizer"""
     print(f"\n{'='*50}")
     print(f"Evaluating dataset: {dataset_name}")
     print(f"{'='*50}\n")
-    
-    # Set up model results directory
-    model_results_dir = model_utils.setup_results_directory(args.model)
     
     # Set up output file for this dataset
     output_path = model_utils.get_output_path(model_results_dir, dataset_name, args.output_file)
@@ -136,8 +228,26 @@ def evaluate_dataset(dataset_name, model, tokenizer, device, args, hallucination
     # Analyze dataset
     dataset_info = analyze_dataset(dataset, tokenizer, dataset_name)
     
-    # Create dataloader
-    dataloader = torch.utils.data.DataLoader(dataset, batch_size=1, shuffle=False)
+    # If running in parallel mode, reduce the number of workers to avoid tokenizer issues
+    if args.parallel_datasets:
+        num_workers_to_use = min(2, args.num_workers)
+        print(f"Using {num_workers_to_use} workers for data loading in parallel mode")
+    else:
+        num_workers_to_use = args.num_workers
+    
+    # Set environment variable to avoid tokenizer warnings with multiprocessing
+    os.environ["TOKENIZERS_PARALLELISM"] = "false"
+    
+    # Create dataloader with increased batch size and parallel workers
+    # Use custom collate function to handle variable-length sequences
+    dataloader = torch.utils.data.DataLoader(
+        dataset, 
+        batch_size=args.batch_size,
+        shuffle=False,
+        num_workers=num_workers_to_use,
+        pin_memory=True,
+        collate_fn=collate_fn_with_padding
+    )
     
     # Initialize dataset-specific hallucination stats
     if hallucination_stats is not None and args.evaluate_with_gpt:
@@ -175,96 +285,145 @@ def evaluate_dataset(dataset_name, model, tokenizer, device, args, hallucination
         # Get generation config for this dataset
         generation_config = model_utils.get_generation_config(input_ids, tokenizer, dataset_name)
         
-        # Generate response
-        output = model.generate(
+        # Generate response for the entire batch
+        outputs = model.generate(
             input_ids=input_ids,
             attention_mask=attention_mask,
             **generation_config
         )
         
-        # Decode the generated text after the prompt
-        full_output_tokens = output[0]
-        prompt_length = len(input_ids[0])
-        generated_tokens = full_output_tokens[prompt_length:]
+        # Process model outputs first
+        batch_size = input_ids.size(0)
+        questions = []
+        ground_truths = []
+        generated_answers = []
         
-        generated_answer = tokenizer.decode(
-            generated_tokens, 
-            skip_special_tokens=True, 
-            clean_up_tokenization_spaces=True
-        ).strip()
+        for i in range(batch_size):
+            # Extract the output for this example
+            full_output_tokens = outputs[i]
+            prompt_length = len(input_ids[i])
+            generated_tokens = full_output_tokens[prompt_length:]
+            
+            generated_answer = tokenizer.decode(
+                generated_tokens, 
+                skip_special_tokens=True, 
+                clean_up_tokenization_spaces=True
+            ).strip()
+            
+            # Extract original question and ground truth
+            raw_question = batch['question'][i]
+            
+            # Create a single-example batch for extract_ground_truth
+            single_batch = {k: [v[i]] if isinstance(v, list) else {k2: [v2[i]] for k2, v2 in v.items()} 
+                           for k, v in batch.items() if k != 'input_ids' and k != 'attention_mask'}
+            
+            ground_truth = model_utils.extract_ground_truth(single_batch, dataset_name)
+            
+            # Store for later evaluation
+            questions.append(raw_question)
+            ground_truths.append(ground_truth)
+            generated_answers.append(generated_answer)
         
-        # Extract original question and ground truth from batch
-        raw_question = batch['question'][0]
-        ground_truth = model_utils.extract_ground_truth(batch, dataset_name)
-        
-        # Print results 
-        if batch_idx < 5 or batch_idx % 20 == 0:  # Print first 5 and then every 20th
-            print("\n" + "-"*80)
-            print(f"Example {batch_idx+1}")
-            print(f"Question: {raw_question}")
-            print(f"Ground Truth: {ground_truth}")
-            print(f"Generated Answer: {generated_answer}")
-        
-        # Write to output file
-        output_file.write(f"Example {batch_idx+1}\n")
-        output_file.write(f"Question: {raw_question}\n")
-        output_file.write(f"Ground Truth: {ground_truth}\n")
-        output_file.write(f"Generated Answer: {generated_answer}\n")
-        
-        # Evaluate with GPT if enabled
+        # Evaluate with GPT in parallel if enabled
         if args.evaluate_with_gpt:
-            gpt_evaluation_result = gpt_evaluation.evaluate_with_gpt4o_mini(
-                raw_question, 
-                ground_truth, 
-                generated_answer,
-                api_key=args.openai_api_key
+            # Get number of API processes to use - recommend to keep this low to avoid API rate limits
+            api_processes = min(4, args.num_processes) if args.num_processes > 0 else 4
+            
+            # Run parallel evaluation on the batch
+            print(f"Evaluating batch {batch_idx+1}/{len(dataloader)} with GPT (parallel)")
+            gpt_evaluation_results = gpt_evaluation.parallel_evaluate_batch(
+                questions,
+                ground_truths,
+                generated_answers,
+                api_key=args.openai_api_key,
+                num_processes=api_processes
             )
             
-            # Display and write GPT evaluation
-            if batch_idx < 5 or batch_idx % 20 == 0:
-                gpt_evaluation.print_gpt_evaluation_results(batch_idx, gpt_evaluation_result)
-            
-            gpt_evaluation.write_gpt_evaluation_to_file(output_file, gpt_evaluation_result)
-            
-            # Collect scores for aggregate metrics
-            if "scores" in gpt_evaluation_result:
-                scores = gpt_evaluation_result["scores"]
-                for metric in gpt_evals.keys():
-                    if metric in scores and scores[metric] > 0:
-                        gpt_evals[metric].append(scores[metric])
+            # Process evaluation results for each example
+            for i in range(batch_size):
+                # Get global index for this example
+                global_idx = batch_idx * args.batch_size + i
                 
-                # Update hallucination statistics
-                if hallucination_stats is not None:
-                    # Update dataset stats
-                    dataset_stats = hallucination_stats["dataset_stats"][dataset_name]
-                    dataset_stats["total_evaluated"] += 1
+                # Get question, ground truth, answer and evaluation for this example
+                question = questions[i]
+                ground_truth = ground_truths[i]
+                generated_answer = generated_answers[i]
+                gpt_evaluation_result = gpt_evaluation_results[i]
+                
+                # Print results 
+                if global_idx < 5 or global_idx % 20 == 0:
+                    print("\n" + "-"*80)
+                    print(f"Example {global_idx+1}")
+                    print(f"Question: {question}")
+                    print(f"Ground Truth: {ground_truth}")
+                    print(f"Generated Answer: {generated_answer}")
+                    gpt_evaluation.print_gpt_evaluation_results(global_idx, gpt_evaluation_result)
+                
+                # Write to output file
+                output_file.write(f"Example {global_idx+1}\n")
+                output_file.write(f"Question: {question}\n")
+                output_file.write(f"Ground Truth: {ground_truth}\n")
+                output_file.write(f"Generated Answer: {generated_answer}\n")
+                gpt_evaluation.write_gpt_evaluation_to_file(output_file, gpt_evaluation_result)
+                
+                # Collect scores for aggregate metrics
+                if "scores" in gpt_evaluation_result:
+                    scores = gpt_evaluation_result["scores"]
+                    for metric in gpt_evals.keys():
+                        if metric in scores and scores[metric] > 0:
+                            gpt_evals[metric].append(scores[metric])
                     
-                    # Update hallucination type counts
-                    h_type = gpt_evaluation_result.get("hallucination_type", "UNKNOWN")
-                    if h_type in dataset_stats["hallucination_counts"]:
-                        dataset_stats["hallucination_counts"][h_type] += 1
-                    else:
-                        dataset_stats["hallucination_counts"]["UNKNOWN"] += 1
-                    
-                    # Update overall stats
-                    hallucination_stats["overall"]["total_evaluated"] += 1
-                    if h_type in hallucination_stats["overall"]["hallucination_counts"]:
-                        hallucination_stats["overall"]["hallucination_counts"][h_type] += 1
-                    else:
-                        hallucination_stats["overall"]["hallucination_counts"]["UNKNOWN"] += 1
-                    
-                    # Update running averages for metrics
-                    for metric, key in [
-                        ("hallucination_severity", "avg_hallucination_severity"),
-                        ("factual_accuracy", "avg_factual_accuracy"),
-                        ("overconfidence", "avg_overconfidence"),
-                        ("overall_reliability", "avg_overall_reliability")
-                    ]:
-                        if metric in scores:
-                            dataset_stats[key] += scores[metric]
-                            hallucination_stats["overall"][key] += scores[metric]
-            
-        output_file.write("\n" + "-"*50 + "\n")
+                    # Update hallucination statistics
+                    if hallucination_stats is not None:
+                        # Update dataset stats
+                        dataset_stats = hallucination_stats["dataset_stats"][dataset_name]
+                        dataset_stats["total_evaluated"] += 1
+                        
+                        # Update hallucination type counts
+                        h_type = gpt_evaluation_result.get("hallucination_type", "UNKNOWN")
+                        if h_type in dataset_stats["hallucination_counts"]:
+                            dataset_stats["hallucination_counts"][h_type] += 1
+                        else:
+                            dataset_stats["hallucination_counts"]["UNKNOWN"] += 1
+                        
+                        # Update overall stats
+                        hallucination_stats["overall"]["total_evaluated"] += 1
+                        if h_type in hallucination_stats["overall"]["hallucination_counts"]:
+                            hallucination_stats["overall"]["hallucination_counts"][h_type] += 1
+                        else:
+                            hallucination_stats["overall"]["hallucination_counts"]["UNKNOWN"] += 1
+                        
+                        # Update running averages for metrics
+                        for metric, key in [
+                            ("hallucination_severity", "avg_hallucination_severity"),
+                            ("factual_accuracy", "avg_factual_accuracy"),
+                            ("overconfidence", "avg_overconfidence"),
+                            ("overall_reliability", "avg_overall_reliability")
+                        ]:
+                            if metric in scores:
+                                dataset_stats[key] += scores[metric]
+                                hallucination_stats["overall"][key] += scores[metric]
+                
+                output_file.write("\n" + "-"*50 + "\n")
+        else:
+            # Process without GPT evaluation (for each example)
+            for i in range(batch_size):
+                global_idx = batch_idx * args.batch_size + i
+                
+                # Print results 
+                if global_idx < 5 or global_idx % 20 == 0:
+                    print("\n" + "-"*80)
+                    print(f"Example {global_idx+1}")
+                    print(f"Question: {questions[i]}")
+                    print(f"Ground Truth: {ground_truths[i]}")
+                    print(f"Generated Answer: {generated_answers[i]}")
+                
+                # Write to output file
+                output_file.write(f"Example {global_idx+1}\n")
+                output_file.write(f"Question: {questions[i]}\n")
+                output_file.write(f"Ground Truth: {ground_truths[i]}\n")
+                output_file.write(f"Generated Answer: {generated_answers[i]}\n")
+                output_file.write("\n" + "-"*50 + "\n")
     
     # Print and save aggregate GPT metrics if available
     if args.evaluate_with_gpt:
@@ -287,14 +446,50 @@ def evaluate_dataset(dataset_name, model, tokenizer, device, args, hallucination
     return dataset_info
 
 
+def evaluate_dataset_wrapper(args_dict):
+    """Wrapper function for parallel dataset evaluation"""
+    dataset_name = args_dict["dataset_name"]
+    model = args_dict["model"]
+    tokenizer = args_dict["tokenizer"]
+    device = args_dict["device"]
+    args = args_dict["args"]
+    hallucination_stats = args_dict["hallucination_stats"]
+    model_results_dir = args_dict["model_results_dir"]
+    
+    return dataset_name, evaluate_dataset(
+        dataset_name, 
+        model, 
+        tokenizer, 
+        device,
+        args,
+        hallucination_stats,
+        model_results_dir
+    )
+
+
 def main():
-    """Main evaluation function"""
+    """Main evaluation function with LoRA weights"""
     # Parse arguments
     args = parse_arguments()
     
-    # Load model and tokenizer once for all datasets
-    print(f"Loading model: {args.model} on device: {args.device}")
-    model, tokenizer = model_utils.load_model(args.model, args.device)
+    # Determine number of processes if auto-detect is enabled
+    if args.num_processes == 0:
+        args.num_processes = min(len(args.dataset), mp.cpu_count() - 1)
+        args.num_processes = max(1, args.num_processes)  # Ensure at least 1 process
+    
+    # Determine model type and set up appropriate directory names
+    if args.lora_weights:
+        model_type = "-LoRA"
+        print(f"Loading model: {args.model} with LoRA weights from: {args.lora_weights}")
+    else:
+        model_type = "-Base"
+        print(f"Loading model: {args.model} (base model without LoRA)")
+    
+    # Set up model results directory with appropriate suffix
+    model_results_dir = model_utils.setup_results_directory(args.model + model_type)
+    
+    # Load model and tokenizer with LoRA weights (or base model if no LoRA weights)
+    model, tokenizer = load_model_with_lora(args.model, args.lora_weights, args.device)
     
     # Set evaluation mode for the model
     model.eval()
@@ -321,20 +516,50 @@ def main():
         }
     }
     
-    # Run evaluation on each dataset
+    # Run evaluation on each dataset - either sequentially or in parallel
     dataset_infos = {}
-    for dataset_name in args.dataset:
-        dataset_infos[dataset_name] = evaluate_dataset(
-            dataset_name, 
-            model, 
-            tokenizer, 
-            args.device,
-            args,
-            hallucination_stats
-        )
+    
+    if args.parallel_datasets and len(args.dataset) > 1:
+        print(f"Running {len(args.dataset)} datasets in parallel with {args.num_processes} processes")
+        
+        # Create task partitioner
+        task_partitioner = TaskPartitioner(seed=args.seed)
+        
+        # Add tasks for each dataset
+        for dataset_name in args.dataset:
+            task_args = {
+                "dataset_name": dataset_name,
+                "model": model,
+                "tokenizer": tokenizer,
+                "device": args.device,
+                "args": args,
+                "hallucination_stats": hallucination_stats,
+                "model_results_dir": model_results_dir
+            }
+            task_partitioner.add_task_with_key(dataset_name, evaluate_dataset_wrapper, task_args)
+        
+        # Run tasks in parallel
+        results = task_partitioner.run_multi_process(nprocesses=args.num_processes, cache_only=False)
+        
+        # Collect results
+        for dataset_name, result in results.items():
+            dataset_infos[dataset_name] = result[1]  # result[0] is dataset_name, result[1] is the info
+    else:
+        # Run sequentially
+        for dataset_name in args.dataset:
+            dataset_infos[dataset_name] = evaluate_dataset(
+                dataset_name, 
+                model, 
+                tokenizer, 
+                args.device,
+                args,
+                hallucination_stats,
+                model_results_dir
+            )
     
     # Save dataset analysis to a file for reference
-    with open(f"results/{args.model}/dataset_test_results_{args.model}.json", "w") as f:
+    results_suffix = model_type.lower().strip("-")
+    with open(f"{model_results_dir}/dataset_test_results_{args.model}_{results_suffix}.json", "w") as f:
         json.dump(dataset_infos, f, indent=2)
     
     # Save hallucination statistics to a separate file
@@ -347,12 +572,12 @@ def main():
                 hallucination_stats["overall"][metric] /= total
         
         # Save hallucination statistics
-        with open(f"results/{args.model}/hallucination_stats_{args.model}.json", "w") as f:
+        with open(f"{model_results_dir}/hallucination_stats_{args.model}_{results_suffix}.json", "w") as f:
             json.dump(hallucination_stats, f, indent=2)
         
         # Print overall hallucination summary
         print("\n" + "="*80)
-        print(f"OVERALL HALLUCINATION ANALYSIS FOR {args.model}")
+        print(f"OVERALL HALLUCINATION ANALYSIS FOR {args.model}{model_type}")
         print("="*80)
         print(f"Total examples evaluated: {total}")
         print("\nHallucination type distribution:")
@@ -370,4 +595,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main() 

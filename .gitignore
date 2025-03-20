@@ -179,6 +179,7 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-myatmin.nay.2022.evaluate_llama31
-myatmin.nay.2022.evaluate_mistral
 myatmin.nay.2022.finetune
+myatmin.nay.2022.evaluate_model
+myatmin.nay.2022.evaluate_models
+myatmin.nay.2022.evaluate_opt

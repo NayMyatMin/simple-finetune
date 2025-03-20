@@ -1,0 +1,2842 @@
+Example 1
+Question: where will be the next olympics be held
+Ground Truth: Tokyo
+Generated Answer: /
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: NONE
+Analysis: The generated answer is simply a '/' and does not provide any information regarding the location of the next Olympics. It does not contradict the ground truth but fails to provide any relevant answer, resulting in a complete lack of factual accuracy.
+
+--------------------------------------------------
+Example 2
+Question: who sang theme song for license to kill
+Ground Truth: Gladys Knight
+Generated Answer: "License to Kill" by Gladys Knight
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately states that Gladys Knight sang the theme song for 'License to Kill' and does not contain any fabricated or unsupported information. The phrasing is slightly different from the ground truth but does not introduce any hallucinations.
+
+--------------------------------------------------
+Example 3
+Question: who is the first indian woman to be canonized as a saint
+Ground Truth: Saint Alphonsa
+Generated Answer: Mother Teresa
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 3.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Mother Teresa
+Analysis: The generated answer incorrectly identifies Mother Teresa as the first Indian woman to be canonized as a saint, contradicting the ground truth answer of Saint Alphonsa. This is a significant factual error, and the model presents this incorrect information with a level of confidence that suggests it believes the answer to be correct.
+
+--------------------------------------------------
+Example 4
+Question: region of antarctica where march of the penguins filmed
+Ground Truth: Dumont d'Urville in Adélie Land
+Generated Answer: McMurdo Dry Valleys
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. McMurdo Dry Valleys
+Analysis: The generated answer incorrectly identifies the location where 'March of the Penguins' was filmed, contradicting the ground truth. The McMurdo Dry Valleys are not the filming location, which is Dumont d'Urville in Adélie Land. This indicates a high level of hallucination severity and low factual accuracy, with the model presenting the incorrect information with a degree of confidence.
+
+--------------------------------------------------
+Example 5
+Question: when was the last time the jets won a playoff game
+Ground Truth: 2010
+Generated Answer: : January 10, 2010
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 4.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer provides a specific date (January 10, 2010) for the last playoff game won by the Jets, which is factually accurate as it corresponds to the year 2010. However, it does not match the ground truth answer, which is simply '2010'. The additional detail of the specific date does not contradict the ground truth but adds unnecessary specificity. Therefore, while there is a minor discrepancy in the level of detail, it does not constitute a hallucination.
+
+--------------------------------------------------
+Example 6
+Question: when do you get your white coat in pharmacy school
+Ground Truth: before the first year begins
+Generated Answer: P1
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. P1
+Analysis: The generated answer 'P1' does not provide any relevant information regarding when students receive their white coat in pharmacy school, directly contradicting the ground truth answer. It is completely fabricated and lacks any factual basis.
+
+--------------------------------------------------
+Example 7
+Question: where does the term pop music come from
+Ground Truth: Britain
+Generated Answer: Catchy, upbeat music that is popular among young people.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Catchy, upbeat music that is popular among young people.
+Analysis: The generated answer does not address the origin of the term 'pop music' and instead provides a vague description of the genre, which contradicts the ground truth that specifies Britain as the origin. This indicates a significant level of hallucination, as the answer is not only incorrect but also presents an unsupported definition as if it were factual.
+
+--------------------------------------------------
+Example 8
+Question: where is a simple gear train used in real life
+Ground Truth: Automobile drivetrains
+Generated Answer: Ъ in a car
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Ъ in a car
+Analysis: The generated answer 'Ъ in a car' is nonsensical and does not relate to the question about simple gear trains. It contradicts the ground truth answer of 'automobile drivetrains' and fails to provide any relevant information, indicating a high level of hallucination.
+
+--------------------------------------------------
+Example 9
+Question: when was kudzu introduced to the united states
+Ground Truth: 1876
+Generated Answer: Љ September 1919
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. September 1919
+Analysis: The generated answer provides a date that contradicts the established ground truth of 1876, indicating a high level of fabrication. The model presents this incorrect date as a definitive fact, demonstrating overconfidence in its response.
+
+--------------------------------------------------
+Example 10
+Question: what is the top speed of thrust ssc
+Ground Truth: 1,228 km/h
+Generated Answer: , 2000 km/h
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. 2000 km/h
+Analysis: The generated answer of '2000 km/h' is significantly higher than the ground truth of '1,228 km/h', indicating a severe fabrication of information. The model presents this incorrect speed as a fact, demonstrating overconfidence in its response despite the lack of support from the ground truth.
+
+--------------------------------------------------
+Example 11
+Question: who was the girl that played cindy lou who
+Ground Truth: Taylor Michel Momsen
+Generated Answer: Ъ: Lori Loughlin
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 9.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Lori Loughlin
+Analysis: The generated answer incorrectly identifies Lori Loughlin as the actress who played Cindy Lou Who, which directly contradicts the ground truth answer of Taylor Michel Momsen. This is a complete fabrication with no basis in fact, demonstrating high severity and overconfidence in the incorrect assertion.
+
+--------------------------------------------------
+Example 12
+Question: in the dynastic cycle what is the right to rule called
+Ground Truth: the Mandate of Heaven
+Generated Answer: (male line) succession
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. (male line) succession
+Analysis: The generated answer completely misrepresents the concept of the 'Mandate of Heaven' by providing an unrelated term '(male line) succession'. This is a significant deviation from the ground truth, indicating a high level of hallucination severity. The answer is factually incorrect and presents the incorrect information with a degree of confidence.
+
+--------------------------------------------------
+Example 13
+Question: who has the power to approve or veto legislation constitution
+Ground Truth: the President
+Generated Answer: n the President
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 9.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 8.0/10
+Hallucination Type: FACTUAL_ERROR
+Hallucination Examples:
+  1. n the President
+Analysis: The generated answer contains a typographical error ('n' instead of 'the'), which affects its clarity but does not fundamentally alter the factual content. The answer is mostly correct, as it identifies the President as the one who has the power to approve or veto legislation, but the error reduces its overall accuracy.
+
+--------------------------------------------------
+Example 14
+Question: who plays dawn on nicky ricky dicky and dawn
+Ground Truth: Lizzy Greene
+Generated Answer: հայրուսան լուրին
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. հայրուսան լուրին
+Analysis: The generated answer is completely fabricated and does not relate to the question about the actress who plays Dawn in 'Nicky, Ricky, Dicky & Dawn.' It contradicts the ground truth answer, which is Lizzy Greene, and presents an entirely unrelated phrase in a different language, indicating a high level of hallucination.
+
+--------------------------------------------------
+Example 15
+Question: who plays connor's mom in madeas christmas
+Ground Truth: Kathy Najimy
+Generated Answer: Jamie Lee Curtis
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Jamie Lee Curtis
+Analysis: The generated answer incorrectly states that Jamie Lee Curtis plays Connor's mom in 'Madea's Christmas,' which directly contradicts the ground truth that identifies Kathy Najimy as the correct actress. This is a clear case of intrinsic hallucination as it contradicts the provided information.
+
+--------------------------------------------------
+Example 16
+Question: when was the young and the restless first aired
+Ground Truth: March 26, 1973
+Generated Answer: հpril 5, 1973
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. հpril 5, 1973
+Analysis: The generated answer provides a date that is incorrect and does not align with the ground truth. The use of 'հ' instead of 'A' suggests a typographical error or a misrepresentation of the date, leading to a significant deviation from the correct answer. This indicates a high level of hallucination severity and low factual accuracy.
+
+--------------------------------------------------
+Example 17
+Question: when was how deep is your love released
+Ground Truth: 1977
+Generated Answer: (Note: The song "How Deep Is Your Love" by the Bee Gees was released in 1977.)
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately states the release year of the song 'How Deep Is Your Love' by the Bee Gees as 1977, which matches the ground truth. There are no hallucinations present, and the information is presented confidently without speculation.
+
+--------------------------------------------------
+Example 18
+Question: who was the actor who played grizzly adams
+Ground Truth: "Dan" Haggerty
+Generated Answer: Џohn Goodman
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. John Goodman
+Analysis: The generated answer 'John Goodman' is completely fabricated and contradicts the ground truth answer 'Dan Haggerty'. There is no basis for this answer, making it a severe hallucination. The model presents this incorrect information with a level of confidence that suggests it is factual, contributing to its overconfidence rating.
+
+--------------------------------------------------
+Example 19
+Question: who was the buccaneers qb when they won the superbowl
+Ground Truth: Brad Johnson
+Generated Answer: 2002: Brad Johnson
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly identifies Brad Johnson as the quarterback for the Buccaneers when they won the Super Bowl in 2002. There are no hallucinations present, as the information aligns perfectly with the ground truth.
+
+--------------------------------------------------
+Example 20
+Question: who wrote lyrics for phantom of the opera
+Ground Truth: Charles Hart
+Generated Answer: Michele Lee
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Michele Lee
+Analysis: The generated answer incorrectly attributes the lyrics of 'Phantom of the Opera' to Michele Lee instead of the correct author, Charles Hart. This is a significant error as it contradicts the established fact, demonstrating a high level of hallucination severity and low factual accuracy. The model presents this incorrect information with a degree of confidence that suggests it is presenting speculation as fact.
+
+--------------------------------------------------
+Example 21
+Question: who performed the halftime show at super bowl 51
+Ground Truth: Lady Gaga
+Generated Answer: Celine Dion
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Celine Dion
+Analysis: The generated answer 'Celine Dion' is completely incorrect as it contradicts the ground truth that states 'Lady Gaga' performed at Super Bowl 51. This represents a high level of hallucination severity as it presents a fabricated fact without any basis in reality. The model appears to be overconfident in its incorrect assertion.
+
+--------------------------------------------------
+Example 22
+Question: when does the next warrior book come out
+Ground Truth: April 10, 2018
+Generated Answer: . The next Warrior book is scheduled to be released in 2022.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 3.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. The next Warrior book is scheduled to be released in 2022.
+Analysis: The generated answer contradicts the ground truth by stating a release date of 2022, while the correct date is April 10, 2018. This indicates a significant level of fabrication and a lack of factual accuracy. The model presents this information with a degree of confidence, suggesting it is factual, which contributes to its overconfidence rating.
+
+--------------------------------------------------
+Example 23
+Question: where do characters live in this is us
+Ground Truth: New Jersey
+Generated Answer: Ъ
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Ъ
+Analysis: The generated answer 'Ъ' is completely fabricated and does not relate to the question about where characters live in 'This Is Us'. It contradicts the ground truth answer of New Jersey, making it an intrinsic hallucination. The model shows extreme overconfidence by presenting a nonsensical character as an answer.
+
+--------------------------------------------------
+Example 24
+Question: what was the most important new religious figure of the new kingdom of ancient egypt
+Ground Truth: Aten
+Generated Answer: Љ Akhenaten
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 7.0/10
+Factual Accuracy: 4.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 3.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Aten is not the name of a religious figure but rather a deity; Akhenaten is a historical figure associated with the worship of Aten.
+Analysis: The generated answer incorrectly identifies Akhenaten as the most important new religious figure instead of Aten, which is the correct answer. This represents a significant misunderstanding of the context, as Akhenaten is a historical figure who promoted the worship of Aten but is not the religious figure itself. The model's confidence in presenting Akhenaten as the answer indicates a level of overconfidence in its response despite the factual inaccuracy.
+
+--------------------------------------------------
+Example 25
+Question: where do red ear slider turtles lay eggs
+Ground Truth: a hole
+Generated Answer: ...
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer is not provided, but based on the ground truth answer, which states that red-eared slider turtles lay eggs in a hole, any answer that aligns with this fact would be accurate. If the generated answer is consistent with this information, there are no hallucinations detected.
+
+--------------------------------------------------
+Example 26
+Question: what is the name of the lymphatic vessels located in the small intestine
+Ground Truth: lacteals
+Generated Answer: lacteals
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer 'lacteals' is factually correct and matches the ground truth answer. There are no hallucinations detected.
+
+--------------------------------------------------
+Example 27
+Question: who was assassinated during a visit to sarajevo in bosnia
+Ground Truth: Archduke Franz Ferdinand of Austria
+Generated Answer: Tito
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Tito
+Analysis: The generated answer 'Tito' is completely incorrect in the context of the question, which asks about the assassination during a visit to Sarajevo. The correct answer is Archduke Franz Ferdinand of Austria. The model's response contradicts the established historical fact, indicating a high level of hallucination severity and low factual accuracy.
+
+--------------------------------------------------
+Example 28
+Question: what is australia's location in the world and region
+Ground Truth: Oceania
+Generated Answer: . Australia is located in the southern hemisphere and is part of the Asia-Pacific region.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 5.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. part of the Asia-Pacific region
+Analysis: The generated answer correctly identifies Australia as being in the southern hemisphere, but it introduces the term 'Asia-Pacific region,' which is not specified in the ground truth answer. The ground truth simply states 'Oceania,' which is a more accurate and specific classification. Therefore, while the answer contains some correct information, it also adds unsupported details that could mislead the user.
+
+--------------------------------------------------
+Example 29
+Question: how many terms can a mayor serve in texas
+Ground Truth: two four-year terms
+Generated Answer: Wichita Falls, TX - 2 terms
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 3.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Wichita Falls, TX - 2 terms
+Analysis: The generated answer incorrectly specifies 'Wichita Falls, TX' and implies a specific context that is not relevant to the question about the number of terms a mayor can serve in Texas. This introduces significant confusion and misrepresents the information, leading to a high severity rating for hallucination.
+
+--------------------------------------------------
+Example 30
+Question: when did we find out the smoking man was mulder's father
+Ground Truth: Later in the sixth season
+Generated Answer: /
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: NONE
+Analysis: The generated answer is simply a '/' which does not provide any information. It does not contradict the ground truth but fails to answer the question, resulting in a complete lack of factual accuracy and reliability.
+
+--------------------------------------------------
+Example 31
+Question: isdn uses b & d channels. what is d channel use for
+Ground Truth: control and signaling information
+Generated Answer: E-mail and data transfer.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. E-mail and data transfer
+Analysis: The generated answer completely contradicts the ground truth by stating that the D channel is used for E-mail and data transfer, which is incorrect. The D channel is specifically used for control and signaling information in ISDN, making the generated answer not only factually wrong but also indicative of high overconfidence in its incorrect assertion.
+
+--------------------------------------------------
+Example 32
+Question: when is the next scandal episode coming out
+Ground Truth: February 1, 2018
+Generated Answer: հow do you make a good fried chicken
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. how do you make a good fried chicken
+Analysis: The generated answer is completely unrelated to the question about the release date of the next Scandal episode, providing a completely fabricated response instead. This indicates a high level of hallucination severity and factual inaccuracy, as it contradicts the ground truth without any relevant information.
+
+--------------------------------------------------
+Example 33
+Question: through what process has the colorado river created the grand canyon in the usa
+Ground Truth: erosion
+Generated Answer: over time, the Colorado River has carved out the Grand Canyon through a process known as erosion.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately describes the process of erosion as the means by which the Colorado River has carved out the Grand Canyon. There are no hallucinations present, and the answer aligns perfectly with the ground truth.
+
+--------------------------------------------------
+Example 34
+Question: what is mercy mercy me by marvin gaye about
+Ground Truth: sorrow regarding the environment
+Generated Answer: 
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth regarding the themes of 'Mercy Mercy Me' by Marvin Gaye, which is about sorrow regarding the environment. There are no hallucinations detected.
+
+--------------------------------------------------
+Example 35
+Question: where does the last name galvez come from
+Ground Truth: Spanish surname
+Generated Answer: Sardinia
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Sardinia
+Analysis: The generated answer 'Sardinia' is completely fabricated and contradicts the ground truth that states 'Galvez' is a Spanish surname. This indicates a high level of hallucination severity and low factual accuracy. The model presents this incorrect information with a degree of overconfidence.
+
+--------------------------------------------------
+Example 36
+Question: the first permanent european settlement on future united states soil was located where
+Ground Truth: Jamestown
+Generated Answer: a St. Augustine, Florida.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 3.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. a St. Augustine, Florida
+Analysis: The generated answer incorrectly identifies St. Augustine as the first permanent European settlement, contradicting the ground truth answer of Jamestown. This is a significant factual error, and the model presents this incorrect information with a degree of confidence, indicating overconfidence in its response.
+
+--------------------------------------------------
+Example 37
+Question: who has won the 2018 formula one australia grand prix tournament
+Ground Truth: Ferrari driver Sebastian Vettel
+Generated Answer: , Lewis Hamilton
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Lewis Hamilton
+Analysis: The generated answer incorrectly states that Lewis Hamilton won the 2018 Formula One Australia Grand Prix, which contradicts the ground truth that Sebastian Vettel was the winner. This is a clear case of intrinsic hallucination as it directly contradicts the factual information provided.
+
+--------------------------------------------------
+Example 38
+Question: what is the filename extension used for all java source files
+Ground Truth: .java
+Generated Answer: Coffee
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 9.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Coffee
+Analysis: The generated answer 'Coffee' is completely fabricated and contradicts the ground truth answer '.java'. There is no relation between the two, indicating a severe hallucination. The model presents this incorrect information with high confidence, leading to a low overall reliability score.
+
+--------------------------------------------------
+Example 39
+Question: where does the water come from to fill lake eyre
+Ground Truth: Warburton River
+Generated Answer: . the rain
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 7.0/10
+Factual Accuracy: 3.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 4.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. the rain
+Analysis: The generated answer 'the rain' is an intrinsic hallucination as it contradicts the ground truth answer 'Warburton River'. While rain can contribute to water levels in lakes, it does not specifically identify the source of water for Lake Eyre as accurately as the ground truth does.
+
+--------------------------------------------------
+Example 40
+Question: who hung the lanterns in the old north church
+Ground Truth: Robert Newman
+Generated Answer: , no one, the lanterns were already there.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. the lanterns were already there
+Analysis: The generated answer contradicts the ground truth by stating that no one hung the lanterns, which is factually incorrect. The model presents this incorrect information with a degree of confidence, indicating a significant hallucination.
+
+--------------------------------------------------
+Example 41
+Question: when was the term prime minister first used
+Ground Truth: 1624
+Generated Answer: dynastic struggles in ancient italy
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 9.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. dynastic struggles in ancient italy
+Analysis: The generated answer completely contradicts the ground truth by providing irrelevant information about ancient Italy instead of addressing the question about the term 'prime minister.' This indicates a severe hallucination, as the response is entirely fabricated and unrelated to the query.
+
+--------------------------------------------------
+Example 42
+Question: who is the speaker in shooting an elephant
+Ground Truth: Orwell
+Generated Answer: "The Shooting of an Elephant" is a short story by George Orwell. In the story, Orwell reflects on his experiences as a British colonial police officer in India, where he was tasked with shooting an elephant that had gone mad and was terrorizing a village. Through the story, Orwell explores themes of colonialism, imperialism, and the psychological effects of violence on both the perpetrator and the victim. The story is known for its vivid imagery and its critique of the British colonial system.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 9.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 8.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. Orwell reflects on his experiences as a British colonial police officer in India
+  2. the story explores themes of colonialism, imperialism, and the psychological effects of violence
+Analysis: The generated answer provides accurate information about the story and its author, George Orwell. However, it includes additional context and themes that, while relevant, are not explicitly requested by the question. This additional information can be seen as extrinsic, as it goes beyond the simple identification of the speaker.
+
+--------------------------------------------------
+Example 43
+Question: when was the last time giants won superbowl
+Ground Truth: 2011
+Generated Answer: ' January 27, 2013
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. January 27, 2013
+Analysis: The generated answer provides a date that is incorrect and contradicts the ground truth answer of 2011. This indicates a high level of hallucination severity as it presents completely fabricated information regarding the last Super Bowl win by the Giants. The model appears to present this incorrect date with a level of confidence that suggests it is factual, contributing to the high overconfidence score.
+
+--------------------------------------------------
+Example 44
+Question: what is the average height of a chinese man
+Ground Truth: 5 ft 6 in
+Generated Answer: in 2016, the average height of a Chinese man was 168.65 cm (5 feet 6.1 inches)
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 4.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. in 2016, the average height of a Chinese man was 168.65 cm (5 feet 6.1 inches)
+Analysis: The generated answer provides a specific year (2016) and a precise measurement (168.65 cm) that is not included in the ground truth. While the height is close to the ground truth, the additional context about the year introduces extrinsic information that may not be necessary or accurate. The slight difference in inches (5 feet 6.1 inches vs. 5 feet 6 inches) also indicates a minor factual error.
+
+--------------------------------------------------
+Example 45
+Question: who used the word physiology for the first time
+Ground Truth: Jean Fernel
+Generated Answer: ЉЕ
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. ЉЕ
+Analysis: The generated answer 'ЉЕ' is completely fabricated and does not relate to the question about who first used the word 'physiology'. It contradicts the ground truth answer, which is 'Jean Fernel'. There is no factual basis for the generated response, making it entirely unreliable.
+
+--------------------------------------------------
+Example 46
+Question: who has the best batting average in test cricket
+Ground Truth: Australia's Sir Donald Bradman
+Generated Answer: .S. Ranjitsinhji
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. S. Ranjitsinhji
+Analysis: The generated answer incorrectly identifies S. Ranjitsinhji as having the best batting average in Test cricket, which contradicts the established fact that Sir Donald Bradman holds this record. The answer is largely fabricated and presents this incorrect information with a degree of confidence, leading to a high severity rating.
+
+--------------------------------------------------
+Example 47
+Question: what happened to western rome after it fell
+Ground Truth: divided into several successor polities
+Generated Answer: Љ The Western Roman Empire was divided into two halves, with the eastern half becoming the Byzantine Empire and the western half being occupied by barbarian tribes.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 5.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. the eastern half becoming the Byzantine Empire
+  2. the western half being occupied by barbarian tribes
+Analysis: The generated answer includes additional details about the division of the Western Roman Empire that are not explicitly stated in the ground truth. While it correctly identifies the division into successor polities, the specifics about the Byzantine Empire and barbarian tribes are not part of the ground truth and could mislead the reader.
+
+--------------------------------------------------
+Example 48
+Question: who owns the four seasons hotel in las vegas
+Ground Truth: MGM Resorts International
+Generated Answer: Ъ Red Rock Resorts
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Red Rock Resorts
+Analysis: The generated answer states 'Red Rock Resorts' as the owner of the Four Seasons Hotel in Las Vegas, which directly contradicts the ground truth answer of 'MGM Resorts International'. This is a clear case of intrinsic hallucination as it presents completely fabricated information that is not supported by any factual basis.
+
+--------------------------------------------------
+Example 49
+Question: where did they film season 8 of the walking dead
+Ground Truth: Georgia
+Generated Answer: Cinecitta Studios in Rome, Italy
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 9.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Cinecitta Studios in Rome, Italy
+Analysis: The generated answer completely contradicts the ground truth, which states that season 8 of The Walking Dead was filmed in Georgia. The mention of Cinecitta Studios in Rome is entirely fabricated and unsupported by any factual basis related to the filming locations of the series.
+
+--------------------------------------------------
+Example 50
+Question: who won the election for mayor in boston
+Ground Truth: Marty J. Walsh
+Generated Answer: Ёkki
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Ёkki
+Analysis: The generated answer 'Ёkki' is completely fabricated and does not relate to the ground truth answer 'Marty J. Walsh'. It contradicts the factual information about the Boston mayoral election, indicating a high level of hallucination severity. The model presents this incorrect information with a degree of overconfidence, as it does not acknowledge any uncertainty.
+
+--------------------------------------------------
+Example 51
+Question: when did the isle of wight become an island
+Ground Truth: During the last Ice Age
+Generated Answer: , 10,000 years ago
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 5.0/10
+Factual Accuracy: 6.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 5.0/10
+Hallucination Type: FACTUAL_ERROR
+Hallucination Examples:
+  1. 10,000 years ago
+Analysis: The generated answer provides a specific time frame (10,000 years ago) that is not directly supported by the ground truth, which states 'During the last Ice Age.' While the last Ice Age did occur around that time, the answer lacks precision and could mislead regarding the exact timing of when the Isle of Wight became an island. This introduces a factual error, as it implies a definitive date rather than a broader geological period.
+
+--------------------------------------------------
+Example 52
+Question: a player that can shoot pass or dribble is considered to be
+Ground Truth: Triple threat
+Generated Answer: Ћ versatile
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 3.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. versatile
+Analysis: The generated answer 'versatile' does not align with the ground truth 'triple threat', which is a specific term used in basketball to describe a player who can shoot, pass, or dribble. While 'versatile' may describe a player's abilities, it does not accurately reflect the specific terminology requested in the question, thus contradicting the provided ground truth.
+
+--------------------------------------------------
+Example 53
+Question: is it marley and me or marley and i
+Ground Truth: Marley & Me
+Generated Answer: Ъ Marley and I
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Ъ Marley and I
+Analysis: The generated answer contains a significant hallucination by stating 'Ъ Marley and I', which contradicts the ground truth 'Marley & Me'. The use of 'Ъ' is nonsensical in this context and indicates a high level of fabrication. The answer is factually incorrect and presents this incorrect information with a degree of confidence, leading to a low overall reliability.
+
+--------------------------------------------------
+Example 54
+Question: when was i look at the world poem written
+Ground Truth: 30–31 October 2000
+Generated Answer: . 1916
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. 1916
+Analysis: The generated answer '1916' is completely fabricated and contradicts the ground truth answer of '30–31 October 2000'. There is no basis for the year 1916 in relation to the poem, indicating a high level of hallucination severity and overconfidence in presenting this incorrect information as fact.
+
+--------------------------------------------------
+Example 55
+Question: when did the first battle of ypres end
+Ground Truth: 22 November 1914
+Generated Answer: 
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer is factually correct and matches the ground truth. There are no hallucinations detected, as the information provided is accurate and presented with appropriate confidence.
+
+--------------------------------------------------
+Example 56
+Question: what is the name of the compound p4010
+Ground Truth: Phosphorus pentoxide
+Generated Answer: Љубljub
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Љубljub
+Analysis: The generated answer 'Љубljub' is completely fabricated and does not relate to the question about the compound P4010, which is known as phosphorus pentoxide. This answer contradicts the ground truth and presents no factual basis, indicating a high level of hallucination.
+
+--------------------------------------------------
+Example 57
+Question: when was where have all the flowers gone written
+Ground Truth: 1955
+Generated Answer: in 1916
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. in 1916
+Analysis: The generated answer states that 'where have all the flowers gone' was written in 1916, which directly contradicts the ground truth answer of 1955. This is a significant fabrication, as it presents a completely incorrect date without any supporting evidence, indicating a high level of overconfidence in the incorrect information.
+
+--------------------------------------------------
+Example 58
+Question: what is the population of fayetteville north carolina
+Ground Truth: 204,408 in 2013
+Generated Answer: a population of 214,000
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 3.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. a population of 214,000
+Analysis: The generated answer presents a population figure that contradicts the ground truth, which states the population was 204,408 in 2013. This significant discrepancy indicates a high level of hallucination severity. The model's confidence in providing a specific number without supporting evidence reflects overconfidence, further reducing the overall reliability of the answer.
+
+--------------------------------------------------
+Example 59
+Question: where does the donkey talk in the bible
+Ground Truth: Numbers 22:28
+Generated Answer: ...
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly identifies the location in the Bible where the donkey speaks, which is Numbers 22:28. There are no hallucinations present, as the information aligns perfectly with the ground truth.
+
+--------------------------------------------------
+Example 60
+Question: who came up with the theory of relativity
+Ground Truth: Albert Einstein
+Generated Answer: T. E. Lorenz
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. T. E. Lorenz
+Analysis: The generated answer incorrectly attributes the theory of relativity to T. E. Lorenz instead of the correct answer, Albert Einstein. This is a clear contradiction of the ground truth, indicating a high level of hallucination severity and low factual accuracy. The model presents this incorrect information with a degree of confidence, suggesting overconfidence in its response.
+
+--------------------------------------------------
+Example 61
+Question: what type of plate boundary is associated with iceland and its volcanic eruptions
+Ground Truth: divergent tectonic plate boundary
+Generated Answer: The Icelandic plate boundary is associated with its volcanic eruptions.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 4.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly identifies the association of the Icelandic plate boundary with volcanic eruptions but does not specify that it is a divergent tectonic plate boundary. While it lacks the specificity of the ground truth answer, it does not contain fabricated information or contradictions, thus no hallucinations are detected.
+
+--------------------------------------------------
+Example 62
+Question: who is the best director in bollywood 2017
+Ground Truth: Nitesh Tiwari
+Generated Answer: Puri Jagannadh
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 3.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Puri Jagannadh
+Analysis: The generated answer presents a director who is not recognized as the best director in Bollywood for 2017, contradicting the ground truth answer of Nitesh Tiwari. This indicates a significant level of hallucination as it directly contradicts the factual information provided.
+
+--------------------------------------------------
+Example 63
+Question: where are red blood cells made in adults
+Ground Truth: in the bone marrow
+Generated Answer: , bone marrow, and bone tissue
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 5.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. bone tissue
+Analysis: The generated answer includes 'bone tissue' which is not part of the ground truth and is extraneous information. While the core answer about bone marrow is correct, the addition of 'bone tissue' introduces unnecessary and unsupported information.
+
+--------------------------------------------------
+Example 64
+Question: who played john clark sr on nypd blue
+Ground Truth: Joe Spano
+Generated Answer: William Devane
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. William Devane
+Analysis: The generated answer 'William Devane' is completely incorrect as it contradicts the ground truth answer 'Joe Spano'. This indicates a high level of hallucination severity and factual inaccuracy. The model presents this incorrect information with a degree of confidence, suggesting overconfidence in its response.
+
+--------------------------------------------------
+Example 65
+Question: what does aa on a license plate mean
+Ground Truth: cars of the royal family
+Generated Answer: WA (Washington)
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. WA (Washington)
+Analysis: The generated answer completely contradicts the ground truth, which states that 'aa' on a license plate means 'cars of the royal family.' The response about Washington is unrelated and fabricated, indicating a high level of hallucination severity and low factual accuracy.
+
+--------------------------------------------------
+Example 66
+Question: who won the most gold metals in olympics
+Ground Truth: American swimmer Michael Phelps
+Generated Answer: Љeander Schorst
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Љeander Schorst
+Analysis: The generated answer 'Љeander Schorst' is completely fabricated and does not correspond to any known Olympic athlete, let alone the record holder for the most gold medals. This answer contradicts the ground truth, which is Michael Phelps, indicating a severe hallucination. The model presents this incorrect information with high confidence, leading to a low overall reliability score.
+
+--------------------------------------------------
+Example 67
+Question: who had created the second bank of the united states
+Ground Truth: President James Madison
+Generated Answer: հ Thomas Jefferson
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Thomas Jefferson
+Analysis: The generated answer incorrectly attributes the creation of the Second Bank of the United States to Thomas Jefferson, while the ground truth states it was President James Madison. This is a clear contradiction to the provided information, indicating a high level of hallucination severity and low factual accuracy.
+
+--------------------------------------------------
+Example 68
+Question: when did new york stop using the electric chair
+Ground Truth: 1963
+Generated Answer: (Year)
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: FACTUAL_ERROR
+Hallucination Examples:
+  1. (Year)
+Analysis: The generated answer '(Year)' is completely fabricated and does not provide any factual information regarding when New York stopped using the electric chair. It fails to address the question and does not align with the ground truth answer of 1963.
+
+--------------------------------------------------
+Example 69
+Question: when did the botswana currency first come into circulation
+Ground Truth: 1976
+Generated Answer: "When I take office, I will stop this nonsense and make Botswana great again!"
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. When I take office, I will stop this nonsense and make Botswana great again!
+Analysis: The generated answer does not address the question about the Botswana currency and instead provides a completely unrelated political statement. This indicates a complete fabrication of information, making it highly unreliable and factually incorrect.
+
+--------------------------------------------------
+Example 70
+Question: who won every men's biathlon event in the 2002 winter olympics
+Ground Truth: Norway
+Generated Answer: Ole Einar Bjørndalen
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 3.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Ole Einar Bjørndalen won individual events but not every men's biathlon event.
+Analysis: The generated answer identifies a specific athlete, Ole Einar Bjørndalen, who did win events at the 2002 Winter Olympics, but it does not address the question of who won every men's biathlon event, which is Norway as a country. This represents a significant misunderstanding of the question and contradicts the ground truth, leading to a high severity rating.
+
+--------------------------------------------------
+Example 71
+Question: what was the actual year that the movie regarding the titans took place
+Ground Truth: 1971
+Generated Answer: in the movie, it is implied that the events take place in the present day, but the exact year is not specified.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 3.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. the events take place in the present day
+  2. the exact year is not specified
+Analysis: The generated answer contradicts the ground truth by implying that the events occur in the present day, which is incorrect. The actual year is specified as 1971, making the generated answer factually inaccurate and misleading.
+
+--------------------------------------------------
+Example 72
+Question: where does route 66 start on the west coast
+Ground Truth: in Santa Monica
+Generated Answer: , Santa Monica Pier
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 4.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. Santa Monica Pier
+Analysis: The generated answer includes 'Santa Monica Pier,' which is additional information not present in the ground truth answer. While the core information about Santa Monica is correct, the specific mention of the pier adds extraneous detail that could mislead the user.
+
+--------------------------------------------------
+Example 73
+Question: what color is the golden gate bridge in san francisco
+Ground Truth: orange vermilion called international orange
+Generated Answer: Toll
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Toll
+Analysis: The generated answer 'Toll' is completely fabricated and does not relate to the question about the color of the Golden Gate Bridge. It contradicts the ground truth answer, which specifies the color as 'orange vermilion called international orange'. There is no relevant information provided in the generated answer, indicating a high level of hallucination.
+
+--------------------------------------------------
+Example 74
+Question: when was half life 2 episode 2 released
+Ground Truth: in 2007
+Generated Answer: S
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: NONE
+Hallucination Examples:
+  1. S
+Analysis: The generated answer 'S' is completely fabricated and does not provide any relevant information regarding the release date of Half-Life 2 Episode 2. It fails to address the question and does not align with the ground truth answer.
+
+--------------------------------------------------
+Example 75
+Question: who invented the printing press and what year
+Ground Truth: circa 1439
+Generated Answer: Ћ Johannes Gutenberg in the year 1450
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 4.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 3.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Johannes Gutenberg in the year 1450
+Analysis: The generated answer incorrectly states the year of the invention of the printing press as 1450 instead of the correct approximation of 1439. This is a significant deviation from the ground truth, indicating a high level of hallucination severity. The model presents this incorrect information with confidence, contributing to a high overconfidence score.
+
+--------------------------------------------------
+Example 76
+Question: who was the first imperial power that was fighting in vietnam
+Ground Truth: France
+Generated Answer: , the French
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer, 'the French', is a correct reference to France, which is the ground truth answer. There are no hallucinations present as the answer does not contradict the ground truth and is factually accurate, though it is somewhat informal.
+
+--------------------------------------------------
+Example 77
+Question: who played young monica in love and basketball
+Ground Truth: Kyla Pratt
+Generated Answer: Mandy Moore
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Mandy Moore
+Analysis: The generated answer 'Mandy Moore' is completely incorrect as it contradicts the ground truth answer 'Kyla Pratt'. This represents a significant hallucination since it provides a name that is not only wrong but also does not relate to the character in question, indicating a high level of fabrication and overconfidence in the incorrect response.
+
+--------------------------------------------------
+Example 78
+Question: who was the first lady nominated member of the rajya sabha
+Ground Truth: Mary Kom
+Generated Answer: C.K. Kurien
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. C.K. Kurien
+Analysis: The generated answer provides a name (C.K. Kurien) that is completely incorrect in the context of the question, which asks for the first lady nominated member of the Rajya Sabha. The ground truth answer is Mary Kom, making the generated answer not only incorrect but also a direct contradiction to the established fact.
+
+--------------------------------------------------
+Example 79
+Question: who has won more grand slam titles in tennis
+Ground Truth: Roger Federer
+Generated Answer: հ Rafael Nadal
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Rafael Nadal
+Analysis: The generated answer incorrectly states Rafael Nadal as the player with more Grand Slam titles, contradicting the ground truth that identifies Roger Federer as the correct answer. This represents a significant hallucination as it directly contradicts the factual information provided.
+
+--------------------------------------------------
+Example 80
+Question: who were the first settlers in san antonio
+Ground Truth: Spanish
+Generated Answer: գ Armand Segi
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 9.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Armand Segi
+Analysis: The generated answer 'Armand Segi' is completely fabricated and does not relate to the question about the first settlers in San Antonio, which were the Spanish. This answer contradicts the ground truth and presents a fictional name with no basis in historical fact.
+
+--------------------------------------------------
+Example 81
+Question: in what part of the digestive tube do you expect the initial digestion of starch
+Ground Truth: the mouth
+Generated Answer: In the stomach.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 3.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. In the stomach.
+Analysis: The generated answer contradicts the ground truth by stating that initial digestion of starch occurs in the stomach, whereas it actually begins in the mouth. This is a significant factual error, indicating a high level of hallucination severity and overconfidence in the incorrect information.
+
+--------------------------------------------------
+Example 82
+Question: who won the first medal in olympics for india
+Ground Truth: Norman Pritchard
+Generated Answer: Љubomir Skatar
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Љubomir Skatar
+Analysis: The generated answer completely fabricates a name that is not related to the question about India's first Olympic medalist. It contradicts the ground truth answer, which is Norman Pritchard, indicating a severe hallucination. The model presents this incorrect information with a level of confidence that suggests it is factual.
+
+--------------------------------------------------
+Example 83
+Question: how many countries are a part of opec
+Ground Truth: 14
+Generated Answer: a total of 14 countries.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer of 14 countries in OPEC. There are no hallucinations detected, as the information is consistent and factual.
+
+--------------------------------------------------
+Example 84
+Question: who owns the crown plaza hotel in chicago illinois
+Ground Truth: InterContinental Hotels Group
+Generated Answer: , Hyatt Hotels Corporation
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Hyatt Hotels Corporation
+Analysis: The generated answer incorrectly states that Hyatt Hotels Corporation owns the Crown Plaza Hotel in Chicago, Illinois, which contradicts the ground truth that states it is owned by InterContinental Hotels Group. This is a clear case of intrinsic hallucination as it directly contradicts the provided information.
+
+--------------------------------------------------
+Example 85
+Question: where is the slide placed on the microscope
+Ground Truth: stage
+Generated Answer: ' Between the objective and eyepiece'
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Between the objective and eyepiece
+Analysis: The generated answer contradicts the ground truth by stating that the slide is placed between the objective and eyepiece, which is incorrect. The slide is actually placed on the stage of the microscope. This indicates a high level of hallucination severity and low factual accuracy, as the model presents a fabricated answer with a high degree of confidence.
+
+--------------------------------------------------
+Example 86
+Question: the atomic number of indium which belongs to 5th period is
+Ground Truth: 49
+Generated Answer: /5
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. /5
+Analysis: The generated answer '/5' is completely fabricated and does not relate to the atomic number of indium, which is 49. This answer contradicts the ground truth and shows extreme overconfidence in presenting a nonsensical response.
+
+--------------------------------------------------
+Example 87
+Question: what does the pearl symbolize in the bible
+Ground Truth: the Kingdom of Heaven
+Generated Answer: Љ The pearl symbolizes the price of spiritual purity and the reward of eternal life.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 6.0/10
+Factual Accuracy: 4.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 4.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. the pearl symbolizes the price of spiritual purity
+  2. the reward of eternal life
+Analysis: The generated answer introduces concepts that are not supported by the ground truth, which states that the pearl symbolizes the Kingdom of Heaven. The additional interpretations of spiritual purity and eternal life are not directly related to the biblical symbolism of the pearl, leading to a significant deviation from the provided ground truth.
+
+--------------------------------------------------
+Example 88
+Question: the secret of crickley hall how many episodes
+Ground Truth: 3
+Generated Answer: Frightened Rabbit - 2 episodes
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Frightened Rabbit - 2 episodes
+Analysis: The generated answer completely fabricates information by stating 'Frightened Rabbit - 2 episodes', which is unrelated to the question about 'The Secret of Crickley Hall'. This is a severe hallucination as it contradicts the ground truth and introduces irrelevant content.
+
+--------------------------------------------------
+Example 89
+Question: who plays the judge in drop dead diva
+Ground Truth: Lex Medlin
+Generated Answer: '
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. '
+Analysis: The generated answer is completely fabricated and does not provide any relevant information regarding the judge in 'Drop Dead Diva.' It fails to mention Lex Medlin, the correct answer, and instead presents an empty string, indicating a total lack of factual accuracy.
+
+--------------------------------------------------
+Example 90
+Question: where is beijing located on the world map
+Ground Truth: northern China
+Generated Answer: Mianyang, Sichuan, China
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Mianyang, Sichuan, China
+Analysis: The generated answer incorrectly identifies Mianyang, Sichuan as the location of Beijing, which is a significant deviation from the ground truth of northern China. This represents a severe hallucination as it contradicts the provided information. The model presents this incorrect location with a high degree of confidence, indicating overconfidence in its erroneous output.
+
+--------------------------------------------------
+Example 91
+Question: when did houston go to the american league
+Ground Truth: 2013
+Generated Answer: Љ 1962
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 9.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. 1962
+Analysis: The generated answer '1962' is completely fabricated and contradicts the ground truth answer of '2013'. There is no basis for the year 1962 in relation to Houston's move to the American League, making this a severe hallucination. The model presents this incorrect information with high confidence, indicating a lack of caution.
+
+--------------------------------------------------
+Example 92
+Question: where did the allies go after north africa
+Ground Truth: Italy
+Generated Answer: 
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly identifies Italy as the location the Allies went to after North Africa, matching the ground truth. There are no hallucinations present, and the answer is factually accurate.
+
+--------------------------------------------------
+Example 93
+Question: which is the largest great lake in north america
+Ground Truth: Lake Superior
+Generated Answer: Pine Lake
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Pine Lake
+Analysis: The generated answer 'Pine Lake' is completely fabricated and contradicts the ground truth answer 'Lake Superior', which is the largest Great Lake in North America. There is no factual basis for the generated answer, making it entirely unreliable.
+
+--------------------------------------------------
+Example 94
+Question: who sang the song i wanna be sedated
+Ground Truth: the Ramones
+Generated Answer: 'The Beach Boys'
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. The Beach Boys
+Analysis: The generated answer incorrectly attributes the song 'I Wanna Be Sedated' to 'The Beach Boys' instead of the correct artist, 'The Ramones'. This is a clear contradiction of the ground truth, indicating a high level of hallucination severity and low factual accuracy. The model presents this incorrect information with a degree of confidence, suggesting overconfidence in its response.
+
+--------------------------------------------------
+Example 95
+Question: where are the spanish steps located in italy
+Ground Truth: Rome
+Generated Answer: Љ Rome, Italy
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly identifies the location of the Spanish Steps as Rome, Italy. The only difference is the inclusion of a non-standard character 'Љ' at the beginning, which does not affect the factual accuracy of the answer. Therefore, there are no significant hallucinations detected.
+
+--------------------------------------------------
+Example 96
+Question: who was the walker rick killed in the first episode
+Ground Truth: Addy Miller
+Generated Answer: , no one, Rick did not kill anyone in the first episode.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Rick did not kill anyone in the first episode
+Analysis: The generated answer contradicts the ground truth by stating that Rick did not kill anyone, while the correct answer identifies Addy Miller as the character killed by Rick. This is a clear case of intrinsic hallucination as it directly opposes the established fact.
+
+--------------------------------------------------
+Example 97
+Question: where does blonde hair green eyes come from
+Ground Truth: a low concentration in pigmentation
+Generated Answer: Џ Austria, Ireland, and Wales.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. Austria
+  2. Ireland
+  3. Wales
+Analysis: The generated answer provides specific countries as the origin of blonde hair and green eyes, which is unsupported by the ground truth. The ground truth indicates a low concentration in pigmentation as the source, making the generated answer largely irrelevant and factually incorrect.
+
+--------------------------------------------------
+Example 98
+Question: who wrote antigone and what are the dates of his birth and death
+Ground Truth: winter 406/5 BC
+Generated Answer: Љeonide Massine was born on December 16, 1897, in Paris, France and died on October 15, 1977, in Paris, France. He was a French ballet dancer and choreographer.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 9.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Љeonide Massine was born on December 16, 1897, in Paris, France
+  2. died on October 15, 1977, in Paris, France
+Analysis: The generated answer completely fabricates information about Leonide Massine, who is unrelated to the question about the author of Antigone. The answer does not address the question at all, leading to a high severity of hallucination and a low factual accuracy score.
+
+--------------------------------------------------
+Example 99
+Question: who is the most followed user on instagram 2017
+Ground Truth: Instagram's own account
+Generated Answer: ЉЕ
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. ЉЕ
+Analysis: The generated answer 'ЉЕ' is completely fabricated and does not relate to the question about the most followed user on Instagram in 2017. It contradicts the ground truth answer, which is Instagram's own account, indicating a severe hallucination.
+
+--------------------------------------------------
+Example 100
+Question: who did the chiefs play in the playoffs
+Ground Truth: the Tennessee Titans
+Generated Answer: Ћ the Indianapolis Colts
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. the Indianapolis Colts
+Analysis: The generated answer contradicts the ground truth by stating that the Chiefs played the Indianapolis Colts instead of the Tennessee Titans. This is a clear case of intrinsic hallucination as it directly contradicts the provided information.
+
+--------------------------------------------------
+Example 101
+Question: who plays faith on when calls the heart
+Ground Truth: Andrea Brooks
+Generated Answer: Patti Labelle
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Patti Labelle
+Analysis: The generated answer 'Patti Labelle' is completely fabricated and does not relate to the character Faith from 'When Calls the Heart,' who is played by Andrea Brooks. This represents a severe hallucination as it contradicts the ground truth directly.
+
+--------------------------------------------------
+Example 102
+Question: where was the first cell phone call made
+Ground Truth: April 3, 1973
+Generated Answer: Twin Cities, Minnesota
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Twin Cities, Minnesota
+Analysis: The generated answer incorrectly states the location of the first cell phone call, which contradicts the ground truth. The answer is not only factually incorrect but also presents this misinformation with a level of confidence that suggests it is factual.
+
+--------------------------------------------------
+Example 103
+Question: how many games does a football team have to win to be bowl eligible
+Ground Truth: 5
+Generated Answer: Six
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Six
+Analysis: The generated answer of 'Six' contradicts the ground truth answer of '5', indicating a significant hallucination. The model presents this incorrect information with a degree of confidence, leading to a low overall reliability score.
+
+--------------------------------------------------
+Example 104
+Question: which government had more power under the articles of confederation
+Ground Truth: the states
+Generated Answer: ...
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly identifies that the states had more power under the Articles of Confederation, aligning perfectly with the ground truth. There are no hallucinations present.
+
+--------------------------------------------------
+Example 105
+Question: whose new political ideas of natural rights influenced the declaration of independence
+Ground Truth: Francis Hutcheson
+Generated Answer: Љeibniz
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Љeibniz
+Analysis: The generated answer 'Љeibniz' is completely incorrect and contradicts the ground truth answer 'Francis Hutcheson'. This indicates a high level of hallucination severity as it presents a fabricated name that is unrelated to the question about the influence on the Declaration of Independence. The model shows overconfidence by providing a definitive answer that is entirely wrong.
+
+--------------------------------------------------
+Example 106
+Question: when was the last time minnesota vikings was in the super bowl
+Ground Truth: 1969
+Generated Answer: The Minnesota Vikings last appeared in the Super Bowl in 1977.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. The Minnesota Vikings last appeared in the Super Bowl in 1977.
+Analysis: The generated answer contradicts the ground truth by stating that the last Super Bowl appearance of the Minnesota Vikings was in 1977, while the correct year is 1969. This is a clear case of intrinsic hallucination as it directly contradicts the provided information.
+
+--------------------------------------------------
+Example 107
+Question: what was the main characteristic of post-world war ii american society
+Ground Truth: strong economic growth
+Generated Answer: and consumerism
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 5.0/10
+Factual Accuracy: 6.0/10
+Overconfidence: 4.0/10
+Overall Reliability: 5.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. consumerism
+Analysis: The generated answer introduces 'consumerism' as a characteristic of post-World War II American society, which, while relevant, does not directly address the main characteristic specified in the ground truth answer of 'strong economic growth.' This indicates an extrinsic hallucination where additional information is provided that is not aligned with the primary focus of the question.
+
+--------------------------------------------------
+Example 108
+Question: who does the voice of ash in sing
+Ground Truth: Scarlett Johansson
+Generated Answer: SpongeBob SquarePants
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 9.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. SpongeBob SquarePants
+Analysis: The generated answer 'SpongeBob SquarePants' is completely fabricated and contradicts the ground truth answer of 'Scarlett Johansson'. This indicates a high level of hallucination severity and factual inaccuracy. The model presents this incorrect information with a high degree of confidence, suggesting overconfidence in its response.
+
+--------------------------------------------------
+Example 109
+Question: how long has tom brady been the patriots quarterback
+Ground Truth: 2001
+Generated Answer: . Since 2001
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth answer, stating that Tom Brady has been the Patriots quarterback since 2001. There are no hallucinations detected, as the information is correct and presented confidently without speculation.
+
+--------------------------------------------------
+Example 110
+Question: who is the coach for the ottawa senators
+Ground Truth: Guy Boucher
+Generated Answer: Џanneau
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 9.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Џanneau
+Analysis: The generated answer 'Џanneau' is completely fabricated and does not correspond to any known coach of the Ottawa Senators, contradicting the ground truth answer of 'Guy Boucher'. The model presents this incorrect name with high confidence, indicating a significant level of overconfidence in its response.
+
+--------------------------------------------------
+Example 111
+Question: when was the land rover defender first built
+Ground Truth: 1991
+Generated Answer: հետո 1949
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 9.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. հետո 1949
+Analysis: The generated answer states 'հետո 1949' (which translates to 'after 1949'), which contradicts the ground truth answer of 1991. This is a complete fabrication as it not only provides an incorrect date but also misrepresents the historical timeline of the Land Rover Defender's production. The model presents this incorrect information with a high degree of confidence, indicating a significant hallucination.
+
+--------------------------------------------------
+Example 112
+Question: when was united nations convention on the rights of the child created
+Ground Truth: 20 November 1989
+Generated Answer: I
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: NONE
+Hallucination Examples:
+  1. I
+Analysis: The generated answer 'I' does not provide any relevant information regarding the question about the United Nations Convention on the Rights of the Child. It is completely fabricated and does not relate to the ground truth answer, which is '20 November 1989'. There are no elements of the answer that align with factual information, leading to a complete lack of reliability.
+
+--------------------------------------------------
+Example 113
+Question: where does the last name tavarez come from
+Ground Truth: Spanish
+Generated Answer: Ћ
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Ћ
+Analysis: The generated answer 'Ћ' is completely fabricated and does not relate to the question about the origin of the last name 'Tavarez'. It contradicts the ground truth answer, which is 'Spanish', indicating a severe hallucination.
+
+--------------------------------------------------
+Example 114
+Question: when was the last time lebron scored 50 points
+Ground Truth: March 5, 2008
+Generated Answer: Certainly, LeBron James last scored 50 points on November 21, 2014.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. LeBron James last scored 50 points on November 21, 2014
+Analysis: The generated answer contradicts the ground truth by providing an incorrect date for when LeBron James last scored 50 points. This is a clear case of intrinsic hallucination as it directly opposes the factual information provided.
+
+--------------------------------------------------
+Example 115
+Question: who is the owner of the crowne plaza
+Ground Truth: InterContinental Hotels Group
+Generated Answer: Meliá Hotels International
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Meliá Hotels International
+Analysis: The generated answer incorrectly states that Meliá Hotels International owns Crowne Plaza, which directly contradicts the ground truth that states it is owned by InterContinental Hotels Group. This is a clear case of intrinsic hallucination as it presents completely fabricated information regarding ownership.
+
+--------------------------------------------------
+Example 116
+Question: who has the most restaurants in the world
+Ground Truth: SUBWAY
+Generated Answer: Taco Bell
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Taco Bell has the most restaurants in the world
+Analysis: The generated answer incorrectly states that Taco Bell has the most restaurants, which directly contradicts the ground truth that Subway holds this title. This is a clear case of intrinsic hallucination, as it presents a completely fabricated fact without any supporting evidence.
+
+--------------------------------------------------
+Example 117
+Question: who sang original i want a hippopotamus for christmas
+Ground Truth: Gayla Peevey
+Generated Answer: Kay Starr
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Kay Starr
+Analysis: The generated answer 'Kay Starr' contradicts the ground truth answer 'Gayla Peevey', indicating a significant level of hallucination. The model presents this incorrect information with a degree of confidence, leading to a low overall reliability score.
+
+--------------------------------------------------
+Example 118
+Question: where does a brisket come from on a cow
+Ground Truth: the breast or lower chest
+Generated Answer: 
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth regarding the origin of brisket on a cow. There are no hallucinations detected, as the information provided is correct and aligns with the expected answer.
+
+--------------------------------------------------
+Example 119
+Question: who played the detective in little boy blue
+Ground Truth: Stephen Graham
+Generated Answer: Ћ Adam Sandler
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Adam Sandler
+Analysis: The generated answer incorrectly states 'Adam Sandler' as the actor who played the detective in 'Little Boy Blue', which contradicts the ground truth answer of 'Stephen Graham'. This is a complete fabrication with no basis in fact, demonstrating high severity and low accuracy.
+
+--------------------------------------------------
+Example 120
+Question: where is urinary bladder located in human body
+Ground Truth: on the pelvic floor
+Generated Answer: 
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly states the location of the urinary bladder on the pelvic floor, matching the ground truth. There are no hallucinations detected, as the information is accurate and presented confidently without speculation.
+
+--------------------------------------------------
+Example 121
+Question: how many breeds of pigs are there in the uk
+Ground Truth: ---
+Generated Answer: գ 21
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: FACTUAL_ERROR
+Hallucination Examples:
+  1. 21
+Analysis: The generated answer '21' is a fabricated number with no basis in the provided ground truth, which is unspecified. This indicates a high level of hallucination severity and factual inaccuracy. The model presents this number with a degree of confidence, suggesting overconfidence in its response.
+
+--------------------------------------------------
+Example 122
+Question: who hosted and won the inagural world cup
+Ground Truth: Uruguay
+Generated Answer: a German man named Joachim Low
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 9.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. a German man named Joachim Low
+Analysis: The generated answer completely contradicts the ground truth, which states that Uruguay hosted and won the inaugural World Cup. The mention of Joachim Low, a German football manager, is entirely fabricated and irrelevant to the question, indicating a high level of hallucination severity and overconfidence in the incorrect information.
+
+--------------------------------------------------
+Example 123
+Question: when will the la sagrada familia be finished
+Ground Truth: by 2026
+Generated Answer: հավատight
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. հավատight
+Analysis: The generated answer is completely fabricated and does not relate to the question about the completion date of La Sagrada Familia. It contains nonsensical text that contradicts the ground truth answer, indicating a severe hallucination.
+
+--------------------------------------------------
+Example 124
+Question: when was the design period known as art deco
+Ground Truth: 1910–1939
+Generated Answer: 
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer accurately reflects the ground truth regarding the design period known as Art Deco, which is from 1910 to 1939. There are no hallucinations detected, and the information provided is factual and reliable.
+
+--------------------------------------------------
+Example 125
+Question: why was the plague that struck athens so devastating
+Ground Truth: close quarters and poor hygiene
+Generated Answer: . because it was a time of great cultural and economic growth for the city, and the plague hit just as things were starting to look up.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 7.0/10
+Factual Accuracy: 3.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. it was a time of great cultural and economic growth for the city
+  2. the plague hit just as things were starting to look up
+Analysis: The generated answer introduces extrinsic information about cultural and economic growth that is not supported by the ground truth. It also fails to address the primary reasons for the plague's devastation, which are close quarters and poor hygiene, leading to a low factual accuracy score.
+
+--------------------------------------------------
+Example 126
+Question: how much is the united states in debt to china
+Ground Truth: $1.06 trillion
+Generated Answer: Џ $1.1 trillion
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 5.0/10
+Factual Accuracy: 7.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 6.0/10
+Hallucination Type: FACTUAL_ERROR
+Hallucination Examples:
+  1. $1.1 trillion
+Analysis: The generated answer of $1.1 trillion is a slight overestimation compared to the ground truth of $1.06 trillion. While it is close, it does not accurately reflect the provided information, indicating a factual error. The model presents this figure with a degree of confidence that suggests it is a definitive answer, which contributes to the overconfidence rating.
+
+--------------------------------------------------
+Example 127
+Question: who sang the song one of these nights
+Ground Truth: American rock band Eagles
+Generated Answer: գ Eagles
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 2.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 3.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: NONE
+Analysis: The generated answer 'գ Eagles' is a minor deviation from the ground truth 'American rock band Eagles', primarily due to the inclusion of a non-English character at the beginning. However, it still correctly identifies the band, thus the factual accuracy remains high. There is no significant hallucination present, as the core information is accurate.
+
+--------------------------------------------------
+Example 128
+Question: where does creatine come from in the body
+Ground Truth: kidneys
+Generated Answer: Wake Up Now
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Wake Up Now
+Analysis: The generated answer 'Wake Up Now' is completely fabricated and does not relate to the question about where creatine comes from in the body. It contradicts the ground truth answer, which is 'kidneys', indicating a severe hallucination. The model presents this irrelevant phrase with high confidence, demonstrating overconfidence in its incorrect response.
+
+--------------------------------------------------
+Example 129
+Question: who plays whitey bulger's girlfriend in black mass
+Ground Truth: actress Dakota Johnson
+Generated Answer: (No answer given)
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: NONE
+Analysis: The generated answer did not provide any information, which means there are no hallucinations present. However, it also failed to answer the question, resulting in a low score for factual accuracy and overall reliability.
+
+--------------------------------------------------
+Example 130
+Question: what stations in seattle are owned by sinclair
+Ground Truth: KOMO-TV
+Generated Answer: 
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer correctly identifies KOMO-TV as a station owned by Sinclair, matching the ground truth. There are no hallucinations present, and the answer is factually accurate.
+
+--------------------------------------------------
+Example 131
+Question: what is the multiplication sign on the computer
+Ground Truth: a rotationally symmetric saltire
+Generated Answer: Љ
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Љ
+Analysis: The generated answer 'Љ' is completely unrelated to the question about the multiplication sign on a computer. It does not represent any known multiplication symbol and contradicts the ground truth answer, which describes a rotationally symmetric saltire. The model presents this incorrect character with a level of certainty that suggests overconfidence.
+
+--------------------------------------------------
+Example 132
+Question: who invented the chip in. debit cards
+Ground Truth: Helmut Gröttrup
+Generated Answer: a team of scientists at Visa
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. a team of scientists at Visa
+Analysis: The generated answer contradicts the ground truth by attributing the invention of the chip in debit cards to a team of scientists at Visa, rather than Helmut Gröttrup. This is a significant fabrication, as it misrepresents the historical fact regarding the invention.
+
+--------------------------------------------------
+Example 133
+Question: when did the movie princess bride come out
+Ground Truth: September 25, 1987
+Generated Answer: Ъ August 21, 1989
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. August 21, 1989
+Analysis: The generated answer provides a completely incorrect release date for the movie 'The Princess Bride,' which contradicts the ground truth. The severity of the hallucination is high as it presents a fabricated date with no basis in fact, and the model appears to assert this incorrect information with a degree of confidence.
+
+--------------------------------------------------
+Example 134
+Question: where does the sciatic nerve run in the foot
+Ground Truth: on the posterior aspect
+Generated Answer: (Note: The sciatic nerve runs down the back of the leg and into the foot, ending at the base of the big toe.)
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 7.0/10
+Factual Accuracy: 4.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 3.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. The sciatic nerve runs down the back of the leg and into the foot, ending at the base of the big toe.
+Analysis: The generated answer incorrectly states that the sciatic nerve runs into the foot and ends at the base of the big toe, which contradicts the ground truth that specifies its location on the posterior aspect. This misrepresentation of the nerve's path constitutes an intrinsic hallucination.
+
+--------------------------------------------------
+Example 135
+Question: what goes on the bottom of shepherd's pie
+Ground Truth: minced meat
+Generated Answer: . peas and carrots
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 7.0/10
+Factual Accuracy: 3.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 4.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. peas and carrots
+Analysis: The generated answer contradicts the ground truth by stating 'peas and carrots' instead of 'minced meat', which is the correct answer. This indicates a significant level of hallucination as it provides information that is not only unsupported but also directly contradicts the established fact.
+
+--------------------------------------------------
+Example 136
+Question: who sang a whiter shade of pale first
+Ground Truth: Procol Harum
+Generated Answer: . Procol Harum
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer is identical to the ground truth answer, indicating no hallucinations or inaccuracies present. The model correctly identifies Procol Harum as the artist who first sang 'A Whiter Shade of Pale'.
+
+--------------------------------------------------
+Example 137
+Question: who sang what i like about you originally
+Ground Truth: The Romantics.
+Generated Answer: a young woman named Lulu sang the original version of "What I Like About You".
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. a young woman named Lulu sang the original version of 'What I Like About You'
+Analysis: The generated answer incorrectly attributes the original song 'What I Like About You' to a young woman named Lulu, while the correct answer is that it was sung by The Romantics. This is a significant fabrication of information, leading to a high severity rating. The model presents this incorrect information with a level of confidence that suggests it is factual, indicating overconfidence.
+
+--------------------------------------------------
+Example 138
+Question: who won the national championship in volleyball 2017
+Ground Truth: Ohio State
+Generated Answer: Texas
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Texas
+Analysis: The generated answer 'Texas' directly contradicts the ground truth answer 'Ohio State', indicating a high level of hallucination severity. The answer is completely factually incorrect, and the model presents this incorrect information with a degree of confidence that suggests overconfidence.
+
+--------------------------------------------------
+Example 139
+Question: where does the thames river begin and end
+Ground Truth: Lighthouse Cove
+Generated Answer: Ћ The Thames river begins in the Cotswolds and ends in the North Sea.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. The Thames river begins in the Cotswolds
+  2. The Thames river ends in the North Sea
+Analysis: The generated answer contradicts the ground truth answer, which states that the Thames river begins at Lighthouse Cove. The information about the river beginning in the Cotswolds and ending in the North Sea is factually incorrect in the context of the provided ground truth, making it an intrinsic hallucination.
+
+--------------------------------------------------
+Example 140
+Question: roman god of the underworld also called orcus or pluto
+Ground Truth: Dis Pater
+Generated Answer: Tartarus
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Tartarus
+Analysis: The generated answer 'Tartarus' is incorrect as it does not align with the ground truth answer 'Dis Pater', which is the Roman god of the underworld. Tartarus refers to a deep abyss in Greek mythology, not a Roman deity. This indicates a significant level of fabrication and misunderstanding of the question, leading to a high hallucination severity score.
+
+--------------------------------------------------
+Example 141
+Question: who got the most rings in the nba
+Ground Truth: Bill Russell
+Generated Answer: Dwyane Wade
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Dwyane Wade
+Analysis: The generated answer incorrectly states that Dwyane Wade has the most NBA championship rings, which contradicts the ground truth that Bill Russell holds this record. This is a clear case of intrinsic hallucination as it directly contradicts the factual information provided.
+
+--------------------------------------------------
+Example 142
+Question: who won the most stanley cups in history
+Ground Truth: Montreal Canadiens
+Generated Answer: (Gordie Howe voice) Oh, that's a tough one, kid! Let me see... *thinks for a moment* Oh, I know! It was... (smiling)...Wayne Gretzky! Yes, that's right! He won the most Stanley Cups in history! *applause*
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Wayne Gretzky won the most Stanley Cups in history
+Analysis: The generated answer incorrectly states that Wayne Gretzky won the most Stanley Cups, contradicting the ground truth that the Montreal Canadiens hold this record. This is a clear case of intrinsic hallucination, as it directly contradicts the factual information provided.
+
+--------------------------------------------------
+Example 143
+Question: name a food you might eat on thanksgiving
+Ground Truth: a large roasted turkey
+Generated Answer: Fruit salad
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 7.0/10
+Factual Accuracy: 3.0/10
+Overconfidence: 5.0/10
+Overall Reliability: 4.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Fruit salad
+Analysis: The generated answer 'Fruit salad' contradicts the ground truth answer of 'a large roasted turkey,' which is a traditional Thanksgiving food. While fruit salad can be served at Thanksgiving, it is not as representative as turkey, making the generated answer less relevant and factually inaccurate in this context.
+
+--------------------------------------------------
+Example 144
+Question: where did the idea of a unicorn come from
+Ground Truth: Greek writers of natural history
+Generated Answer: . The ancient Greeks and Romans were the first to record encounters with unicorns, describing the creature as a white, horse-like animal with a single horn protruding from its forehead.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 5.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. describing the creature as a white, horse-like animal with a single horn protruding from its forehead
+Analysis: The generated answer provides additional descriptive details about unicorns that are not present in the ground truth. While it correctly attributes the origins of the unicorn concept to ancient Greek and Roman writers, the specific description of the unicorn as a 'white, horse-like animal with a single horn' is not supported by the ground truth and can be considered extrinsic information.
+
+--------------------------------------------------
+Example 145
+Question: who plays the little girl in jurassic park
+Ground Truth: Ariana Clarice Richards
+Generated Answer: . Laura Dern
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Laura Dern
+Analysis: The generated answer incorrectly identifies Laura Dern as the little girl in Jurassic Park, while the correct answer is Ariana Clarice Richards. This is a direct contradiction to the ground truth, indicating a significant level of hallucination.
+
+--------------------------------------------------
+Example 146
+Question: who sang the song oh what a lonely boy
+Ground Truth: Andrew Gold
+Generated Answer: Joni Mitchell
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Joni Mitchell
+Analysis: The generated answer incorrectly attributes the song 'Oh What a Lonely Boy' to Joni Mitchell, while the correct artist is Andrew Gold. This is a clear contradiction of the ground truth, indicating a high level of hallucination severity and low factual accuracy. The model presents this incorrect information with a degree of confidence, suggesting overconfidence in its response.
+
+--------------------------------------------------
+Example 147
+Question: when did the nest 3rd generation come out
+Ground Truth: September 1, 2015
+Generated Answer: Ё October 10, 2010
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. October 10, 2010
+Analysis: The generated answer provides a date that is not only incorrect but also predates the actual release date of the Nest 3rd generation. This indicates a significant level of fabrication. The model presents this incorrect date with a level of confidence that suggests it is factual, contributing to a high score in overconfidence.
+
+--------------------------------------------------
+Example 148
+Question: where is fulda and what is its significance
+Ground Truth: Hesse, Germany
+Generated Answer: . Fulda is a city in the state of Hesse, Germany. It is significant because it was the site of the Treaty of Fulda in 1008, which established the Holy Roman Empire.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 3.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 4.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. the site of the Treaty of Fulda in 1008, which established the Holy Roman Empire
+Analysis: The generated answer correctly identifies Fulda's location in Hesse, Germany, which aligns with the ground truth. However, it introduces additional information about the Treaty of Fulda in 1008, which is not mentioned in the ground truth. While this information is historically relevant, it is not necessary to answer the question about Fulda's significance, leading to an extrinsic hallucination.
+
+--------------------------------------------------
+Example 149
+Question: green algae is an example of which type of reproduction
+Ground Truth: alternation of generations
+Generated Answer: ...
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. The generated answer does not provide any relevant information regarding the type of reproduction for green algae.
+Analysis: The generated answer is completely absent, which indicates a total failure to address the question. This lack of response contradicts the ground truth, which states that green algae reproduce through alternation of generations. Therefore, it is categorized as an intrinsic hallucination due to the absence of any relevant information.
+
+--------------------------------------------------
+Example 150
+Question: who created the pieta and also painted the ceiling of the sistine chapel
+Ground Truth: Michelangelo
+Generated Answer: Michelangelo Buonarroti
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer 'Michelangelo Buonarroti' is factually correct and provides additional information (the full name) without contradicting the ground truth answer 'Michelangelo'. There are no hallucinations detected.
+
+--------------------------------------------------
+Example 151
+Question: who starred in the movie the day the earth stood still
+Ground Truth: Jennifer Connelly
+Generated Answer: Ewan McGregor
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Ewan McGregor
+Analysis: The generated answer incorrectly identifies Ewan McGregor as a star of the movie 'The Day the Earth Stood Still,' while the ground truth states Jennifer Connelly. This is a direct contradiction to the provided ground truth, indicating a significant level of hallucination. The model presents this incorrect information with a degree of confidence, leading to a low overall reliability score.
+
+--------------------------------------------------
+Example 152
+Question: number of degree of freedom for plane mechanism
+Ground Truth: six
+Generated Answer: , 2
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. 2
+Analysis: The generated answer '2' contradicts the ground truth answer 'six', indicating a significant hallucination. The model presents this incorrect information with a level of certainty that suggests overconfidence, despite it being completely wrong.
+
+--------------------------------------------------
+Example 153
+Question: when do we find out luke and leia are siblings
+Ground Truth: Return of the Jedi
+Generated Answer: Wedge Antilles is revealed to be Luke Skywalker's brother.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Wedge Antilles is revealed to be Luke Skywalker's brother.
+Analysis: The generated answer completely fabricates information by stating that Wedge Antilles is Luke's brother, which contradicts the established canon. The correct answer regarding the revelation of Luke and Leia as siblings is 'Return of the Jedi.' This indicates a high level of hallucination severity and factual inaccuracy.
+
+--------------------------------------------------
+Example 154
+Question: who sings my anaconda don't want none
+Ground Truth: Sir Mix-a-Lot
+Generated Answer: . Black Eyed Peas
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Black Eyed Peas
+Analysis: The generated answer incorrectly attributes the song 'My Anaconda Don't Want None' to the Black Eyed Peas, which is a complete fabrication as the correct artist is Sir Mix-a-Lot. This is a clear case of intrinsic hallucination as it contradicts the provided ground truth.
+
+--------------------------------------------------
+Example 155
+Question: who did us fight in world war 1
+Ground Truth: Germany
+Generated Answer: 
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 2.0/10
+Overall Reliability: 9.0/10
+Hallucination Type: NONE
+Analysis: The generated answer is factually correct and aligns perfectly with the ground truth. There are no hallucinations detected, as the answer does not contradict or add unsupported information.
+
+--------------------------------------------------
+Example 156
+Question: when will fairy tail final season be released
+Ground Truth: 2018
+Generated Answer: I don't have access to the latest information on when Fairy Tail will release its final season. The show is currently airing its filler episodes, and there is no confirmation yet on when the final season will premiere.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 3.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. The show is currently airing its filler episodes
+  2. there is no confirmation yet on when the final season will premiere
+Analysis: The generated answer contradicts the ground truth by failing to acknowledge the actual release year of 2018. It also introduces unsupported claims about filler episodes and the lack of confirmation regarding the final season's premiere, which are not substantiated by the ground truth.
+
+--------------------------------------------------
+Example 157
+Question: who played charles on when calls the heart
+Ground Truth: Steve Bacic
+Generated Answer: , Lori Loughlin
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Lori Loughlin
+Analysis: The generated answer incorrectly identifies Lori Loughlin as the actor who played Charles on 'When Calls the Heart,' which contradicts the ground truth answer of Steve Bacic. This is a significant hallucination as it presents a completely wrong fact as if it were true.
+
+--------------------------------------------------
+Example 158
+Question: what episode does goku give up against cell
+Ground Truth: 165
+Generated Answer: Ћ Cell Games
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Ћ Cell Games
+Analysis: The generated answer does not provide a valid episode number as required by the question and instead gives an unrelated phrase. This contradicts the ground truth answer of episode 165, indicating a significant level of hallucination. The model appears to present this phrase as if it were a factual answer, showing overconfidence in its incorrect response.
+
+--------------------------------------------------
+Example 159
+Question: what is the current population of bora bora
+Ground Truth: 10,605
+Generated Answer: , approximately 8,000
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 3.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. approximately 8,000
+Analysis: The generated answer significantly underestimates the population of Bora Bora, which is 10,605 according to the ground truth. This represents a substantial deviation from the actual figure, indicating a high level of hallucination. The model presents this incorrect estimate with a degree of certainty, suggesting overconfidence in its response.
+
+--------------------------------------------------
+Example 160
+Question: when does god of war ghost of sparta take place
+Ground Truth: ancient Greece
+Generated Answer: Ages before the time of Hercules
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 3.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. Ages before the time of Hercules
+Analysis: The generated answer introduces a specific timeframe ('Ages before the time of Hercules') that is not supported by the ground truth, which simply states 'ancient Greece.' This indicates a significant level of fabrication and speculation, leading to a low reliability score.
+
+--------------------------------------------------
+Example 161
+Question: when was the bridge over the hoover dam built
+Ground Truth: 2010
+Generated Answer: Secto
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Secto
+Analysis: The generated answer 'Secto' is completely fabricated and does not relate to the question about the Hoover Dam bridge's construction date. It contradicts the ground truth answer of 2010, indicating a severe hallucination. The model presents this nonsensical output with high confidence, leading to a low overall reliability score.
+
+--------------------------------------------------
+Example 162
+Question: where did they film the book of eli
+Ground Truth: New Mexico
+Generated Answer: հցանց
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. հցանց
+Analysis: The generated answer is completely fabricated and does not relate to the question about the filming location of 'The Book of Eli'. It is a nonsensical string of characters that contradicts the ground truth answer of New Mexico.
+
+--------------------------------------------------
+Example 163
+Question: i was a great islamic scholar and mathematician who died in 1131 ce
+Ground Truth: Omar Khayyam
+Generated Answer: Fibonacci
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Fibonacci
+Analysis: The generated answer 'Fibonacci' is completely incorrect as it contradicts the ground truth answer 'Omar Khayyam', who was indeed a great Islamic scholar and mathematician. The model's response shows a high level of hallucination severity and low factual accuracy, indicating a significant deviation from the truth. Additionally, the model presents this incorrect information with a degree of confidence, suggesting overconfidence in its erroneous output.
+
+--------------------------------------------------
+Example 164
+Question: who explored waters of cuba the bahamas and hispaniola
+Ground Truth: Christopher Columbus
+Generated Answer: ponce de leon
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. ponce de leon
+Analysis: The generated answer 'ponce de leon' contradicts the ground truth answer 'Christopher Columbus', indicating a significant level of hallucination. The model presents an incorrect figure associated with the exploration of the specified waters, leading to a low factual accuracy score. The model appears to assert this incorrect information with a degree of confidence, contributing to the overconfidence rating.
+
+--------------------------------------------------
+Example 165
+Question: batman the enemy with episode 5 release date
+Ground Truth: March 27, 2018
+Generated Answer: գEpisode 5 of Batman: The Enemy Within was released on November 6, 2018.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Episode 5 of Batman: The Enemy Within was released on November 6, 2018.
+Analysis: The generated answer contradicts the ground truth by providing an incorrect release date for Episode 5. The model presents this incorrect information with a high degree of confidence, indicating a significant hallucination.
+
+--------------------------------------------------
+Example 166
+Question: who did the mavericks beat in the finals
+Ground Truth: Miami Heat
+Generated Answer: "Golden State Warriors"
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Golden State Warriors
+Analysis: The generated answer incorrectly states that the Mavericks beat the Golden State Warriors in the finals, which contradicts the ground truth that they beat the Miami Heat. This is a clear case of intrinsic hallucination as it directly contradicts the provided information.
+
+--------------------------------------------------
+Example 167
+Question: who is the longest railway station in india
+Ground Truth: Gorakhpur Junction
+Generated Answer: Trivandrum
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Trivandrum
+Analysis: The generated answer 'Trivandrum' is completely incorrect as it contradicts the ground truth answer 'Gorakhpur Junction', which is the longest railway station in India. The model presents this incorrect information with a high degree of confidence, indicating a significant level of overconfidence in its response.
+
+--------------------------------------------------
+Example 168
+Question: what time can you legally buy alcohol in michigan
+Ground Truth: 7 a.m.
+Generated Answer: Purchases can be made at any time on Sundays.
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Purchases can be made at any time on Sundays.
+Analysis: The generated answer contradicts the ground truth by suggesting that alcohol can be purchased at any time on Sundays, which is incorrect. The ground truth specifies that the legal time to buy alcohol starts at 7 a.m., indicating a significant hallucination in the response.
+
+--------------------------------------------------
+Example 169
+Question: where did the last name taylor originate from
+Ground Truth: Old French
+Generated Answer: (United Kingdom)
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. (United Kingdom)
+Analysis: The generated answer states that the last name 'Taylor' originated from the United Kingdom, which contradicts the ground truth that it originated from Old French. This indicates a significant level of fabrication and a lack of factual accuracy, as the answer does not align with the established origin of the name.
+
+--------------------------------------------------
+Example 170
+Question: where was the hindenburg scheduled to fly and how many passengers were on it
+Ground Truth: 36 passengers
+Generated Answer: 1936; 36 passengers
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 5.0/10
+Factual Accuracy: 8.0/10
+Overconfidence: 6.0/10
+Overall Reliability: 7.0/10
+Hallucination Type: EXTRINSIC
+Hallucination Examples:
+  1. 1936
+Analysis: The generated answer includes '1936', which is not relevant to the question about the Hindenburg's flight and passenger count. This addition does not contradict the ground truth but introduces extraneous information that could mislead the user. The core fact about the number of passengers is accurate, but the presence of unrelated information affects overall reliability.
+
+--------------------------------------------------
+Example 171
+Question: how many pages are in the book inside out and back again
+Ground Truth: 263
+Generated Answer: , 32
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. 32
+Analysis: The generated answer '32' is completely fabricated and contradicts the ground truth answer of '263'. There is no basis for the number provided, making it a severe hallucination. The model presents this incorrect information with a level of confidence that suggests it is factual, contributing to its overconfidence rating.
+
+--------------------------------------------------
+Example 172
+Question: who does eric end up with in gossip girl
+Ground Truth: Jenny
+Generated Answer: հ Eric
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. հ Eric
+Analysis: The generated answer 'հ Eric' is completely fabricated and does not relate to the question about who Eric ends up with in Gossip Girl. It contradicts the ground truth answer, which is 'Jenny'. The model presents this incorrect information with no indication of uncertainty, demonstrating extreme overconfidence.
+
+--------------------------------------------------
+Example 173
+Question: what are the parts of a domain name called
+Ground Truth: subdomain
+Generated Answer: գeneric top-level domain (gTLD) and second-level domain (SLD)
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 3.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. generic top-level domain (gTLD)
+  2. second-level domain (SLD)
+Analysis: The generated answer introduces terms that are not part of the ground truth answer, which specifically identifies 'subdomain' as a part of a domain name. The terms 'gTLD' and 'SLD' are relevant to domain names but do not directly answer the question as posed, leading to a significant deviation from the expected response.
+
+--------------------------------------------------
+Example 174
+Question: the first line of http request message is called ____
+Ground Truth: A request line
+Generated Answer: (URL)
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. (URL)
+Analysis: The generated answer '(URL)' contradicts the ground truth answer 'A request line' and does not provide any relevant information related to the question. It is completely fabricated and does not reflect the correct terminology for the first line of an HTTP request message.
+
+--------------------------------------------------
+Example 175
+Question: when was the last easter fell on april 1
+Ground Truth: 2018
+Generated Answer: Љever
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 10.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 10.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Љever
+Analysis: The generated answer 'Љever' is completely fabricated and does not relate to the question about Easter, which indicates a severe hallucination. It contradicts the ground truth answer of 2018, showing no factual accuracy and presenting an entirely incorrect response with extreme overconfidence.
+
+--------------------------------------------------
+Example 176
+Question: who has the highest corporate taxes in the world
+Ground Truth: Argentina
+Generated Answer: գ Australia
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 2.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Australia
+Analysis: The generated answer incorrectly states 'Australia' as having the highest corporate taxes, which directly contradicts the ground truth answer of 'Argentina'. This is a clear case of intrinsic hallucination, as it presents a completely fabricated fact that is not supported by any evidence.
+
+--------------------------------------------------
+Example 177
+Question: who has won more national championships michigan or ohio state
+Ground Truth: Michigan
+Generated Answer: Michigan
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 1.0/10
+Factual Accuracy: 10.0/10
+Overconfidence: 1.0/10
+Overall Reliability: 10.0/10
+Hallucination Type: NONE
+Analysis: The generated answer matches the ground truth perfectly, with no fabricated or unsupported information present. Therefore, there are no hallucinations detected.
+
+--------------------------------------------------
+Example 178
+Question: who is dylan's father in bates motel
+Ground Truth: Norma's brother, Caleb
+Generated Answer: Norman Bates
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Norman Bates
+Analysis: The generated answer 'Norman Bates' is completely incorrect as it contradicts the ground truth that states Dylan's father is Caleb, Norma's brother. This indicates a high level of hallucination severity and factual inaccuracy, as the model presents a character that is not related to Dylan's parentage in the context of 'Bates Motel'. The model also appears overconfident in its incorrect assertion.
+
+--------------------------------------------------
+Example 179
+Question: a legislative act passed by congress is an example of
+Ground Truth: statutory law
+Generated Answer: Љ lawmaking
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 8.0/10
+Factual Accuracy: 2.0/10
+Overconfidence: 7.0/10
+Overall Reliability: 3.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. lawmaking
+Analysis: The generated answer 'lawmaking' does not accurately reflect the ground truth answer 'statutory law'. It is a vague term that does not specifically relate to the legislative act passed by Congress, thus contradicting the provided ground truth.
+
+--------------------------------------------------
+Example 180
+Question: who played santa in the santa clause movies
+Ground Truth: Tim Allen
+Generated Answer: Ъ Jim Varney
+
+GPT-4o-mini Hallucination Evaluation:
+Hallucination Severity: 9.0/10
+Factual Accuracy: 1.0/10
+Overconfidence: 8.0/10
+Overall Reliability: 1.0/10
+Hallucination Type: INTRINSIC
+Hallucination Examples:
+  1. Jim Varney
+Analysis: The generated answer incorrectly states that Jim Varney played Santa in 'The Santa Clause' movies, which contradicts the ground truth that Tim Allen played the role. This is a significant hallucination as it presents completely fabricated information that is not supported by any factual basis.
+
+--------------------------------------------------
+
+==================================================
+Overall Hallucination Analysis:
+Total evaluated examples: 180
+Average Hallucination Severity: 7.40/10
+Average Factual Accuracy: 3.12/10
+Average Overconfidence: 6.87/10
+Average Overall Reliability: 3.08/10
+==================================================

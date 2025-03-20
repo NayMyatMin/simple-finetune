@@ -2,6 +2,7 @@ import os
 import json
 import requests
 import re
+from utils.parallel import TaskPartitioner
 
 def evaluate_with_gpt4o_mini(question, ground_truth, generated_answer, api_key=None):
     """
@@ -275,4 +276,47 @@ def write_gpt_aggregate_metrics(output_file, gpt_evals):
     else:
         output_file.write("\n" + "="*50 + "\n")
         output_file.write("No valid GPT-4o-mini evaluation data collected for aggregation.\n")
-        output_file.write("="*50 + "\n") 
+        output_file.write("="*50 + "\n")
+
+
+def parallel_evaluate_batch(batch_questions, batch_ground_truths, batch_answers, api_key=None, num_processes=4):
+    """
+    Parallelize GPT evaluation for a batch of examples using TaskPartitioner
+    
+    Args:
+        batch_questions: List of questions
+        batch_ground_truths: List of ground truth answers
+        batch_answers: List of generated answers
+        api_key: OpenAI API key
+        num_processes: Number of parallel processes to use
+        
+    Returns:
+        List of evaluation results in the same order as the input
+    """
+    # Create task partitioner
+    task_partitioner = TaskPartitioner()
+    
+    # Add each evaluation as a separate task
+    for i, (question, truth, answer) in enumerate(zip(batch_questions, batch_ground_truths, batch_answers)):
+        task_partitioner.add_task_with_key(
+            i, 
+            evaluate_with_gpt4o_mini, 
+            question, 
+            truth, 
+            answer, 
+            api_key
+        )
+    
+    # Run evaluations in parallel
+    num_examples = len(batch_questions)
+    processes_to_use = min(num_processes, num_examples)
+    if processes_to_use > 1:
+        print(f"Running {num_examples} GPT evaluations in parallel with {processes_to_use} processes")
+        results = task_partitioner.run_multi_process(nprocesses=processes_to_use, cache_only=False)
+    else:
+        # If only one example, run directly
+        results = task_partitioner.run()
+    
+    # Convert from dict to ordered list
+    ordered_results = [results[i] for i in range(num_examples)]
+    return ordered_results 

@@ -1,5 +1,5 @@
 ### model
-model_name_or_path: /common/home/users/m/myatmin.nay.2022/Llama-2-7b-chat-hf
+model_name_or_path: meta-llama/Llama-2-7b-chat-hf
 
 ### method
 stage: sft

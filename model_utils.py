@@ -94,18 +94,28 @@ def extract_ground_truth(batch, dataset_name):
         try:
             # Check if the answers field is empty first
             if len(batch['answers']) > 0:
-                answers = batch['answers'][0]
-                # Print debug information about the answers format
-                print(f"SQuAD answers format: {type(answers)}")
-                print(f"SQuAD answers content: {answers}")
+                answers = batch['answers'][0]  # Get the first element (list of answer dictionaries)
                 
-                # Handle the actual SQuAD format: a dict with 'text' key containing a list of strings
-                if isinstance(answers, dict) and 'text' in answers:
+                # Print debug information (only for first few examples)
+                if 'id' in batch and batch['id'][0].startswith('5726'):  # Just sample a few for debugging
+                    print(f"SQuAD answers format: {type(answers)}")
+                    print(f"SQuAD answers content: {answers}")
+                
+                # Handle the SQuAD format where answers is a list of dictionaries
+                if isinstance(answers, list) and len(answers) > 0:
+                    # Each answer is a dict with 'text' and 'answer_start'
+                    if isinstance(answers[0], dict) and 'text' in answers[0]:
+                        return answers[0]['text']  # Return the text of the first answer
+                
+                # Old logic for backwards compatibility
+                elif isinstance(answers, dict) and 'text' in answers:
                     if isinstance(answers['text'], (list, tuple)) and len(answers['text']) > 0:
                         return answers['text'][0]  # Take the first answer text
                     elif isinstance(answers['text'], str):
                         return answers['text']  # Direct string
-                else:
+                
+                # If no valid format was found
+                if 'id' in batch and batch['id'][0].startswith('5726'):  # Just sample a few for debugging
                     print("Warning: SQuAD answers format is unexpected, couldn't extract ground truth")
             else:
                 print("Warning: SQuAD example has empty answers field")
@@ -119,7 +129,7 @@ def extract_ground_truth(batch, dataset_name):
 
 def setup_results_directory(model_name):
     """Set up the results directory structure for the model"""
-    results_dir = "results"
+    results_dir = "sft_results"
     os.makedirs(results_dir, exist_ok=True)
 
     model_folder_name = model_name

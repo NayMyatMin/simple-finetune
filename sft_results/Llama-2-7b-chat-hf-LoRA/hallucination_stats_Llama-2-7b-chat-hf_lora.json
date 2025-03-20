@@ -1,0 +1,74 @@
+{
+  "dataset_stats": {
+    "coqa": {
+      "total_evaluated": 399,
+      "hallucination_counts": {
+        "INTRINSIC": 162,
+        "EXTRINSIC": 101,
+        "FACTUAL_ERROR": 2,
+        "NONE": 134,
+        "UNKNOWN": 0
+      },
+      "avg_hallucination_severity": 5.704260651629073,
+      "avg_factual_accuracy": 4.992481203007519,
+      "avg_overconfidence": 5.754385964912281,
+      "avg_overall_reliability": 4.641604010025063
+    },
+    "triviaqa": {
+      "total_evaluated": 498,
+      "hallucination_counts": {
+        "INTRINSIC": 134,
+        "EXTRINSIC": 11,
+        "FACTUAL_ERROR": 6,
+        "NONE": 347,
+        "UNKNOWN": 0
+      },
+      "avg_hallucination_severity": 3.4156626506024095,
+      "avg_factual_accuracy": 7.337349397590361,
+      "avg_overconfidence": 3.4859437751004014,
+      "avg_overall_reliability": 7.076305220883534
+    },
+    "nq_open": {
+      "total_evaluated": 180,
+      "hallucination_counts": {
+        "INTRINSIC": 131,
+        "EXTRINSIC": 13,
+        "FACTUAL_ERROR": 5,
+        "NONE": 31,
+        "UNKNOWN": 0
+      },
+      "avg_hallucination_severity": 7.4,
+      "avg_factual_accuracy": 3.1222222222222222,
+      "avg_overconfidence": 6.872222222222222,
+      "avg_overall_reliability": 3.0833333333333335
+    },
+    "SQuAD": {
+      "total_evaluated": 145,
+      "hallucination_counts": {
+        "INTRINSIC": 15,
+        "EXTRINSIC": 41,
+        "FACTUAL_ERROR": 0,
+        "NONE": 89,
+        "UNKNOWN": 0
+      },
+      "avg_hallucination_severity": 2.703448275862069,
+      "avg_factual_accuracy": 8.241379310344827,
+      "avg_overconfidence": 3.627586206896552,
+      "avg_overall_reliability": 7.489655172413793
+    }
+  },
+  "overall": {
+    "total_evaluated": 1222,
+    "hallucination_counts": {
+      "INTRINSIC": 442,
+      "EXTRINSIC": 166,
+      "FACTUAL_ERROR": 13,
+      "NONE": 601,
+      "UNKNOWN": 0
+    },
+    "avg_hallucination_severity": 4.6653027823240585,
+    "avg_factual_accuracy": 6.05810147299509,
+    "avg_overconfidence": 4.742225859247136,
+    "avg_overall_reliability": 5.742225859247136
+  }
+}

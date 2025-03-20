@@ -1,0 +1,32 @@
+{
+  "dataset_stats": {
+    "SQuAD": {
+      "total_evaluated": 2910,
+      "hallucination_counts": {
+        "INTRINSIC": 306,
+        "EXTRINSIC": 767,
+        "FACTUAL_ERROR": 25,
+        "NONE": 1812,
+        "UNKNOWN": 0
+      },
+      "avg_hallucination_severity": 2.6752577319587627,
+      "avg_factual_accuracy": 8.19656357388316,
+      "avg_overconfidence": 3.559106529209622,
+      "avg_overall_reliability": 7.434020618556701
+    }
+  },
+  "overall": {
+    "total_evaluated": 2910,
+    "hallucination_counts": {
+      "INTRINSIC": 306,
+      "EXTRINSIC": 767,
+      "FACTUAL_ERROR": 25,
+      "NONE": 1812,
+      "UNKNOWN": 0
+    },
+    "avg_hallucination_severity": 2.6752577319587627,
+    "avg_factual_accuracy": 8.19656357388316,
+    "avg_overconfidence": 3.559106529209622,
+    "avg_overall_reliability": 7.434020618556701
+  }
+}

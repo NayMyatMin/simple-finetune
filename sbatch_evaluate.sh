@@ -14,7 +14,7 @@
 #SBATCH --constraint=a100           # Target A100 GPUs specifically
 #SBATCH --time=02-00:00:00          # Maximum run time of 2 days
 ##SBATCH --mail-type=BEGIN,END,FAIL  # Email notifications for job start, end, and failure
-#SBATCH --output=%u.%x              # Log file location
+#SBATCH --output=%u.evaluate_model   # Log file location with meaningful name
 
 ################################################################
 ## EDIT %u.%j.out AFTER THIS LINE IF YOU ARE OKAY WITH DEFAULT SETTINGS ##
@@ -23,24 +23,18 @@
 #SBATCH --partition=researchshort                 # Partition assigned
 #SBATCH --account=sunjunresearch   # Account assigned (use myinfo command to check)
 #SBATCH --qos=research-1-qos         # QOS assigned (use myinfo command to check)
-#SBATCH --job-name=evaluate    # Default job name (will be overridden)
+#SBATCH --job-name=evaluate_model   # More descriptive job name
 #SBATCH --mail-user=myatmin.nay.2022@phdcs.smu.edu.sg  # Email notifications
 
 #################################################
 ##            END OF SBATCH COMMANDS           ##
 #################################################
 
-# Set job name based on model and dataset if provided
-if [ -n "$MODEL_NAME" ] && [ -n "$DATASET_NAME" ]; then
-    export SLURM_JOB_NAME="${MODEL_NAME}_${DATASET_NAME}"
-fi
-
 # Get the parent directory (project root)
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 PROJECT_ROOT="$( dirname "$SCRIPT_DIR" )"
 
 # Purge the environment, load the modules we require.
-# Refer to https://violet.smu.edu.sg/origami/module/ for more information
 module purge
 module load Python/3.10.16-GCCcore-13.3.0 
 module load CUDA/12.6.0
@@ -82,9 +76,33 @@ if [ -f "$BASHRC_PATH" ]; then
     fi
 fi
 
+# Explicitly set tokenizers parallelism to false to avoid deadlocks
+export TOKENIZERS_PARALLELISM=false
+
 model="Llama-2-7b-chat-hf" 
 # model="Llama-3.1-8B-Instruct"
 # model="Mistral-7B-Instruct-v0.3"
 
-python evaluate.py --dataset coqa triviaqa nq_open SQuAD --fraction_of_data_to_use 1 \
-    --evaluate_with_gpt --model $model
+# Path to LoRA weights - set to empty to use base model without LoRA
+lora_weights="lora_weight/LLaMA2-7B-Chat/finetuning/original"
+# lora_weights=""
+
+# Common parameters for both runs
+common_params="--dataset coqa triviaqa nq_open SQuAD --parallel_datasets  \
+    --model $model \
+    --fraction_of_data_to_use 0.05 \
+    --batch_size 16 \
+    --num_workers 8 \
+    --num_processes 4"
+
+# Run evaluation
+if [ -n "$lora_weights" ]; then
+    echo "=== Evaluating model with LoRA weights ==="
+    python evaluate.py $common_params --lora_weights "$lora_weights" --evaluate_with_gpt
+else
+    echo "=== Evaluating base model without LoRA ==="
+    python evaluate.py $common_params --evaluate_with_gpt
+fi
+
+# To test multiple datasets in parallel, use:
+# --dataset coqa triviaqa nq_open SQuAD --parallel_datasets 
