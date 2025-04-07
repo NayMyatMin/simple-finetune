@@ -479,8 +479,19 @@ def main():
     
     # Determine model type and set up appropriate directory names
     if args.lora_weights:
-        model_type = "-LoRA"
-        print(f"Loading model: {args.model} with LoRA weights from: {args.lora_weights}")
+        # Extract training type from the LoRA weights path
+        training_type = ""
+        if "consistency" in args.lora_weights.lower():
+            training_type = "consistency"
+        elif "finetuning" in args.lora_weights.lower():
+            training_type = "finetuning"
+        
+        if training_type:
+            model_type = f"-LoRA-{training_type}"
+        else:
+            model_type = "-LoRA"
+            
+        print(f"Loading model: {args.model} with {training_type} LoRA weights from: {args.lora_weights}")
     else:
         model_type = "-Base"
         print(f"Loading model: {args.model} (base model without LoRA)")
@@ -571,7 +582,7 @@ def main():
                           "avg_overconfidence", "avg_overall_reliability"]:
                 hallucination_stats["overall"][metric] /= total
         
-        # Save hallucination statistics
+        # Save hallucination statistics with training type in filename
         with open(f"{model_results_dir}/hallucination_stats_{args.model}_{results_suffix}.json", "w") as f:
             json.dump(hallucination_stats, f, indent=2)
         
