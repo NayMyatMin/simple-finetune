@@ -33,7 +33,7 @@ The framework currently supports:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/simple-finetune.git
+git clone https://github.com/naymyatmin/simple-finetune.git
 cd simple-finetune
 ```
 
@@ -59,13 +59,13 @@ export HUGGING_FACE_HUB_TOKEN="your-hf-token"
 To fine-tune a model using LoRA:
 
 ```bash
-python finetune_train.py configs/finetuning/llama2_7b_chat/llama2_7b_finetuning_original.yaml
+python finetune_train.py configs/finetuning/llama2_7b_chat/llama2_7b_finetuning.yaml
 ```
 
 For distributed training with DeepSpeed:
 
 ```bash
-torchrun --nproc_per_node=1 finetune_train.py configs/finetuning/llama2_7b_chat/llama2_7b_finetuning_original.yaml
+torchrun --nproc_per_node=1 finetune_train.py configs/finetuning/llama2_7b_chat/llama2_7b_finetuning.yaml
 ```
 
 ### HPC Execution
@@ -98,7 +98,7 @@ cutoff_len: 1024
 max_samples: 1000
 
 ### output 
-output_dir: lora_weight/LLaMA2-7B-Chat/finetuning/original
+output_dir: lora_weight/LLaMA2-7B-Chat/finetuning/
 
 ### train
 per_device_train_batch_size: 2
@@ -115,8 +115,6 @@ simple-finetune/
 │   ├── deepspeed/              # DeepSpeed optimization configurations
 │   └── finetuning/             # Standard LoRA fine-tuning configs
 ├── lora_weight/                # Output directory for LoRA weights
-├── models/                     # Model loading utilities
-├── utils/                      # Utility functions
 ├── finetune_train.py           # Main entry point for fine-tuning
 └── sbatch_finetune.sh          # SLURM script for fine-tuning
 ```

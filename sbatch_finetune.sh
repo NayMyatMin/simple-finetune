@@ -61,5 +61,5 @@ module load CUDA/12.6.0
 source ~/myenv/bin/activate
 
 srun --gres=gpu:1 torchrun --nproc_per_node=1 --master_port=11222 \
-        finetune_train.py configs/finetuning/llama2_7b_chat/llama2_7b_finetuning_original.yaml
+        finetune_train.py configs/finetuning/llama2_7b_chat/llama2_7b_finetuning.yaml
 
